@@ -3,7 +3,7 @@ Priority: optional
 Homepage: apt.condor.andysayler.com
 Standards-Version: 3.9.2
 Package: cu-cs-foundations-base
-Maintainer: Andy Sayler (asayler) <andy.sayler@gmail.com>
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
 Depends: binutils, binutils-doc, build-essential, ddd, ddd-doc, emacs | emacs23 | emacs23-nox, gdb, gdb-doc, geany, geany-plugins, geany-plugins, git, git-doc, manpages, manpages-dev, manpages-posix, manpages-posix-dev, rsync, screen, ssh, valgrind, vim | vim-nox, vim-doc
 Architecture: all
 Copyright: copyright
