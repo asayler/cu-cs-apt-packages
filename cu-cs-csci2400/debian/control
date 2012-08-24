@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci2400
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, gcc, gcc-doc, gcc-multilib, kcachegrind
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for Unversity of Colorado CSCI-2400 Course 
