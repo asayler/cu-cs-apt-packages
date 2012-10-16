@@ -8,4 +8,6 @@ Depends: cu-cs-foundations-base, gcc, gcc-doc, gcc-multilib, kcachegrind
 Architecture: all
 Copyright: copyright
 Changelog: changelog
+Postinst: postinst
+Postrm: postrm
 Description: Packages for Unversity of Colorado CSCI-2400 Course 
