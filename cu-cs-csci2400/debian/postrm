@@ -8,7 +8,7 @@
 
 # Constants
 BACKUPEXT=".old"
-SETTINGSFILE="test"
+SETTINGSFILE="/etc/sysctl.conf"
 PACKAGENAME="cu-cs-csci2400"
 
 # Commands

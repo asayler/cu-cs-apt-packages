@@ -8,10 +8,9 @@
 
 # Constants
 BACKUPEXT=".old"
-SETTINGSFILE="test"
-#SETTINGSFILE="/etc/sysctl.conf"
-SETTINGKEY="kernel.randomize_va_space"
+SETTINGSFILE="/etc/sysctl.conf"
 PACKAGENAME="cu-cs-csci2400"
+SETTINGKEY="kernel.randomize_va_space"
 SROFF="0"
 
 # Commands
