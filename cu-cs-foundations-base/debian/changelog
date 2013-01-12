@@ -1,4 +1,10 @@
-cu-cs-foundations-base (0.1-0ubuntu3) precise; urgency=high
+cu-cs-foundations-base (0.2-0ubuntu2) precise; urgency=low
+
+  * Added binutils dev package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 15:12:41 -0700
+
+cu-cs-foundations-base (0.2-0ubuntu1) precise; urgency=high
 
   * Split out editor packages and updated base packages for S13
 
