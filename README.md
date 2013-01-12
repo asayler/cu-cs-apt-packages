@@ -3,11 +3,10 @@ cu-cs-apt-packages
 
 APT Packages for University of Colorado CS Courses
 
-Notes:
-
-To update changelog:
-From 'debian' package directory
-Run 'dch -i'
+To update changelog
+-------------------
+* From 'debian' package directory
+** Run 'dch -i'
 
 To export repo:
 From pakcage git repo
