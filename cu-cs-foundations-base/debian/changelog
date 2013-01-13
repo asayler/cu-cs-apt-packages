@@ -1,3 +1,9 @@
+cu-cs-foundations-base (0.2-0ubuntu4) precise; urgency=low
+
+  * Fixed another misnamed dependency
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 19:47:07 -0700
+
 cu-cs-foundations-base (0.2-0ubuntu3) precise; urgency=high
 
   * Fixed misnamed package dependency
