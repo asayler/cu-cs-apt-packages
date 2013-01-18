@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Andy Sayler
+# cu-cs-csci4830-advrobo Package
+# postrm Script
+# Purpose: Restores previous state
+# Created 10/2012
+
+# ToDo - Fix up .bashrc
