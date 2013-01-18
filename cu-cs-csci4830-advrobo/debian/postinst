@@ -8,5 +8,6 @@
 
 rosdep init
 rosdep update
-echo "source /opt/ros/groovy/setup.bash" >> ~/.bashrc
-~/.bashrc
+# The following commands must be run manully by the user after the install
+#echo "source /opt/ros/groovy/setup.bash" >> ~/.bashrc
+#~/.bashrc
