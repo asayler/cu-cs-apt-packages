@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.2-0ubuntu1) precise; urgency=high
+
+  * Updated for Summer 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 26 May 2013 21:36:51 -0600
+
 cu-cs-csci1300 (0.1-0ubuntu2) precise; urgency=high
 
   * Corrected wrong package dependencies (used 2270 dependencies instead of 1300)
