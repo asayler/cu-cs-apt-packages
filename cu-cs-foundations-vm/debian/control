@@ -8,5 +8,5 @@ Depends: linux-virtual
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/CU-CS-VM-Background.png
+Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/
 Description: Virtual Machine packages for University of Colorado CS Foundations VirutalBox VM
