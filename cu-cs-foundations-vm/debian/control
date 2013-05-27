@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-vm
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: linux-virtual
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Virtual Machine packages for University of Colorado CS Foundations VirutalBox VM
