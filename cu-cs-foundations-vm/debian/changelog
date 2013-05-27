@@ -1,3 +1,9 @@
+cu-cs-foundations-vm (0.1-0ubuntu2) precise; urgency=low
+
+  * Added desktop background file
+
+ -- andy <andy@foundation.cs.colorado.edu>  Mon, 27 May 2013 15:22:53 -0600
+
 cu-cs-foundations-vm (0.1-0ubuntu1) precise; urgency=high
 
   * Initial release
