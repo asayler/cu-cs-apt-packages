@@ -11,7 +11,7 @@ To update changelog
 To export repo
 --------------
 * From 'packages' git repo
-* Run 'git checkout-index -a -f --prefix=<PATH>/build/'
+* Run 'git checkout-index -a -f --prefix=PATH/build/'
 
 To build package
 ----------------
@@ -21,12 +21,12 @@ To build package
 To add deb package to repo
 --------------------------
 * From '/var/www/apt/ubuntu' directory
-* Run 'reprepro includedeb precise <PATH>/build/PATH/NAME.deb'
+* Run 'reprepro includedeb precise PATH/build/PATH/NAME.deb'
 
 To add source package to repo
 -----------------------------
 * From '/var/www/apt/ubuntu' directory
-* Run 'reprepro includedsc precise <PATH>/build/PATH/NAME.dsc'
+* Run 'reprepro includedsc precise PATH/build/PATH/NAME.dsc'
 
 To list repo packages
 ---------------------
