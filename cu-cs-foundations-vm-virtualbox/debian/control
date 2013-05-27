@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-foundations-vm-virtualbox
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Pre-Depends: dkms cu-cs-foundations-vm
+Pre-Depends: dkms, cu-cs-foundations-vm
 Depends: virtualbox-guest-dkms, virtualbox-guest-utils, virtualbox-guest-x11
 Architecture: all
 Copyright: copyright
