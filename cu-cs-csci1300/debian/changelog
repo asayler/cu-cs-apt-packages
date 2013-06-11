@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.3-0ubuntu1) precise; urgency=high
+
+  * Added python-tk
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 10 Jun 2013 23:01:31 -0600
+
 cu-cs-csci1300 (0.2-0ubuntu1) precise; urgency=high
 
   * Updated for Summer 2013
