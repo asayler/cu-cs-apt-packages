@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-core
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-csci1300, cu-cs-csci2270, cu-cs-csci2400
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Core course packages for Unversity of Colorado CS Foundations Courses
