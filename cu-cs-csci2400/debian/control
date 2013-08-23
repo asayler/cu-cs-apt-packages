@@ -1,6 +1,6 @@
 Section: extra
 Priority: optional
-Homepage: foundation.cs.colorado.edu
+Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-csci2400
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>

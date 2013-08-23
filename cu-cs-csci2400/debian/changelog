@@ -1,3 +1,9 @@
+cu-cs-csci2400 (0.3-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 10:59:42 -0600
+
 cu-cs-csci2400 (0.2-0ubuntu1) precise; urgency=high
 
   * Added postinst and postrm scripts to handle stack randomization setting
