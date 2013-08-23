@@ -1,0 +1,8 @@
+Package: cu-cs-keyring
+Version: 1-1
+Section: extra
+Priority: optional
+Homepage: http://apt.cs.colorado.edu
+Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
+Architecture: all
+Description: GPG Keyring for apt.cs.colorado.edu
