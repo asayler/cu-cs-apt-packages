@@ -1,3 +1,9 @@
+cu-cs-foundations-vm (0.2-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 11:16:21 -0600
+
 cu-cs-foundations-vm (0.1-0ubuntu3) precise; urgency=high
 
   * Fixed background file location
