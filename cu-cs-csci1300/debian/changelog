@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.4-0ubuntu3) precise; urgency=low
+
+  * Fixed another package dependency issues
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 22 Aug 2013 22:23:11 -0600
+
 cu-cs-csci1300 (0.4-0ubuntu2) precise; urgency=low
 
   * Fixed package dependency issues
