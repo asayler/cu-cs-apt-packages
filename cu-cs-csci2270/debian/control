@@ -1,10 +1,10 @@
 Section: extra
 Priority: optional
-Homepage: foundation.cs.colorado.edu
+Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-csci2270
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: cu-cs-foundations-base, openjdk-7-jdk, openjdk-7-jre, openjdk-7-doc
+Depends: cu-cs-foundations-base, g++, g++-multilib, openjdk-7-jdk, openjdk-7-jre, openjdk-7-doc
 Architecture: all
 Copyright: copyright
 Changelog: changelog
