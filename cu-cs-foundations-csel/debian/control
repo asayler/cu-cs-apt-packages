@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-csel
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-editors, cu-cs-foundations-core, cu-cs-csci3202, cu-cs-csci3308, cu-cs-csci3753, cu-cs-csci4753
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: CSEL course packages for Unversity of Colorado CS Foundations Courses
