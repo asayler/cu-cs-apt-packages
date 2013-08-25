@@ -5,6 +5,8 @@ packages=$(ls | grep "cu-cs-")
 for p in ${packages}
 do
     pushd "${p}/debian/" > /dev/null
+    rm *.deb
+    rm *.dsc
     equivs-build -f "control"
     popd > /dev/null
 done
