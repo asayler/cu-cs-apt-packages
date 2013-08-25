@@ -1,3 +1,9 @@
+cu-cs-csci3308 (0.1-0ubuntu3) precise; urgency=high
+
+  * Updated to ruby1.9.3
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 25 Aug 2013 12:08:16 -0600
+
 cu-cs-csci3308 (0.1-0ubuntu2) precise; urgency=low
 
   * Removed compiz package
