@@ -9,4 +9,4 @@ Architecture: all
 Copyright: copyright
 Changelog: changelog
 Postinst: postinst
-Description: Package for Unversity of Colorado CSCI-3308 Course 
+Description: Package for University of Colorado CSCI-3308 Course 
