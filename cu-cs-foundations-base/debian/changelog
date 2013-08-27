@@ -1,3 +1,9 @@
+cu-cs-foundations-base (0.3-0ubuntu3) precise; urgency=high
+
+  * Moved pat package to pre-depends
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:29:59 -0600
+
 cu-cs-foundations-base (0.3-0ubuntu2) precise; urgency=low
 
   * Added apt package

@@ -4,7 +4,8 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-foundations-base
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: binutils, binutils-dev, binutils-doc, build-essential, gdb, gdb-doc, git, git-core, git-doc, manpages, manpages-dev, manpages-posix, manpages-posix-dev, rsync, screen | tmux, ssh, sshfs, valgrind, cu-cs-foundations-apt
+Pre-Depends: cu-cs-foundations-apt
+Depends: binutils, binutils-dev, binutils-doc, build-essential, gdb, gdb-doc, git, git-core, git-doc, manpages, manpages-dev, manpages-posix, manpages-posix-dev, rsync, screen | tmux, ssh, sshfs, valgrind
 Suggests: cu-cs-foundations-editors
 Architecture: all
 Copyright: copyright
