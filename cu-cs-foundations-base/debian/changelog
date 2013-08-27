@@ -1,3 +1,9 @@
+cu-cs-foundations-base (0.3-0ubuntu2) precise; urgency=low
+
+  * Added apt package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:18:20 -0600
+
 cu-cs-foundations-base (0.3-0ubuntu1) precise; urgency=high
 
   * Updated for Fall 2013
