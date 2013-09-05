@@ -1,3 +1,9 @@
+cu-cs-foundations-csel (0.1-0ubuntu2) precise; urgency=low
+
+  * Add some classes 
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 05 Sep 2013 15:33:53 -0600
+
 cu-cs-foundations-csel (0.1-0ubuntu1) precise; urgency=high
 
   * Initial release
