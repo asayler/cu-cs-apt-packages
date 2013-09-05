@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci5535
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, ocaml
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: CSCI 5535: Fundamentals of Programming Languages (University of Colorado, Boulder)
