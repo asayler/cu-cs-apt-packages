@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci4229
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, libqt4-dev, libsdl-dev, freeglut3-dev, python-pygame, python-numpy
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: CSCI 4229/5229: Computer Graphics (University of Colorado, Boulder)
