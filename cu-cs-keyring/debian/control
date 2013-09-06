@@ -1,0 +1,12 @@
+Section: extra
+Priority: optional
+Homepage: https://apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-keyring
+Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: GPG Keyring for apt.cs.colorado.edu
+Files: ./csel-matt.gpg /etc/apt/trusted.gpg.d/
+ ./csel-andy.gpg /etc/apt/trusted.gpg.d/
