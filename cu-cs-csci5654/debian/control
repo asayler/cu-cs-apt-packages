@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-csci5654
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: cu-cs-foundations-base, glpk
+Depends: cu-cs-foundations-base, glpk, python-glpk
 Architecture: all
 Copyright: copyright
 Changelog: changelog
