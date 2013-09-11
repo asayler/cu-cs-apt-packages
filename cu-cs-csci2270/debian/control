@@ -8,4 +8,6 @@ Depends: cu-cs-foundations-base, g++, g++-multilib, openjdk-7-jdk, openjdk-7-jre
 Architecture: all
 Copyright: copyright
 Changelog: changelog
+Postinst: postinst
+Postrm: postrm
 Description: Packages for Unversity of Colorado CSCI-2270 Course 

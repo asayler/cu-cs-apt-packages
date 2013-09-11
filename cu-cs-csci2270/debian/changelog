@@ -1,4 +1,10 @@
-cu-cs-csci2270 (0.2-0ubuntu1) precise; urgency=hight
+cu-cs-csci2270 (0.2-0ubuntu2) precise; urgency=low
+
+  * Added postinst script to set java7 as default
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 16:04:13 -0600
+
+cu-cs-csci2270 (0.2-0ubuntu1) precise; urgency=high
 
   * Updated for Fall 2013
 
