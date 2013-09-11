@@ -10,7 +10,7 @@ do
     rm -f *.dsc
     echo "Building ${p}..."
     equivs-build -f "control" > /dev/null
-    if [$? -ne 0]
+    if [ $? -ne 0 ]
     then
 	echo "Build failed"
 	failure=1
@@ -19,5 +19,10 @@ do
     fi
     popd > /dev/null
 done
+
+if [ ${failure} -ne 0 ]
+then
+    echo "There were build errors..."
+fi
 
 exit ${failure}
