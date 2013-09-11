@@ -5,30 +5,48 @@ failure=0
 
 for p in "${packages[@]}"
 do
+
     pushd "${p}" > /dev/null
-    deb=$(readlink -f *.deb)
-    dsc=$(readlink -f *.dsc)
+
+    deb_path=$(readlink -f *.deb)
+    dsc_path=$(readlink -f *.dsc)
+    deb_file=${deb_path##*/}
+    deb_name=${deb_file%.*}
+    pkg_base=$(echo "${deb_name}" | cut -d _ -f 1) 
+    pkg_vers=$(echo "${deb_name}" | cut -d _ -f 2)
+    pkg_arch=$(echo "${deb_name}" | cut -d _ -f 3)
+
     pushd "/srv/apt/ubuntu/" > /dev/null
-    echo "Publishing ${deb}..."
-    reprepro includedeb precise "${deb}" > /dev/null
-    if [ $? -ne 0 ]
+    echo "Publishing ${pkg_base}"
+
+    rep_vers=$(reprepro list precise | grep "${pkg_base} " | grep amd64 | cut -d ' ' -f 3)
+
+    if [ "${pkg_vers}" != "${rep_vers}" ]
     then
-	echo "deb publishing failed"
-	failure=1
+	echo "Version not in repo, adding"
+	reprepro -s includedeb precise "${deb_path}" > /dev/null
+	if [ $? -ne 0 ]
+	then
+	    echo "deb publishing failed"
+	    failure=1
+	else
+	    echo "deb publishing succeeded"
+	fi
+	reprepro includedsc precise "${dsc_path}" > /dev/null
+	if [ $? -ne 0 ]
+	then
+	    echo "dsc publishing failed"
+	    failure=1
+	else
+	    echo "dsc publishing succeeded"
+	fi
     else
-	echo "deb publishing succeeded"
+	echo "Version already in repo, skipping"
     fi
-    echo "Publishing ${dsc}..."
-    reprepro includedsc precise "${dsc}" > /dev/null
-    if [ $? -ne 0 ]
-    then
-	echo "dsc publishing failed"
-	failure=1
-    else
-	echo "dsc publishing succeeded"
-    fi    
+    
     popd > /dev/null
     popd > /dev/null
+
 done
 
 if [ ${failure} -ne 0 ]
