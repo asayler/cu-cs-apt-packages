@@ -1,3 +1,9 @@
+cu-cs-keyring (2-0) precise; urgency=high
+
+  * Updating Matt's key
+
+ -- Matt Monaco <matthew.monaco@colorado.edu>  Wed, 11 Sep 2013 11:47:16 -0600
+
 cu-cs-keyring (1-2ubuntu1) precise; urgency=high
 
   * Resigning with asayler's key
