@@ -5,8 +5,8 @@ packages=( */debian )
 for p in "${packages[@]}"
 do
     pushd "${p}" > /dev/null
-    rm *.deb
-    rm *.dsc
+    rm -f *.deb
+    rm -f *.dsc
     equivs-build -f "control"
     popd > /dev/null
 done

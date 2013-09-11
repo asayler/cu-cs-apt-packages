@@ -1,3 +1,9 @@
+cu-cs-keyring (1-2ubuntu1) precise; urgency=high
+
+  * Resigning with asayler's key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 10:03:16 -0600
+
 cu-cs-keyring (1-2) precise; urgency=high
 
   * Initial release.
