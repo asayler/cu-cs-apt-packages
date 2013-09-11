@@ -8,6 +8,7 @@ Depends:
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Preinst: preinst
-Postrm: postrm
+Postinst: postinst
+Files: ./ros-latest.list /etc/apt/sources.list.d/
+ ./ros.gpg /etc/apt/trusted.gpg.d/
 Description: Packags for Unversity of Colorado CSCI-4830 Advanced Robotics Course ROS Repo
