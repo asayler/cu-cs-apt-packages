@@ -8,4 +8,6 @@ Depends: cu-cs-foundations-base, python, python-dev, python-doc, python-numpy, p
 Architecture: all
 Copyright: copyright
 Changelog: changelog
+Postinst: postinst
+Postrm: postrm
 Description: Packages for University of Colorado CSCI-3202 Course (Intro to AI)
