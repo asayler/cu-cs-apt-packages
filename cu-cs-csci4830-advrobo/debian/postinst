@@ -7,7 +7,5 @@
 # Created 01/2013
 
 rosdep init
+# What does 'update' do? The install instructions say it doesn't need to be run as root...
 rosdep update
-# The following commands must be run manully by the user after the install
-#echo "source /opt/ros/groovy/setup.bash" >> ~/.bashrc
-#~/.bashrc
