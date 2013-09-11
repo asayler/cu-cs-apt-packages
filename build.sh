@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-packages=$(ls | grep "cu-cs-")
+packages=( */debian )
 
-for p in ${packages}
+for p in "${packages[@]}"
 do
-    pushd "${p}/debian/" > /dev/null
+    pushd "${p}" > /dev/null
     rm *.deb
     rm *.dsc
     equivs-build -f "control"

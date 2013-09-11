@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-packages=$(ls | grep "cu-cs-")
+packages=( */debian )
 
-for p in ${packages}
+for p in "${packages[@]}"
 do
-    pushd "${p}/debian/" > /dev/null
+    pushd "${p}" > /dev/null
     deb=$(readlink -f *.deb)
     dsc=$(readlink -f *.dsc)
     pushd "/srv/apt/ubuntu/" > /dev/null
