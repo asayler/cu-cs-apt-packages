@@ -3,6 +3,12 @@ cu-cs-apt-packages
 
 APT Packages for University of Colorado CS Courses
 
+To build automatically, export the repo and then run:
+
+'./build; ./install' from the build directory.
+
+To build manually, see steps below.
+
 To update changelog
 -------------------
 * From 'debian' package directory
