@@ -1,3 +1,9 @@
+cu-cs-foundations-csel (0.1-0ubuntu3) precise; urgency=low
+
+  * Removed unused 3308 course
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 18:04:22 -0600
+
 cu-cs-foundations-csel (0.1-0ubuntu2) precise; urgency=low
 
   * Add some classes 
