@@ -5,9 +5,7 @@ Standards-Version: 3.9.2
 Package: cu-cs-foundations-csel
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
 Depends: cu-cs-foundations-editors, cu-cs-foundations-core,
- cu-cs-csci3202, cu-cs-csci3753, cu-cs-csci4229, cu-cs-csci4753, cu-cs-csci5535, cu-cs-csci5654,
- git, vim, rsync, tmux, bash-completion, man-db, curl, tree,
- tcpdump, traceroute, iptables, strace
+ cu-cs-csci3202, cu-cs-csci3753, cu-cs-csci4229, cu-cs-csci4753, cu-cs-csci5535, cu-cs-csci5654
 Architecture: all
 Copyright: copyright
 Changelog: changelog
