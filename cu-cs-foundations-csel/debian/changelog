@@ -2,7 +2,7 @@ cu-cs-foundations-csel (0.2-0ubuntu3) precise; urgency=low
 
   * Moved extra packages to base repo
 
- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 15 Sep 2013 20:49:50 -0600
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 15 Sep 2013 20:49:50 -0600
 
 cu-cs-foundations-csel (0.2-0ubuntu2) precise; urgency=low
 
