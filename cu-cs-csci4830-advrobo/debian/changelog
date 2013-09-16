@@ -1,3 +1,11 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu4) precise; urgency=low
+
+  * Add python-wstool
+  * Drop 'rosdep update' from postinst, this command works on a user's home
+    directory, which is not appropriate on the package level
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 16 Sep 2013 17:26:07 -0600
+
 cu-cs-csci4830-advrobo (0.1-0ubuntu3) precise; urgency=low
 
   * Put Andy's key at top
