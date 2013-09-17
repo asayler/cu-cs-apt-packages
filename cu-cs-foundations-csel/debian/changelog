@@ -1,3 +1,9 @@
+cu-cs-foundations-csel (0.2-0ubuntu4) precise; urgency=high
+
+  * Added cu-cs-csci4273 package (network systems)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 16 Sep 2013 20:59:32 -0600
+
 cu-cs-foundations-csel (0.2-0ubuntu3) precise; urgency=low
 
   * Moved extra packages to base repo
