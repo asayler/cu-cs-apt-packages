@@ -9,5 +9,4 @@ Copyright: copyright
 Changelog: changelog
 Files: ./csel-matt.gpg /etc/apt/trusted.gpg.d/
  ./csel-andy.gpg /etc/apt/trusted.gpg.d/
-Preinst: preinst
 Description: GPG Keyring for apt.cs.colorado.edu
