@@ -6,4 +6,7 @@
 # Purpose: Setup ROS
 # Created 01/2013
 
+# This fails if it's already been run. Sure, we could make sure it's
+# only run once, but this also does the trick
 rosdep init
+true
