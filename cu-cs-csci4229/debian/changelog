@@ -1,3 +1,9 @@
+cu-cs-csci4229 (0.1-0ubuntu4) precise; urgency=low
+
+  * Add mesa-utils{,-extra} (matt)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 20 Sep 2013 10:04:46 -0600
+
 cu-cs-csci4229 (0.1-0ubuntu3) precise; urgency=high
 
   * Resigned with asayler's key
