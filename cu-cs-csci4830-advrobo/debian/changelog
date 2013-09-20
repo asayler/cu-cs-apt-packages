@@ -1,3 +1,10 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu6) precise; urgency=low
+
+  * Add ros-hydro-turtlebot-simulator ros-hydro-turtlebot-apps
+    ros-hydro-turtlebot-rviz-launchers (matt)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 20 Sep 2013 12:23:24 -0600
+
 cu-cs-csci4830-advrobo (0.1-0ubuntu5) precise; urgency=low
 
   * Fix script to not fail after 'rosdep init'
