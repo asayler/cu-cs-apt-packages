@@ -2,7 +2,7 @@ cu-cs-foundations-csel (0.2-0ubuntu5) precise; urgency=high
 
   * Added cu-cs-csci3155 package (programming languages)
 
- -- Matt Monaco <andrew.sayler@colorado.edu>  Tue, 24 Sep 2013 21:59:32 -0600
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Tue, 24 Sep 2013 21:59:32 -0600
 
 cu-cs-foundations-csel (0.2-0ubuntu4) precise; urgency=high
 
