@@ -2,6 +2,9 @@
 
 packages=( */debian )
 failure=0
+build_dir="/tmp/cu-cs-pkg-build/"
+
+pushd "${build_dir}"
 
 for p in "${packages[@]}"
 do
@@ -53,5 +56,7 @@ if [ ${failure} -ne 0 ]
 then
     echo "There were build errors..."
 fi
+
+popd
 
 exit ${failure}
