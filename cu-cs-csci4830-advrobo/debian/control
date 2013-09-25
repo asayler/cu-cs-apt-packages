@@ -5,8 +5,10 @@ Standards-Version: 3.9.2
 Package: cu-cs-csci4830-advrobo
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
 Pre-Depends: cu-cs-csci4830-advrobo-rosrepo
-Depends: cu-cs-foundations-base, doxygen, ros-hydro-desktop-full, ros-hydro-moveit-core, ros-hydro-rqt, python, python-dev, python-doc, python-rosdep, python-rosinstall, python-wstool,
- ros-hydro-turtlebot-simulator ros-hydro-turtlebot-apps ros-hydro-turtlebot-rviz-launchers
+Depends: cu-cs-foundations-base, doxygen,
+ python, python-dev, python-doc, python-rosdep, python-rosinstall, python-wstool,
+ ros-hydro-desktop-full, ros-hydro-moveit-core, ros-hydro-rqt, 
+ ros-hydro-turtlebot-simulator, ros-hydro-turtlebot-apps, ros-hydro-turtlebot-rviz-launchers
 Architecture: all
 Copyright: copyright
 Changelog: changelog

@@ -1,3 +1,9 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu7) precise; urgency=low
+
+  * Fixed lack of commas between packages
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 25 Sep 2013 13:26:11 -0600
+
 cu-cs-csci4830-advrobo (0.1-0ubuntu6) precise; urgency=low
 
   * Add ros-hydro-turtlebot-simulator ros-hydro-turtlebot-apps
