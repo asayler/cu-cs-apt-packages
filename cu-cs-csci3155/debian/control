@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci3155
+Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
+Depends: cu-cs-foundations-base, scala, sbt
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: CSCI 3155: Principles of Programming Languages (University of Colorado, Boulder)
