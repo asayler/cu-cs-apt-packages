@@ -7,6 +7,6 @@ Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./csel-matt.gpg /etc/apt/trusted.gpg.d/
- ./csel-andy.gpg /etc/apt/trusted.gpg.d/
+Files: ./csel-andy.gpg /etc/apt/trusted.gpg.d/
 Description: GPG Keyring for apt.cs.colorado.edu
+Postinst: postinst
