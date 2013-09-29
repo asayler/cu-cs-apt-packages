@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.4-0ubuntu6) precise; urgency=high
+
+  * Fixed bug in 32-bit paths
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 28 Sep 2013 22:51:52 -0600
+
 cu-cs-csci1300 (0.4-0ubuntu5) precise; urgency=low
 
   * Added postinst script to set java7 as default
