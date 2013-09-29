@@ -1,3 +1,9 @@
+cu-cs-csci2270 (0.2-0ubuntu3) precise; urgency=high
+
+  * Fixed 32-bit path bug
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 28 Sep 2013 23:08:44 -0600
+
 cu-cs-csci2270 (0.2-0ubuntu2) precise; urgency=low
 
   * Added postinst script to set java7 as default
