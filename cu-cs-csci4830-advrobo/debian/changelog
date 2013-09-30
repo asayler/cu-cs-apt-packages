@@ -1,3 +1,9 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu8) precise; urgency=high
+
+  * Merged Dave Coleman's new package dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 30 Sep 2013 14:36:47 -0600
+
 cu-cs-csci4830-advrobo (0.1-0ubuntu7) precise; urgency=low
 
   * Fixed lack of commas between packages
