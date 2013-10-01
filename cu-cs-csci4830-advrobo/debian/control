@@ -9,7 +9,8 @@ Depends: cu-cs-foundations-base, doxygen,
  python, python-dev, python-doc, python-rosdep, python-rosinstall, python-wstool,
  ros-hydro-desktop-full, ros-hydro-moveit-full, ros-hydro-rqt, 
  ros-hydro-turtlebot-simulator, ros-hydro-turtlebot-apps, ros-hydro-turtlebot-rviz-launchers,
- ros-hydro-ros-control, ros-hydro-ros-controllers, ros-hydro-gazebo-ros-control, terminator
+ ros-hydro-ros-control, ros-hydro-ros-controllers, ros-hydro-gazebo-ros-control, terminator,
+ ros-hydro-cmake-modules
 Architecture: all
 Copyright: copyright
 Changelog: changelog
