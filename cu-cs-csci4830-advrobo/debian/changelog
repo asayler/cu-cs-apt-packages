@@ -1,14 +1,14 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu9) precise; urgency=high
+
+  * Merged more of Dave Coleman's new package dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 30 Sep 2013 20:19:33 -0600
+	
 cu-cs-csci4830-advrobo (0.1-0ubuntu8) precise; urgency=high
 
   * Merged Dave Coleman's new package dependencies
 
  -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 30 Sep 2013 14:36:47 -0600
-
-cu-cs-csci4830-advrobo (0.1-0ubuntu7) precise; urgency=low
-
-  * Added new dependencies for Baxter and MoveIt
-
- -- Dave Coleman (davetcoleman) <david.t.coleman@colorado.edu>  Mon, 30 Sep 2013 13:26:11 -0600
 
 cu-cs-csci4830-advrobo (0.1-0ubuntu7) precise; urgency=low
 
