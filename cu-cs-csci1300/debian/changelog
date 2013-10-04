@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.4-0ubuntu8) precise; urgency=high
+
+  * Added python-pygame
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 04 Oct 2013 09:49:21 -0600
+
 cu-cs-csci1300 (0.4-0ubuntu7) precise; urgency=high
 
   * Fixed bash error
