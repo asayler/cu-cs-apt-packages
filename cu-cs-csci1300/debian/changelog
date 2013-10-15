@@ -1,3 +1,9 @@
+cu-cs-csci1300 (0.4-0ubuntu9) precise; urgency=high
+
+  * Added netbeans
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 14 Oct 2013 18:28:25 -0600
+
 cu-cs-csci1300 (0.4-0ubuntu8) precise; urgency=high
 
   * Added python-pygame
