@@ -4,6 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-foundations-vm
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Pre-Depends: cu-cs-foundations-vm-grub
 Depends: linux-virtual
 Architecture: all
 Copyright: copyright
