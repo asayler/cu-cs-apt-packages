@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# prerm Script
+# Purpose: Remove sound kernel modules
+# Created 10/2013
+
+MODULEFILE="/etc/modules"
+MODULES="snd snd-ac97-codec snd-hda-intel snd-hda-codec"
+
+# TODO: Add intelligent module removal on uninstall
