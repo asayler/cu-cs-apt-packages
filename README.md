@@ -5,38 +5,59 @@ APT Packages for University of Colorado CS Courses
 
 Published at apt.cs.colorado.edu
 
+Andy Sayler (www.andysayler.com)
+Matt Monaco
+
+Requirements
+------------
+
+*reprepro
+*equivs
+
+Auto Build
+----------
+
 To build and publish automatically, run:
 
 './build && ./publish'
 
+
+Manual Build
+------------
 To build manually, see steps below.
 
-To update changelog
--------------------
-* From 'debian' package directory
-* Run 'dch -i'
+### To Update changelog
 
-To export repo
---------------
-* From 'packages' git repo
-* Run 'git checkout-index -a -f --prefix=PATH/build/'
+From 'debian' package directory, run:
 
-To build package
-----------------
-* From 'debian' package directory
-* Run 'equivs-build -f control'
+    dch -i
 
-To add deb package to repo
---------------------------
-* From '/var/www/apt/ubuntu' directory
-* Run 'reprepro includedeb precise PATH/build/PATH/NAME.deb'
+### To export repo
 
-To add source package to repo
------------------------------
-* From '/var/www/apt/ubuntu' directory
-* Run 'reprepro includedsc precise PATH/build/PATH/NAME.dsc'
+From 'packages' git repo, run:
 
-To list repo packages
----------------------
-* From '/var/www/apt/ubuntu' directory
-* Run 'reprepro list precise'
+    git checkout-index -a -f --prefix=PATH/build/
+
+### To build package
+
+From 'debian' package directory, run:
+
+    equivs-build -f control
+
+### To add deb package to repo
+
+From '/var/www/apt/ubuntu' directory, run:
+
+    reprepro includedeb precise PATH/build/PATH/NAME.deb
+
+### To add source package to repo
+
+From '/var/www/apt/ubuntu' directory, run:
+
+    reprepro includedsc precise PATH/build/PATH/NAME.dsc
+
+### To list repo packages
+
+From '/var/www/apt/ubuntu' directory, run:
+
+    reprepro list precise
