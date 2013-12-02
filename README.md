@@ -3,7 +3,7 @@ cu-cs-apt-packages
 
 APT Packages for University of Colorado CS Courses
 
-Published at apt.cs.colorado.edu
+Published at http://apt.cs.colorado.edu
 
 Andy Sayler (www.andysayler.com)
 Matt Monaco
@@ -11,15 +11,15 @@ Matt Monaco
 Requirements
 ------------
 
-*reprepro
-*equivs
+* reprepro
+* equivs
 
 Auto Build
 ----------
 
 To build and publish automatically, run:
 
-'./build && ./publish'
+    ./build && ./publish
 
 
 Manual Build
