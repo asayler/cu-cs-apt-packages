@@ -22,7 +22,7 @@ else
 fi
 
 echo "Detected machine type ${type_path}"
-echo "Updating Java7 alternatives to priority ${priority}"
+echo "Updating Java 7 alternatives to priority ${priority}"
 
 # java
 update-alternatives --install /usr/bin/java \
