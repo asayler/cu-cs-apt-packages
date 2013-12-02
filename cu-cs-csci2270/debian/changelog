@@ -1,3 +1,9 @@
+cu-cs-csci2270 (0.2-0ubuntu4) precise; urgency=high
+
+  * Added extra dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 01 Dec 2013 20:50:51 -0700
+
 cu-cs-csci2270 (0.2-0ubuntu3) precise; urgency=high
 
   * Fixed 32-bit path bug
