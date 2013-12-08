@@ -5,7 +5,7 @@ APT Packages for University of Colorado CS Courses
 
 Published at http://apt.cs.colorado.edu
 
-Andy Sayler (http://www.andysayler.com)
+Andy Sayler (http://www.andysayler.com) <br />
 Matt Monaco (http://ngn.cs.colorado.edu/~matt/)
 
 Requirements
