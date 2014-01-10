@@ -5,7 +5,7 @@ Standards-Version: 3.9.2
 Package: cu-cs-foundations-vm
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
 Pre-Depends: cu-cs-foundations-vm-grub
-Depends: linux-virtual, linux-image-virtual, linux-image-extra-virtual
+Depends: linux-generic-lts-raring, linux-image-generic-lts-raring, linux-headers-generic-lts-raring
 Architecture: all
 Copyright: copyright
 Changelog: changelog

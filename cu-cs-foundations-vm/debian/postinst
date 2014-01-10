@@ -3,18 +3,8 @@
 # Andy Sayler
 # CS CS VM Package
 # postinst Script
-# Purpose: Enable sound kernel modules
-# Created 10/2013
+# Purpose: Placeholder
 
-MODULEFILE="/etc/modules"
-MODULES="snd snd-ac97-codec snd-hda-intel snd-hda-codec"
-
-for MOD in ${MODULES}
-do
-    CNT=$(grep "${MOD}\$" "${MODULEFILE}" -c)
-    echo "${MOD}" = ${CNT}
-    if [ ${CNT} -eq 0 ]
-    then
-        echo "${MOD}" >> "${MODULEFILE}"
-    fi
-done
+# Do Nothing
+echo "Nothing to do in postinst script"
+exit 0
