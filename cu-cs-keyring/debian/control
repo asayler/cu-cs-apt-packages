@@ -8,5 +8,7 @@ Architecture: all
 Copyright: copyright
 Changelog: changelog
 Files: ./csel-andy.gpg /etc/apt/trusted.gpg.d/
+ ./csel-matt.gpg /etc/apt/trusted.gpg.d/
+ ./main-andy.gpg /etc/apt/trusted.gpg.d/
+ ./main-matt.gpg /etc/apt/trusted.gpg.d/
 Description: GPG Keyring for apt.cs.colorado.edu
-Postinst: postinst

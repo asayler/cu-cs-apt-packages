@@ -1,3 +1,9 @@
+cu-cs-keyring (4-0) precise; urgency=high
+
+  * Added new keys for both Andy and Matt
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 18:33:33 -0700
+
 cu-cs-keyring (3-0) precise; urgency=high
 
   * Remove Matt's key, for now (matt)
