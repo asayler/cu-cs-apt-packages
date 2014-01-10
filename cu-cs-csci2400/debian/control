@@ -10,4 +10,5 @@ Copyright: copyright
 Changelog: changelog
 Postinst: postinst
 Postrm: postrm
+Files: ./90-csci2400.conf /etc/sysctl.d/
 Description: Packages for Unversity of Colorado CSCI-2400 Course 

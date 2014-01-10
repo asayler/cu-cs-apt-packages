@@ -1,3 +1,9 @@
+cu-cs-csci2400 (0.4-0ubuntu1) precise; urgency=high
+
+  * Switched to sysctl.d usage
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 17:33:33 -0700
+
 cu-cs-csci2400 (0.3-0ubuntu1) precise; urgency=high
 
   * Updated for Fall 2013

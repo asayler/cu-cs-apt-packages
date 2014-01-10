@@ -3,79 +3,8 @@
 # Andy Sayler
 # CSCI 2400 Package
 # postinst Script
-# Purpose: Disables stack randomization setting
-# Created 10/2012
+# Purpose: Placeholder
 
-# Constants
-BACKUPEXT=".old"
-SETTINGSFILE="/etc/sysctl.conf"
-PACKAGENAME="cu-cs-csci2400"
-SETTINGKEY="kernel.randomize_va_space"
-SROFF="0"
-
-# Commands
-SEDSEARCH="sed -r -n"
-SEDEDIT="sed -r -i$BACKUPEXT"
-
-# REGEX
-AGBSTART="###START AUTO GENERATED BLOCK"
-AGBSTOP="###STOP AUTO GENERATED BLOCK"
-AGBSTARTLINE="$AGBSTART BY $PACKAGENAME"
-AGBSTOPLINE="$AGBSTOP BY $PACKAGENAME"
-
-AEBSTART="###START AUTO EDITED BLOCK"
-AEBSTOP="###STOP AUTO EDITED BLOCK"
-AEBSTARTLINE="$AEBSTART BY $PACKAGENAME"
-AEBSTOPLINE="$AEBSTOP BY $PACKAGENAME"
-
-OLDLINE="#OLD="
-
-KEYREGEX="^[[:space:]]*$SETTINGKEY[[:space:]]*"
-VALUEREGEX="[[:space:]]*([[:digit:]]*)[[:space:]]*$"
-REGEX=$KEYREGEX"="$VALUEREGEX
-KEYSEARCHOP="&"
-VALUESEARCHOP="\1"
-VALUEREPLACEOP="$SETTINGKEY = $SROFF"
-
-add_sr_setting()
-{
-    echo "" >> $SETTINGSFILE
-    echo $AGBSTARTLINE >> $SETTINGSFILE
-    echo '#Disable Stack Randomization' >> $SETTINGSFILE
-    echo $VALUEREPLACEOP >> $SETTINGSFILE
-    echo $AGBSTOPLINE >> $SETTINGSFILE
-}
-
-disable_sr()
-{
-    $SEDEDIT "s|$REGEX|$AEBSTARTLINE\n$OLDLINE&\n$VALUEREPLACEOP\n$AEBSTOPLINE|" $SETTINGSFILE
-}
-
-# Get Status
-settingKeyResult=`cat $SETTINGSFILE | $SEDSEARCH "s|$KEYREGEX|$KEYSEARCHOP|p"`
-settingValResult=`cat $SETTINGSFILE | $SEDSEARCH "s|$REGEX|$VALUESEARCHOP|p"`
-settingKeyCnt=`echo $settingKeyResult | wc -w`
-settingValCnt=`echo $settingValResult | wc -w`
-
-# Process Status
-if [ $settingKeyCnt -eq 0 ]; then
-    echo "Stack Randomization Setting Not Found"
-    echo "Adding Setting and Setting Randomization to Disabled"
-    add_sr_setting
-    exit 0
-else
-    if [ $settingValCnt -eq 1 ]; then
-	echo "Stack Randomization Setting Found"
-	if [ $settingValResult -eq 0 ]; then
-	    echo "Stack Randomization Already Disabled. No Action Required."
-	    exit 0
-	else
-	    echo "Setting Stack Randomization to Disabled"
-	    disable_sr
-	    exit 0
-	fi
-    else
-	echo "Bad Stack Randomization Value. Script Failed! No chnages made."
-	exit 1
-    fi
-fi
+# Do Nothing
+echo "Nothing to do in postinst script"
+exit 0

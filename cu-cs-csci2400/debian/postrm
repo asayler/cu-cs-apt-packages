@@ -3,56 +3,8 @@
 # Andy Sayler
 # CSCI 2400 Package
 # postrm Script
-# Purpose: Restores stack randomization setting to previous state
-# Created 10/2012
+# Purpose: Placeholder
 
-# Constants
-BACKUPEXT=".old"
-SETTINGSFILE="/etc/sysctl.conf"
-PACKAGENAME="cu-cs-csci2400"
-
-# Commands
-SEDEDIT="sed -r -i$BACKUPEXT"
-
-# REGEX
-AGBSTART="###START AUTO GENERATED BLOCK"
-AGBSTOP="###STOP AUTO GENERATED BLOCK"
-AGBSTARTLINE="$AGBSTART BY $PACKAGENAME"
-AGBSTOPLINE="$AGBSTOP BY $PACKAGENAME"
-START_AG_REGEX="^[[:space:]]*$AGBSTARTLINE[[:space:]]*$"
-STOP_AG_REGEX="^[[:space:]]*$AGBSTOPLINE[[:space:]]*$"
-
-AEBSTART="###START AUTO EDITED BLOCK"
-AEBSTOP="###STOP AUTO EDITED BLOCK"
-AEBSTARTLINE="$AEBSTART BY $PACKAGENAME"
-AEBSTOPLINE="$AEBSTOP BY $PACKAGENAME"
-START_AE_REGEX="^[[:space:]]*$AEBSTARTLINE[[:space:]]*$"
-STOP_AE_REGEX="^[[:space:]]*$AEBSTOPLINE[[:space:]]*$"
-
-OLDLINE="[[:space:]]*^#OLD[[:space:]]*=[[:space:]]*"
-
-# Remove Auto Generted Blocks
-echo "Removing auto-generated stack randomization code"
-$SEDEDIT "
-/$START_AG_REGEX/,/$STOP_AG_REGEX/ {
-d
-}
-" $SETTINGSFILE
-
-echo "Restoring auto-edited stack randomization code"
-# Restore Auto Edited Blocks
-$SEDEDIT "
-/$START_AE_REGEX/,/$STOP_AE_REGEX/ {
-/$OLDLINE/ {
-s|$OLDLINE||
-n
-}
-d
-}
-" $SETTINGSFILE
-
-# Delete blank lines from end of file
-echo "Removing extra blank lines"
-$SEDEDIT -e :a -e '/^\n*$/{$d;N;ba' -e '}' $SETTINGSFILE
-
+# Do Nothing
+echo "Nothing to do in postrm script"
 exit 0
