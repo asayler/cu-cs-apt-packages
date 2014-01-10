@@ -1,3 +1,9 @@
+cu-cs-csci2270 (0.3-0ubuntu1) precise; urgency=high
+
+  * Removed Eclipse (moved to editors package)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2013 17:33:33 -0700
+
 cu-cs-csci2270 (0.2-0ubuntu4) precise; urgency=high
 
   * Added extra dependencies
