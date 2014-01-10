@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Fixes occasional grub-pc recofngiure issue where user must select new install location
+# Fixes occasional grub-pc reconfigure issue where user must select new install location
 echo "grub-pc grub-pc/install_devices multiselect /dev/sda" | sudo debconf-set-selections
 echo "grub-pc grub-pc/install_devices_disks_changed multiselect /dev/sda" | sudo debconf-set-selections
 echo "grub-pc grub-pc/hidden_timeout boolean true" | sudo debconf-set-selections
