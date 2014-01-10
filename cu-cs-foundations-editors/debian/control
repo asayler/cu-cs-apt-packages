@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
 Package: cu-cs-foundations-editors
 Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: emacs | emacs23 | emacs23-nox, geany, geany-plugins, vim | vim-gtk | vim-nox, vim-doc
+Depends: emacs | emacs23 | emacs23-nox, geany, geany-plugins, vim | vim-gtk | vim-nox, vim-doc, eclipse
 Architecture: all
 Copyright: copyright
 Changelog: changelog

@@ -1,3 +1,9 @@
+cu-cs-foundations-editors (0.3-0ubuntu1) precise; urgency=high
+
+  * Added Eclipse
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 17:33:33 -0700
+
 cu-cs-foundations-editors (0.2-0ubuntu1) precise; urgency=high
 
   * Updated for Fall 2013
