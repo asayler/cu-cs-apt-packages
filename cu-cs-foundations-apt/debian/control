@@ -8,7 +8,7 @@ Depends: cu-cs-keyring
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./precise.list /etc/apt/sources.d/
- ./cs-colorado-edu.list /etc/apt/sources.d/
+Files: ./precise.list /etc/apt/sources.list.d/
+ ./cs-colorado-edu.list /etc/apt/sources.list.d/
  ./precise-backports-ipython /etc/apt/preferences.d/
 Description: Apt repo packages for Unversity of Colorado CS Foundations Courses 
