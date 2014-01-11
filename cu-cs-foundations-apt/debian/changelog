@@ -1,3 +1,9 @@
+cu-cs-foundations-apt (0.2-1) precise; urgency=low
+
+  * Added precise-proposed
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 10 Jan 2014 23:39:39 -0700
+
 cu-cs-foundations-apt (0.2-0) precise; urgency=low
 
   * Fixed apt location
