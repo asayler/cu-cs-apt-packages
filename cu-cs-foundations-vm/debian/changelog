@@ -1,3 +1,9 @@
+cu-cs-foundations-vm (0.3-2) precise; urgency=low
+
+  * Added sudo NOPASSWD rules
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 10 Jan 2014 22:44:53 -0700
+
 cu-cs-foundations-vm (0.3-1ubuntu1) precise; urgency=high
 
   * Added Chrome and Dropbox

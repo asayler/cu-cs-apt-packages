@@ -11,6 +11,7 @@ Architecture: all
 Copyright: copyright
 Changelog: changelog
 Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/
+ ./cu-cs-vm-sudoers /etc/sudoers.d/
 Postinst: postinst
 Prerm: prerm
 Description: Virtual Machine packages for University of Colorado CS Foundations VirutalBox VM
