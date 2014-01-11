@@ -6,6 +6,10 @@
 # Purpose: Sets Java 7 to default
 # Created 09/2013
 
+# ToDo
+# Setup Python 3 as Geany Default
+# See http://terminalobsession.blogspot.com/2012/06/how-to-get-geany-to-use-python3-as-its.html
+
 priority=1071
 
 machine_type=$(uname -i)
