@@ -1,3 +1,9 @@
+cu-cs-csci3155 (0.2-0ubuntu1) precise; urgency=high
+
+  * Added node and apt repo
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu> Wed, 12 Feb 2014 20:48:22 -0700
+
 cu-cs-csci3155 (0.1-0ubuntu1) precise; urgency=high
 
   * Initial release (matt)

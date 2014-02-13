@@ -2,11 +2,12 @@ Section: extra
 Priority: optional
 Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.2
-Package: cu-cs-csci3155
+Package: cu-cs-csci3155-apt
 Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
-Pre-Depends: cu-cs-csci3155-apt
-Depends: cu-cs-foundations-base, scala, sbt, nodejs
+Depends: 
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: CSCI 3155: Principles of Programming Languages (University of Colorado, Boulder)
+Files: ./chris-lea-node_js-saucy.list /etc/apt/sources.list.d/
+ ./chris-lea-node_js.gpg /etc/apt/trusted.gpg.d/
+Description: Apt Repos and PPAs for CU CSCI 3155
