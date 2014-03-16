@@ -1,3 +1,9 @@
+cu-cs-csci2400 (0.4.1) precise; urgency=low
+
+  * Removed stack randomization disable and added multilib support
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 15 Mar 2014 22:33:33 -0600
+
 cu-cs-csci2400 (0.4-0ubuntu1) precise; urgency=high
 
   * Switched to sysctl.d usage
