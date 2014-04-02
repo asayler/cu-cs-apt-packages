@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=MATLAB
+Exec=matlab %u
+Terminal=false
+Type=Application
+Icon=matlab
+Categories=GNOME;Development;IDE;
+Version=1.0
+Comment=MATLAB
+Keywords=Code;Programming;
+MimeType=text/x-matlab;

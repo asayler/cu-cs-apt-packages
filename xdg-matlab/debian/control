@@ -1,0 +1,13 @@
+Section: extra
+Priority: optional
+Homepage: http://www.mathworks.com
+Standards-Version: 3.9.2
+Package: xdg-matlab
+Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
+Architecture: all
+Changelog: changelog
+Files: matlab.desktop /usr/share/applications/
+ matlab.svg /usr/share/icons/hicolor/scalable/apps/
+ matlab.svg /usr/share/icons/hicolor/scalable/mimetypes/application-matlab-m.svg
+ matlab.xml /usr/share/mime/packages/
+Description: MATLAB Freedesktop files
