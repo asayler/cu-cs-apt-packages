@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
-	<mime-type type="text/x-matlab">
+	
+	<mime-type type="application/x-matlab">
+		<comment>MATLAB script/function</comment>
 		<sub-class-of type="text/plain"/>
-		<comment>Matlab source file</comment>
-		<glob pattern="*.m" weight="90"/>
-		<icon name="application-matlab-m"/>
+		<magic priority="10">
+			<match value="%" type="string" offset="0"/>
+		</magic>
+		<magic priority="50">
+			<match value="function" type="string" offset="0"/>
+		</magic>
+		<glob pattern="*.m" weight="60"/>
+		<alias type="text/x-octave"/>
+		<generic-icon name="text-x-matlab"/>
+		<icon name="text-x-matlab"/>
 	</mime-type>
+	
+	<mime-type type="application/x-matlab-figure">
+		<comment>MATLAB figure</comment>
+		<magic priority="50">
+			<match value="MATLAB" type="string" offset="0"/>
+		</magic>
+		<glob pattern="*.fig" weight="60"/>
+		<icon name="image-x-matlab-figure"/>
+	</mime-type>
+
+	<mime-type type="application/x-matlab-data">
+		<comment>MATLAB data file</comment>
+		<magic priority="50">
+			<match value="MATLAB" type="string" offset="0"/>
+		</magic>
+		<glob pattern="*.mat"/>
+		<icon name="application-x-matlab-data"/>
+	</mime-type>
+
 </mime-info>

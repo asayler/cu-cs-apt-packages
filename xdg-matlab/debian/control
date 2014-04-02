@@ -8,6 +8,17 @@ Architecture: all
 Changelog: changelog
 Files: matlab.desktop /usr/share/applications/
  matlab.svg /usr/share/icons/hicolor/scalable/apps/
- matlab.svg /usr/share/icons/hicolor/scalable/mimetypes/application-matlab-m.svg
  matlab.xml /usr/share/mime/packages/
+ 16x16/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 16x16/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 16x16/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 32x32/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 32x32/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 32x32/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 48x48/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 48x48/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 48x48/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 256x256/mimetypes/application-x-matlab-data.png /usr/share/icons/hicolor/
+ 256x256/mimetypes/image-x-matlab-figure.png     /usr/share/icons/hicolor/
+ 256x256/mimetypes/text-x-matlab.png             /usr/share/icons/hicolor/
 Description: MATLAB Freedesktop files

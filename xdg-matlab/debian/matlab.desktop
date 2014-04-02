@@ -1,11 +1,15 @@
+
 [Desktop Entry]
-Name=MATLAB
-Exec=matlab %u
-Terminal=false
-Type=Application
-Icon=matlab
-Categories=GNOME;Development;IDE;
 Version=1.0
-Comment=MATLAB
+Encoding=UTF-8
+Name=MATLAB
+Type=Application
+Terminal=false
+Icon=matlab
+Exec=matlab -desktop
+Categories=GNOME;Development;IDE;
 Keywords=Code;Programming;
-MimeType=text/x-matlab;
+
+# Unfortunately, it doesn't look like MATLAB takes command line filenames
+# but at least let a double-click open MATLAB for convenience
+MimeTypes=text/x-matlab;image/x-matlab-fig;application/x-matlab-data
