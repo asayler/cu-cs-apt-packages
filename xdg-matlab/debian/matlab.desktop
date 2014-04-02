@@ -12,4 +12,4 @@ Keywords=Code;Programming;
 
 # Unfortunately, it doesn't look like MATLAB takes command line filenames
 # but at least let a double-click open MATLAB for convenience
-MimeTypes=text/x-matlab;image/x-matlab-fig;application/x-matlab-data
+MimeType=application/x-matlab;application/x-matlab-figure;application/x-matlab-data
