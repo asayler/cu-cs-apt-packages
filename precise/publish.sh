@@ -3,13 +3,19 @@
 packages=( */debian )
 failure=0
 build_dir="/tmp/cu-cs-pkg-build/"
+platform="precise"
 
-pushd "${build_dir}"
+pushd "${build_dir}"/"${platform}"
+if [ $? -ne 0 ]
+then
+    echo "Failed to open ${build_dir}/${platform}"
+    exit 1
+fi
 
 for p in "${packages[@]}"
 do
 
-    pushd "${p}" > /dev/null
+    pushd "${p}"
 
     deb_path=$(readlink -f *.deb)
     dsc_path=$(readlink -f *.dsc)
@@ -22,12 +28,12 @@ do
     pushd "/srv/apt/ubuntu/" > /dev/null
     echo "Publishing ${pkg_base}"
 
-    rep_vers=$(reprepro list precise | grep "${pkg_base} " | grep amd64 | cut -d ' ' -f 3)
+    rep_vers=$(reprepro list "${platform}" | grep "${pkg_base} " | grep amd64 | cut -d ' ' -f 3)
 
     if [ "${pkg_vers}" != "${rep_vers}" ]
     then
 	echo "Version not in repo, adding"
-	reprepro -s includedeb precise "${deb_path}" > /dev/null
+	reprepro -s includedeb "${platform}" "${deb_path}" > /dev/null
 	if [ $? -ne 0 ]
 	then
 	    echo "deb publishing failed"
@@ -35,7 +41,7 @@ do
 	else
 	    echo "deb publishing succeeded"
 	fi
-	reprepro includedsc precise "${dsc_path}" > /dev/null
+	reprepro includedsc "${platform}" "${dsc_path}" > /dev/null
 	if [ $? -ne 0 ]
 	then
 	    echo "dsc publishing failed"
