@@ -1,3 +1,9 @@
+xdg-matlab (1-1.0) precise; urgency=high
+
+  * Signed with Andy's Key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 07 May 2014 16:33:33 -0600
+
 xdg-matlab (1-1) precise; urgency=high
 
   * Initial release
