@@ -1,14 +1,14 @@
 Section: extra
 Priority: optional
 Homepage: apt.cs.colorado.edu
-Standards-Version: 3.9.2
-Package: cu-cs-foundations-apt
-Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Standards-Version: 3.9.5
+Package: cu-cs-apt
+Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
 Depends: cu-cs-keyring
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./precise.list /etc/apt/sources.list.d/
- ./cs-colorado-edu.list /etc/apt/sources.list.d/
- ./precise-backports-ipython /etc/apt/preferences.d/
-Description: Apt repo packages for Unversity of Colorado CS Foundations Courses 
+Files: /
+ ./trusty.list /etc/apt/sources.list.d/
+ ./cu-cs.list /etc/apt/sources.list.d
+Description: apt repo package for Unversity of Colorado CS Courses 
