@@ -1,0 +1,5 @@
+# Packages
+deb      http://apt.cs.colorado.edu/ubuntu  trusty  main
+
+# Sources
+deb-src  http://apt.cs.colorado.edu/ubuntu  trusty  main
