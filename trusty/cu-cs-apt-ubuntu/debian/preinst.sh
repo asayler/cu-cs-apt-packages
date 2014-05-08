@@ -6,7 +6,7 @@
 
 list="/etc/apt/sources.list"
 
-sed -i '' 's/^\([^#]\)/###\1/g' "${list}"
+sed -i 's/^\(deb\)/###\1/g' "${list}"
 if [ $? -ne 0 ]
 then
     echo "Failed to disable sources in ${list}"

@@ -6,7 +6,7 @@
 
 list="/etc/apt/sources.list"
 
-sed -i '' 's/^###//g' "${list}"
+sed -i 's/^###//g' "${list}"
 if [ $? -ne 0 ]
 then
     echo "Failed to enable sources in ${list}"
