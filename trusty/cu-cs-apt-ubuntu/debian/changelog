@@ -2,4 +2,4 @@ cu-cs-apt-ubuntu (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.
 
- -- Andy Sayler <andy.sayler@colorado.edu>  Wed, 07 May 2014 17:33:33 -0600
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 May 2014 17:33:33 -0600
