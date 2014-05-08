@@ -8,5 +8,7 @@ Depends:
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./trusty.list /etc/apt/sources.list.d/
+Preinst: preinst.sh
+Postrm: postrm.sh
+Files: ./ubuntu.list /etc/apt/sources.list.d/
 Description: apt repo package for standard ubuntu sources
