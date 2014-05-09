@@ -1,0 +1,65 @@
+cu-cs-foundations-base (0.3-0ubuntu5) precise; urgency=low
+
+  * Added zsh (matt)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 22 Sep 2013 00:41:39 -0600
+
+cu-cs-foundations-base (0.3-0ubuntu4) precise; urgency=low
+
+  * Moved extra packages from csel repo
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 15 Sep 2013 20:50:39 -0600
+
+cu-cs-foundations-base (0.3-0ubuntu3) precise; urgency=high
+
+  * Moved pat package to pre-depends
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:29:59 -0600
+
+cu-cs-foundations-base (0.3-0ubuntu2) precise; urgency=low
+
+  * Added apt package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:18:20 -0600
+
+cu-cs-foundations-base (0.3-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 11:05:41 -0600
+
+cu-cs-foundations-base (0.2-0ubuntu4) precise; urgency=low
+
+  * Fixed another misnamed dependency
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 19:47:07 -0700
+
+cu-cs-foundations-base (0.2-0ubuntu3) precise; urgency=high
+
+  * Fixed misnamed package dependency
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 19:42:42 -0700
+
+cu-cs-foundations-base (0.2-0ubuntu2) precise; urgency=low
+
+  * Added binutils dev package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 15:12:41 -0700
+
+cu-cs-foundations-base (0.2-0ubuntu1) precise; urgency=high
+
+  * Split out editor packages and updated base packages for S13
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 12:26:46 -0700
+
+cu-cs-foundations-base (0.1-0ubuntu2) precise; urgency=low
+
+  * Minor formatting changes
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 23 Aug 2012 20:27:39 -0600
+
+cu-cs-foundations-base (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 20 Aug 2012 21:33:31 -0600

@@ -1,0 +1,13 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-base
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Pre-Depends: cu-cs-foundations-apt
+Depends: bash-completion, binutils, binutils-dev, binutils-doc, build-essential, curl, gdb, gdb-doc, git, git-core, git-doc, man-db, manpages, manpages-dev, manpages-posix, manpages-posix-dev, rsync, screen, tmux, ssh, sshfs, tree, tcpdump, traceroute, iptables, strace, valgrind, zsh
+Suggests: cu-cs-foundations-editors
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Base packages for Unversity of Colorado CS Foundations Courses 
