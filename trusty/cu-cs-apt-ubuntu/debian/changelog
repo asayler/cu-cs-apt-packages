@@ -1,3 +1,9 @@
+cu-cs-apt-ubuntu (1405-1.1) precise; urgency=low
+
+  * Changed section
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 08 May 2014 20:44:46 -0600
+
 cu-cs-apt-ubuntu (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.

@@ -1,3 +1,9 @@
+cu-cs-apt (1405-1.1) precise; urgency=high
+
+  * Fixed dependency bug and changed section
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 08 May 2014 20:44:11 -0600
+
 cu-cs-apt (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.

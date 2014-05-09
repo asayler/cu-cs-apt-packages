@@ -1,10 +1,11 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-apt-ubuntu
 Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
 Depends:
+Suggests:
 Architecture: all
 Copyright: copyright
 Changelog: changelog
