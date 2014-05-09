@@ -4,10 +4,13 @@
 # CS CS VM Package
 # postinst Script
 
-# Do Nothing
-echo "Nothing to do in postinst script"
-exit 0
+background="/usr/share/backgrounds/CU-CS-VM-Background.png"
+
+# Set Desktop Background
+gsettings set org.gnome.desktop.background picture-uri "file://${background}"
 
 # TODO
 # Automate /usr/share/polkit-1/actions/org.debian.apt.policy changes
 # Change to: <allow_active>yes</allow_active>
+
+exit 0
