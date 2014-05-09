@@ -11,6 +11,6 @@ Copyright: copyright
 Changelog: changelog
 Files: ./cu-cs.list /etc/apt/sources.list.d/
  ./csel.gpg /etc/apt/trusted.gpg.d/
- ./perosnal-andy.gpg /etc/apt/trusted.gpg.d/
+ ./personal-andy.gpg /etc/apt/trusted.gpg.d/
  ./personal-matt.gpg /etc/apt/trusted.gpg.d/
 Description: apt repo package for Unversity of Colorado CS Courses 
