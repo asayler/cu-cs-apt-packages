@@ -1,17 +1,18 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
-Standards-Version: 3.9.2
-Package: cu-cs-foundations-vm
-Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Pre-Depends: cu-cs-foundations-vm-grub
-Depends: linux-generic-lts-raring, linux-image-generic-lts-raring, linux-headers-generic-lts-raring,
+Standards-Version: 3.9.5
+Package: cu-cs-vm
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-vm-grub
+Depends: linux-generic, linux-image-generic, linux-headers-generic,
+ xserver-xorg, libgl1-mesa-glx,
  google-chrome-stable, dropbox
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/
- ./cu-cs-vm-sudoers /etc/sudoers.d/
 Postinst: postinst
 Prerm: prerm
-Description: Virtual Machine packages for University of Colorado CS Foundations VirutalBox VM
+Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/
+ ./cu-cs-vm-sudoers /etc/sudoers.d/
+Description: virtual machine packages for University of Colorado CS VM

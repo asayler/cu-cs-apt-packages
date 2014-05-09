@@ -3,7 +3,6 @@
 # Andy Sayler
 # CS CS VM Package
 # prerm Script
-# Purpose: Placeholder
 
 # Do Nothing
 echo "Nothing to do in prerm script"
