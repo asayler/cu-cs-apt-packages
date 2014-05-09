@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+# Purpose: Placeholder
+
+# Do Nothing
+echo "Nothing to do in postinst script"
+exit 0
+
+# TODO
+# Automate /usr/share/polkit-1/actions/org.debian.apt.policy changes
+# Change to: <allow_active>yes</allow_active>
