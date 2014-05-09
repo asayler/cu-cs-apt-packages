@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-vm
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends:
+Pre-Depends: cu-cs-apt-ubuntu
 Depends: linux-generic, linux-image-generic, linux-headers-generic,
  xserver-xorg, libgl1-mesa-glx,
  google-chrome-stable, dropbox
