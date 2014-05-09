@@ -3,14 +3,12 @@
 packages=( */debian )
 failure=0
 build_dir="/tmp/cu-cs-pkg-build/"
-platform="trusty"
 gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
+platform="trusty"
 
 # Set GNUPGHOME
 old_GNUPGHOME="${GNUPGHOME}"
 export GNUPGHOME="${gpgkeys}"
-echo "GNUPGHOME = ${GNUPGHOME}"
-gpg -K
 
 rm -rf "${build_dir}"
 git checkout-index -a -f --prefix="${build_dir}"
@@ -53,6 +51,5 @@ then
 else
     export GNUPGHOME="${old_GNUPGHOME}"
 fi
-echo "GNUPGHOME = ${GNUPGHOME}"
 
 exit ${failure}

@@ -3,7 +3,12 @@
 packages=( */debian )
 failure=0
 build_dir="/tmp/cu-cs-pkg-build/"
+gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
 platform="trusty"
+
+# Set GNUPGHOME
+old_GNUPGHOME="${GNUPGHOME}"
+export GNUPGHOME="${gpgkeys}"
 
 pushd "${build_dir}"/"${platform}"
 if [ $? -ne 0 ]
@@ -64,5 +69,13 @@ then
 fi
 
 popd
+
+# Reset GNUPGHOME
+if [[ -z "${old_GNUPGHOME}" ]]
+then
+    unset GNUPGHOME
+else
+    export GNUPGHOME="${old_GNUPGHOME}"
+fi
 
 exit ${failure}
