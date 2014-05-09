@@ -1,8 +1,10 @@
 Format: http://dep.debian.net/deps/dep5
-Name: cu-cs-foundations-vm-virtualbox
+Name: cu-cs-vm-virtualbox
 
 Files: debian/*
-Copyright: 2012 Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+
+Copyright: 2014 Andy Sayler <andy.sayler@colorado.edu>
+
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -15,7 +17,7 @@ License: GPL-2+
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
