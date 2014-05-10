@@ -19,8 +19,8 @@ Auto Build
 
 To build and publish automatically, run:
 
-    ./build && ./publish
-
+    (precise) ./build && ./publish
+    (trusty) ./build_cu-cs.sh && ./get_thirdparty.sh && ./publish_all.sh
 
 Manual Build
 ------------
