@@ -7,6 +7,8 @@
 background="/usr/share/backgrounds/CU-CS-VM-Background.png"
 
 # Set Desktop Background
+gsettings set org.gnome.desktop.background primary-color '#000000000000'
+gsettings set org.gnome.desktop.background picture-options 'scaled'
 gsettings set org.gnome.desktop.background picture-uri "file://${background}"
 
 # TODO
