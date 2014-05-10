@@ -2,47 +2,52 @@
 
 packages=( */debian )
 failure=0
-build_dir="/tmp/cu-cs-pkg-build/"
-gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
+
 platform="trusty"
+base_dir="/tmp/cu-cs-pkg-build"
+build_dir="${base_dir}/${platform}/"
+out_dir="/tmp/packages/${platform}/"
+
+gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
 
 # Set GNUPGHOME
 old_GNUPGHOME="${GNUPGHOME}"
 export GNUPGHOME="${gpgkeys}"
 
-rm -rf "${build_dir}"
-git checkout-index -a -f --prefix="${build_dir}"
+# Setup Dirs
+rm -rf "${base_dir}"
+git checkout-index -a -f --prefix="${base_dir}/"
+mkdir -p "${out_dir}"
 
-pushd "${build_dir}"/"${platform}"
-if [ $? -ne 0 ]
-then
-    echo "Failed to open ${build_dir}/${platform}"
-    exit 1
-fi
-
-for p in "${packages[@]}"
+# Build
+pushd "${build_dir}"
+for p in ./*
 do
-    pushd "${p}"
-    rm -f *.deb
-    rm -f *.dsc
-    echo "Building ${p}..."
-    equivs-build -f "control" > /dev/null
-    if [ $? -ne 0 ]
+    if [[ -d ${p} ]]
     then
-	echo "Build failed"
-	failure=1
+	pushd "${p}/debian/"
+	echo "Building ${p}..."
+	equivs-build -f "control" > /dev/null
+	if [[ $? -ne 0 ]]
+	then
+	    echo "Build failed"
+	    failure=1
+	else
+	    echo "Build succeeded"
+	    mv ${p}_*.deb ${out_dir}
+	    mv ${p}_*.dsc ${out_dir}
+	    mv ${p}_*.changes ${out_dir}
+	    mv ${p}_*.tar.gz ${out_dir}
+	fi
+	popd
     else
-	echo "Build succeeded"
+	continue
     fi
-    popd
 done
-
-if [ ${failure} -ne 0 ]
-then
-    echo "There were build errors..."
-fi
-
 popd
+
+# Clean Up
+rm -rf "${base_dir}"
 
 # Reset GNUPGHOME
 if [[ -z "${old_GNUPGHOME}" ]]
@@ -50,6 +55,12 @@ then
     unset GNUPGHOME
 else
     export GNUPGHOME="${old_GNUPGHOME}"
+fi
+
+# Report Errors
+if [[ ${failure} -ne 0 ]]
+then
+    echo "There were build errors..."
 fi
 
 exit ${failure}
