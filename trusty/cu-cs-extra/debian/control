@@ -9,7 +9,4 @@ Depends: google-chrome-stable, dropbox
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Postinst:
-Prerm:
-Files:
 Description: extra packages for University of Colorado CS VM
