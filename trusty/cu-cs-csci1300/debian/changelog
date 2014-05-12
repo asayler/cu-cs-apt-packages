@@ -1,0 +1,83 @@
+cu-cs-csci1300 (0.5-0ubuntu1) precise; urgency=high
+
+  * Removed blujay
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 16:33:33 -0700
+
+cu-cs-csci1300 (0.4-0ubuntu9) precise; urgency=high
+
+  * Added netbeans
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 14 Oct 2013 18:28:25 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu8) precise; urgency=high
+
+  * Added python-pygame
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 04 Oct 2013 09:49:21 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu7) precise; urgency=high
+
+  * Fixed bash error
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 28 Sep 2013 23:00:49 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu6) precise; urgency=high
+
+  * Fixed bug in 32-bit paths
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 28 Sep 2013 22:51:52 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu5) precise; urgency=low
+
+  * Added postinst script to set java7 as default
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 16:01:02 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu4) precise; urgency=low
+
+  * Fixed extra files
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 22 Aug 2013 22:53:57 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu3) precise; urgency=low
+
+  * Fixed another package dependency issues
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 22 Aug 2013 22:23:11 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu2) precise; urgency=low
+
+  * Fixed package dependency issues
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 22 Aug 2013 22:16:16 -0600
+
+cu-cs-csci1300 (0.4-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 22 Aug 2013 21:53:01 -0600
+
+cu-cs-csci1300 (0.3-0ubuntu1) precise; urgency=high
+
+  * Added python-tk
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 10 Jun 2013 23:01:31 -0600
+
+cu-cs-csci1300 (0.2-0ubuntu1) precise; urgency=high
+
+  * Updated for Summer 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 26 May 2013 21:36:51 -0600
+
+cu-cs-csci1300 (0.1-0ubuntu2) precise; urgency=high
+
+  * Corrected wrong package dependencies (used 2270 dependencies instead of 1300)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 23 Aug 2012 18:28:34 -0600
+
+cu-cs-csci1300 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 22 Aug 2012 22:32:45 -0600
