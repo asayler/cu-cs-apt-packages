@@ -1,17 +1,5 @@
-cu-cs-foundations-current-vm-virtualbox (0.2-0ubuntu1) precise; urgency=high
+cu-cs-current-vm (1405-1.0) trusty; urgency=high
 
-  * Updated for Fall 2013
+  * Initial trusty release.
 
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 11:25:00 -0600
-
-cu-cs-foundations-current-vm-virtualbox (0.1-0ubuntu2) precise; urgency=low
-
-  * Minor typo changes in control file
-
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 18 Aug 2013 16:35:22 -0600
-
-cu-cs-foundations-current-vm-virtualbox (0.1-0ubuntu1) precise; urgency=high
-
-  * Initial release
-
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 26 May 2013 23:55:00 -0600
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 23:33:33 -0600

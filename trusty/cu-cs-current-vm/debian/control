@@ -1,12 +1,12 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
-Standards-Version: 3.9.2
-Package: cu-cs-foundations-current-vm-virtualbox
-Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Pre-Depends: cu-cs-foundations-vm-virtualbox
-Depends: cu-cs-foundations-core, cu-cs-foundations-editors
+Standards-Version: 3.9.5
+Package: cu-cs-current-vm
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base, cu-cs-extra, cu-cs-editors
+Depends: cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Current default packages for Unversity of Colorado CS Foundations VirutalBox VM
+Description: Default VM course packages for Unversity of Colorado CS Dept.
