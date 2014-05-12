@@ -1,0 +1,35 @@
+cu-cs-csci2270 (0.3-0ubuntu1) precise; urgency=high
+
+  * Removed Eclipse (moved to editors package)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 17:33:33 -0700
+
+cu-cs-csci2270 (0.2-0ubuntu4) precise; urgency=high
+
+  * Added extra dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 01 Dec 2013 20:50:51 -0700
+
+cu-cs-csci2270 (0.2-0ubuntu3) precise; urgency=high
+
+  * Fixed 32-bit path bug
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 28 Sep 2013 23:08:44 -0600
+
+cu-cs-csci2270 (0.2-0ubuntu2) precise; urgency=low
+
+  * Added postinst script to set java7 as default
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 16:04:13 -0600
+
+cu-cs-csci2270 (0.2-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 10:57:15 -0600
+
+cu-cs-csci2270 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 23 Aug 2012 18:13:26 -0600
