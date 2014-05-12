@@ -1,17 +1,5 @@
-cu-cs-foundations-editors (0.3-0ubuntu1) precise; urgency=high
+cu-cs-editors (1405-1.0) trusty; urgency=high
 
-  * Added Eclipse
+  * Initial trusty release.
 
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 09 Jan 2014 17:33:33 -0700
-
-cu-cs-foundations-editors (0.2-0ubuntu1) precise; urgency=high
-
-  * Updated for Fall 2013
-
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 11:11:28 -0600
-
-cu-cs-foundations-editors (0.1-0ubuntu1) precise; urgency=high
-
-  * Initial release
-
- -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 12:33:33 -0600
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 22:03:33 -0600

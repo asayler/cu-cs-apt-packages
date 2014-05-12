@@ -1,11 +1,16 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
-Standards-Version: 3.9.2
-Package: cu-cs-foundations-editors
-Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: emacs | emacs23 | emacs23-nox, geany, geany-plugins, vim | vim-gtk | vim-nox, vim-doc, eclipse
+Standards-Version: 3.9.5
+Package: cu-cs-editors
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt
+Depends: emacs24 | emacs24-nox | emacs,
+ vim | vim-gtk | vim-gnome | vim-nox, vim-doc,
+ gedit, gedit-plugins,
+ geany, geany-plugins,
+ nano
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Editor packages for Unversity of Colorado CS Foundations Courses 
+Description: Editors packages for Unversity of Colorado CS Courses 
