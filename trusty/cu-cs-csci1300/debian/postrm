@@ -7,3 +7,4 @@
 # Created 09/2013
 
 echo "Nothing to cleanup"
+exit 0
