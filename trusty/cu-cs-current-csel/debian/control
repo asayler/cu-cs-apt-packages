@@ -9,4 +9,4 @@ Depends: cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: CSEL course packages for Unversity of Colorado CS courses
+Description: Default CSEL course packages for Unversity of Colorado CS Dept.
