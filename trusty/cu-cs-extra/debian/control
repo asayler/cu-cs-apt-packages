@@ -1,0 +1,15 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-extra
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: libappindicator1
+Depends: google-chrome-stable, dropbox 
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst:
+Prerm:
+Files:
+Description: extra packages for University of Colorado CS VM
