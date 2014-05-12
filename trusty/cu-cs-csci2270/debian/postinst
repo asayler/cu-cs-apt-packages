@@ -3,8 +3,6 @@
 # Andy Sayler
 # CSCI 2270 Package
 # postinst Script
-# Purpose: Sets Java 7 to default
-# Created 09/2013
 
 priority=1071
 
@@ -71,3 +69,5 @@ update-alternatives --install /usr/bin/javadoc \
 		    --slave /usr/share/man/man1/javadoc.1.gz \
 		            javadoc.1.gz \
 		            /usr/lib/jvm/java-7-openjdk-${type_path}/man/man1/javadoc.1.gz
+
+exit 0
