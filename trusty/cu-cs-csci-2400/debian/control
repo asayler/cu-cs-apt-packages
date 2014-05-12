@@ -1,13 +1,16 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
-Standards-Version: 3.9.2
-Package: cu-cs-csci2400
-Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
-Depends: cu-cs-foundations-base, gcc, gcc-doc, gcc-multilib, g++, g++-multilib, kcachegrind
+Standards-Version: 3.9.5
+Package: cu-cs-csci-2400
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base
+Depends: gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib, g++-4.8, g++-4.8-multilib,
+ kcachegrind
 Architecture: all
 Copyright: copyright
 Changelog: changelog
 Postinst: postinst
 Postrm: postrm
+Files: 
 Description: Packages for University of Colorado CSCI-2400 Course 
