@@ -1,3 +1,6 @@
+This directory contains the following packages:
+(listed with their dependencies)
+
 # Apt packages
 cu-cs-apt: none
 cu-cs-apt-ubuntu: none
