@@ -1,6 +1,16 @@
+# Apt packages
 cu-cs-apt: none
 cu-cs-apt-ubuntu: none
+
+# Core packages
 cu-cs-base: cu-cs-apt
 cu-cs-extra: cu-cs-apt
+cu-cs-editors: cu-cs-apt
+
+# VM Packages
 cu-cs-vm: cu-cs-apt, cu-cs-apt-ubuntu
 cu-cs-vm-virtualbox: cu-cs-vm
+
+# Course Packages
+cu-cs-csci1300: cu-cs-base
+cu-cs-csci2270: cu-cs-base
