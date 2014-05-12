@@ -18,3 +18,9 @@ cu-cs-vm-virtualbox: cu-cs-vm
 cu-cs-csci1300: cu-cs-base
 cu-cs-csci2270: cu-cs-base
 cu-cs-csci2400: cu-cs-base
+
+# Current Packages:
+cu-cs-current-csel: cu-cs-base, cu-cs-extra, cu-cs-editors,
+                    cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
+cu-cs-current-vm: cu-cs-base, cu-cs-extra, cu-cs-editors,
+                  cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
