@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Andy Sayler
+# CSCI 2400 Package
+# postinst Script
+# Purpose: Placeholder
+
+# Do Nothing
+echo "Nothing to do in postinst script"
+exit 0
