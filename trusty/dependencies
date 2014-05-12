@@ -1,0 +1,6 @@
+cu-cs-apt: none
+cu-cs-apt-ubuntu: none
+cu-cs-base: cu-cs-apt
+cu-cs-extra: cu-cs-apt
+cu-cs-vm: cu-cs-apt, cu-cs-apt-ubuntu
+cu-cs-vm-virtualbox: cu-cs-vm
