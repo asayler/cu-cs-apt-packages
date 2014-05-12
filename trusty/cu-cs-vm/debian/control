@@ -4,10 +4,9 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-vm
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-apt-ubuntu, libappindicator1
+Pre-Depends:
 Depends: linux-generic, linux-image-generic, linux-headers-generic,
- xserver-xorg, libgl1-mesa-glx,
- google-chrome-stable, dropbox
+ xserver-xorg, libgl1-mesa-glx
 Architecture: all
 Copyright: copyright
 Changelog: changelog
