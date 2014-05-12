@@ -14,3 +14,4 @@ cu-cs-vm-virtualbox: cu-cs-vm
 # Course Packages
 cu-cs-csci1300: cu-cs-base
 cu-cs-csci2270: cu-cs-base
+cu-cs-csci2400: cu-cs-base
