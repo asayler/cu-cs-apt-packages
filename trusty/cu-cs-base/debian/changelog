@@ -1,3 +1,10 @@
+cu-cs-base (1405-1.1) precise; urgency=high
+
+ * Added latex
+ * Suggested cu-cs-langs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:13:04 -0600
+
 cu-cs-base (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.
