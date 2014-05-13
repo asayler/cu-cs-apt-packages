@@ -1,3 +1,9 @@
+cu-cs-editors (1405-1.1) precise; urgency=high
+
+  * Added codeblocks
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 21:48:22 -0600
+
 cu-cs-editors (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.
