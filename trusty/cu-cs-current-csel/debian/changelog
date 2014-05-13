@@ -1,4 +1,4 @@
-cu-cs-current-csel (1405-1.1) precise; urgency=low
+cu-cs-current-csel (1405-1.1) trusty; urgency=low
 
   * Added cu-cs-langs
 
