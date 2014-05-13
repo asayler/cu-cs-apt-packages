@@ -1,3 +1,9 @@
+cu-cs-current-vm (1405-1.1) precise; urgency=low
+
+  * Added cu-cs-langs package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:17:44 -0600
+
 cu-cs-current-vm (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.

@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-current-vm
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-base, cu-cs-extra, cu-cs-editors
+Pre-Depends: cu-cs-base, cu-cs-extra, cu-cs-editors, cu-cs-langs
 Depends: cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
 Architecture: all
 Copyright: copyright
