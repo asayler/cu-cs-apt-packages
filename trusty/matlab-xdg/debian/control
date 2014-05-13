@@ -1,7 +1,7 @@
-Section: extra
+Section: main
 Priority: optional
 Homepage: http://www.mathworks.com
-Standards-Version: 3.9.2
+Standards-Version: 3.9.5
 Package: matlab-xdg
 Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
 Architecture: all
