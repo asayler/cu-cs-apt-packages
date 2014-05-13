@@ -1,0 +1,24 @@
+Section: extra
+Priority: optional
+Homepage: http://www.mathworks.com
+Standards-Version: 3.9.2
+Package: matlab-xdg
+Maintainer: Matt Monaco <matthew.monaco@colorado.edu>
+Architecture: all
+Changelog: changelog
+Files: matlab.desktop /usr/share/applications/
+ matlab.svg /usr/share/icons/hicolor/scalable/apps/
+ matlab.xml /usr/share/mime/packages/
+ 16x16/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 16x16/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 16x16/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 32x32/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 32x32/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 32x32/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 48x48/mimetypes/application-x-matlab-data.png   /usr/share/icons/hicolor/
+ 48x48/mimetypes/image-x-matlab-figure.png       /usr/share/icons/hicolor/
+ 48x48/mimetypes/text-x-matlab.png               /usr/share/icons/hicolor/
+ 256x256/mimetypes/application-x-matlab-data.png /usr/share/icons/hicolor/
+ 256x256/mimetypes/image-x-matlab-figure.png     /usr/share/icons/hicolor/
+ 256x256/mimetypes/text-x-matlab.png             /usr/share/icons/hicolor/
+Description: MATLAB Freedesktop files
