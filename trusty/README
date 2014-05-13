@@ -9,6 +9,7 @@ cu-cs-apt-ubuntu: none
 cu-cs-base: cu-cs-apt
 cu-cs-extra: cu-cs-apt
 cu-cs-editors: cu-cs-apt
+cu-cs-langs: cu-cs-apt
 
 # VM Packages
 cu-cs-vm: cu-cs-apt, cu-cs-apt-ubuntu
@@ -20,7 +21,7 @@ cu-cs-csci2270: cu-cs-base
 cu-cs-csci2400: cu-cs-base
 
 # Current Packages:
-cu-cs-current-csel: cu-cs-base, cu-cs-extra, cu-cs-editors,
+cu-cs-current-csel: cu-cs-base, cu-cs-extra, cu-cs-editors, cu-cs-langs,
                     cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
-cu-cs-current-vm: cu-cs-base, cu-cs-extra, cu-cs-editors,
+cu-cs-current-vm: cu-cs-base, cu-cs-extra, cu-cs-editors, cu-cs-langs,
                   cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400
