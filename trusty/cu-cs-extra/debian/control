@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-extra
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-apt, libappindicator1
+Pre-Depends: cu-cs-apt, libappindicator1, python-gpgme
 Depends: google-chrome-stable, dropbox 
 Architecture: all
 Copyright: copyright
