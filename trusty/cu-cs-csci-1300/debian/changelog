@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1405-1.1) precise; urgency=low
+
+  * Added libsndfile1 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 20:23:32 -0600
+
 cu-cs-csci-1300 (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.
