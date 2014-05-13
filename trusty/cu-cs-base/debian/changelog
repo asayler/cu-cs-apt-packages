@@ -1,8 +1,8 @@
-cu-cs-base (1405-1.1) trusty; urgency=high
+cu-cs-base (1405-1.1) trusty; urgency=low
 
- * Added latex
+  * Added latex
 
- -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:13:04 -0600
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:34:45 -0600
 
 cu-cs-base (1405-1.0) trusty; urgency=high
 
