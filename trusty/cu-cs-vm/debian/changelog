@@ -1,3 +1,9 @@
+cu-cs-vm (1405-1.6) trusty; urgency=low
+
+  * Added more gesettings config
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 16 May 2014 13:50:10 -0600
+
 cu-cs-vm (1405-1.5) trusty; urgency=medium
 
   * Added automatic support for more gconf and polkit settings

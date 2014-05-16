@@ -16,8 +16,11 @@ ubuntu-lock-on-suspend=false
 [org.gnome.desktop.session]
 idle-delay=0
 
-[com.canonical.Unity.Launcher]
-favorites=['application://ubiquity.desktop', 'application://nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'application://ubuntu-software-center.desktop', 'application://ubuntu-amazon-default.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']
-
 [com.canonical.Unity.Lenses]
 remote-content-search='none'
+
+[com.canonical.Unity]
+integrated-menus=true
+
+[com.canonical.Unity.Launcher]
+favorites=['application://ubiquity.desktop', 'application://nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'application://ubuntu-software-center.desktop', 'application://ubuntu-amazon-default.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']
