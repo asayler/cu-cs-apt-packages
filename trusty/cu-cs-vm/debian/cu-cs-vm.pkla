@@ -1,0 +1,9 @@
+[Install package file]
+Identity=unix-group:sudo
+Action=org.debian.apt.install-file;org.debian.apt.update-cache;org.debian.apt.install-or-remove-packages;org.debian.apt.upgrade-packages
+ResultActive=yes
+
+[Change add repo]
+Identity=unix-group:sudo
+Action=com.ubuntu.softwareproperties.applychanges;org.debian.apt.change-repository
+ResultActive=yes

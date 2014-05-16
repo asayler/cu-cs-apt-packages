@@ -4,7 +4,7 @@
 # CS CS VM Package
 # prerm Script
 
-# TODO Cleanup Desktop Background
+# TODO Cleanup Files
 
 # Do Nothing
 echo "Nothing to do in prerm script"

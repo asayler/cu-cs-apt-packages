@@ -1,3 +1,9 @@
+cu-cs-vm (1405-1.5) trusty; urgency=medium
+
+  * Added automatic support for more gconf and polkit settings
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 15 May 2014 22:19:13 -0600
+
 cu-cs-vm (1405-1.4) trusty; urgency=low
 
   * Switched background image to use gschema
