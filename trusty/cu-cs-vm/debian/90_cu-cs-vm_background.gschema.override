@@ -1,0 +1,9 @@
+[com.canonical.unity-greeter]
+background-color='#000000000000'
+background='/usr/share/backgrounds/CU-CS-VM-Background.png'
+draw-grid=false
+
+[org.gnome.desktop.background]
+picture-color='#000000000000'
+picture-options='scaled'
+picture-uri='file:///usr/share/backgrounds/CU-CS-VM-Background.png'
