@@ -4,6 +4,7 @@ background='/usr/share/backgrounds/CU-CS-VM-Background.png'
 draw-grid=false
 
 [org.gnome.desktop.background]
-picture-color='#000000000000'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 picture-options='scaled'
 picture-uri='file:///usr/share/backgrounds/CU-CS-VM-Background.png'

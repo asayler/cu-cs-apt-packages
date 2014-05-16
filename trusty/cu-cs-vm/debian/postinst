@@ -5,14 +5,15 @@
 # postinst Script
 
 #background="/usr/share/backgrounds/CU-CS-VM-Background.png"
-background_schema="/usr/share/glib-2.0/schemas/90_cu-cs-vm_background.gschema.override"
+schema_dir="/usr/share/glib-2.0/schemas"
+background_schema="${schema_dir}/90_cu-cs-vm_background.gschema.override"
 
 # Set Desktop Background
 # Now done via gschema
 #gsettings set org.gnome.desktop.background primary-color '#000000000000'
 #gsettings set org.gnome.desktop.background picture-options 'scaled'
 #gsettings set org.gnome.desktop.background picture-uri "file://${background}"
-glib-compile-schemas "${background_schema}"
+glib-compile-schemas "${schema_dir}"
 
 # TODO
 # Automate /usr/share/polkit-1/actions/org.debian.apt.policy changes
