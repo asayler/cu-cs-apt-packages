@@ -1,0 +1,5 @@
+cu-cs-current-elra (1405-1.1) trusty; urgency=low
+
+  * Copy from cu-cs-current-csel
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu> Thu, 15 May 2014 11:24:10 -0600
