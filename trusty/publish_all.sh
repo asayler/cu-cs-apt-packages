@@ -94,7 +94,7 @@ do
 	fi
 
 	# Publish dsc
-	if [[ -n ${pkg_path} ]]
+	if [[ -n ${src_path} ]]
 	then
 	    reprepro -s includedsc "${platform}" "${src_path}" > /dev/null
 	    if [ $? -ne 0 ]
@@ -129,7 +129,7 @@ fi
 # Report failure
 if [ ${failure} -ne 0 ]
 then
-    echo "There were build errors..."
+    echo "There were publishing errors..."
 fi
 
 exit ${failure}
