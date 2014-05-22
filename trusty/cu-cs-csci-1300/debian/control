@@ -6,7 +6,8 @@ Package: cu-cs-csci-1300
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends: gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib, g++-4.8, g++-4.8-multilib,
- libsndfile1, libsndfile1-dev
+ libsndfile1, libsndfile1-dev,
+ libportaudio2, portaudio19-dev, portaudio19-doc
 Architecture: all
 Copyright: copyright
 Changelog: changelog
