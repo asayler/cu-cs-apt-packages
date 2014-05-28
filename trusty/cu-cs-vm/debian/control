@@ -7,7 +7,7 @@ Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm
 Depends: linux-generic, linux-image-generic, linux-headers-generic,
  xserver-xorg, libgl1-mesa-glx, libglib2.0-bin,
- zerofree
+ zerofree, secure-delete
 Architecture: all
 Copyright: copyright
 Changelog: changelog
@@ -17,5 +17,4 @@ Files: ./cu-cs-vm-sudoers /etc/sudoers.d/
        ./cu-cs-vm.pkla /etc/polkit-1/localauthority/30-site.d/
        ./CU-CS-VM-Background.png /usr/share/backgrounds/
        ./90_cu-cs-vm.gschema.override /usr/share/glib-2.0/schemas/
- 
 Description: virtual machine packages for University of Colorado CS VM
