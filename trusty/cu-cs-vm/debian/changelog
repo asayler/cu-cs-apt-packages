@@ -1,3 +1,9 @@
+cu-cs-vm (1405-1.7) trusty; urgency=medium
+
+ * Added zerofree
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 27 May 2014 22:59:03 -0600
+
 cu-cs-vm (1405-1.6) trusty; urgency=low
 
   * Added more gesettings config
