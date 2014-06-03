@@ -11,7 +11,7 @@ machine_type=$(uname -i)
 if [ "${machine_type}" == "x86_64" ]
 then
     type_path="amd64"
-elif [ "${machine_type}" == "i386" ]
+elif [ "${machine_type}" == "i386" ] || [ "${machine_type}" == "i686" ]
 then
     type_path="i386"
 else
@@ -20,6 +20,7 @@ else
 fi
 
 echo "Detected machine type ${type_path}"
+
 echo "Updating Java 7 alternatives to priority ${priority}"
 
 # java
