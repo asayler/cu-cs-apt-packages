@@ -1,3 +1,9 @@
+cu-cs-current-csel (1405-1.3) trusty; urgency=medium
+
+  * Fixed package typo
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 21:05:09 -0600
+
 cu-cs-current-csel (1405-1.2) trusty; urgency=medium
 
  * Added cu-cs-csci-3308 package
