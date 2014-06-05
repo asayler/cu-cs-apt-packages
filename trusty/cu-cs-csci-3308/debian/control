@@ -1,0 +1,17 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-3308
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base
+Depends: valgrind, kcachegrind,
+git, subversion,
+doxygen, doxygen-doc, doxygen-gui, doxygen-latex
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Postrm: postrm
+Files: 
+Description: Packages for University of Colorado CSCI-3308 Course 
