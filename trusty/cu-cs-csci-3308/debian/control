@@ -6,8 +6,8 @@ Package: cu-cs-csci-3308
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends: valgrind, kcachegrind,
-git, subversion,
-doxygen, doxygen-doc, doxygen-gui, doxygen-latex
+ git, subversion,
+ doxygen, doxygen-doc, doxygen-gui, doxygen-latex
 Architecture: all
 Copyright: copyright
 Changelog: changelog
