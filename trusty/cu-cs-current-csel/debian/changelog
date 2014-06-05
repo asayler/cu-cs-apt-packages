@@ -1,3 +1,9 @@
+cu-cs-current-csel (1405-1.2) trusty; urgency=medium
+
+ * Added cu-cs-csci-3308 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 20:48:01 -0600
+
 cu-cs-current-csel (1405-1.1) trusty; urgency=low
 
   * Added cu-cs-langs
