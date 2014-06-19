@@ -14,4 +14,4 @@ Changelog: changelog
 Postinst: postinst
 Postrm: postrm
 Files:
-Description: Packages for Unversity of Colorado CSCI-1300 Course
+Description: Packages for University of Colorado CSCI-1300 Course
