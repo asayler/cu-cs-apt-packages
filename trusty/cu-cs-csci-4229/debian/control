@@ -5,7 +5,8 @@ Standards-Version: 3.9.5
 Package: cu-cs-csci-4229
 Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
-Depends: libqt4-dev, freeglut3-dev, mesa-utils, mesa-utils-extra,
+Depends: libqt4-dev, libsdl1.2-dev, libsdl2-dev, freeglut3-dev,
+ mesa-utils, mesa-utils-extra,
  python-pygame, python-numpy
 Architecture: all
 Copyright: copyright
