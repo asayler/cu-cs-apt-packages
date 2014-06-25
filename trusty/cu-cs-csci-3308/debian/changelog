@@ -1,3 +1,9 @@
+cu-cs-csci-3308 (1405-1.2) trusty; urgency=medium
+
+  * Added check package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 24 Jun 2014 23:11:19 -0600
+
 cu-cs-csci-3308 (1405-1.1) trusty; urgency=medium
 
   * Added python packages

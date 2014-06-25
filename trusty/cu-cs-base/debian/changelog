@@ -1,3 +1,9 @@
+cu-cs-base (1405-1.2) trusty; urgency=medium
+
+  * Added ddd and kcachegrind
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 24 Jun 2014 23:12:38 -0600
+
 cu-cs-base (1405-1.1) trusty; urgency=low
 
   * Added latex
