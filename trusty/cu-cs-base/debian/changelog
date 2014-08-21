@@ -1,3 +1,9 @@
+cu-cs-base (1408-1.0) trusty; urgency=medium
+
+  * Moved LaTeX to extra
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:54:04 -0600
+
 cu-cs-base (1405-1.2) trusty; urgency=medium
 
   * Added ddd and kcachegrind
