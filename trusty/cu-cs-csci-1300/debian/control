@@ -12,6 +12,6 @@ Architecture: all
 Copyright: copyright
 Changelog: changelog
 Postinst: postinst
-Postrm: postrm
+Prerm: prerm
 Files:
 Description: Packages for University of Colorado CSCI-1300 Course

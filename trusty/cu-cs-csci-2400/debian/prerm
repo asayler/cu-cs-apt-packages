@@ -2,8 +2,8 @@
 
 # Andy Sayler
 # CSCI 2400 Package
-# postrm Script
+# prerm Script
 
 # Do Nothing
-echo "Nothing to do in postrm script"
+echo "Nothing to do in prerm script"
 exit 0

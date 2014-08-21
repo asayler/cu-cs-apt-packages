@@ -11,6 +11,6 @@ Architecture: all
 Copyright: copyright
 Changelog: changelog
 Postinst: postinst
-Postrm: postrm
+Prerm: prerm
 Files:
 Description: Packages for Unversity of Colorado CSCI-2270 Course

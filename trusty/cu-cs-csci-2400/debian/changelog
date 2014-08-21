@@ -1,3 +1,9 @@
+cu-cs-csci-2400 (1408-1.0) trusty; urgency=low
+
+  * Renamed postrm -> prerm
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 10:44:05 -0600
+
 cu-cs-csci-2400 (1405-1.0) trusty; urgency=high
 
   * Initial trusty release.
