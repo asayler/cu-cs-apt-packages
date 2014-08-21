@@ -14,4 +14,4 @@ Depends: emacs24 | emacs24-nox | emacs23 | emacs23-nox | emacs,
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Editors packages for Unversity of Colorado CS Courses 
+Description: Editor Packages for Unversity of Colorado, Dept of CS
