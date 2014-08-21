@@ -1,3 +1,9 @@
+cu-cs-langs (1408-1.0) trusty; urgency=medium
+
+  * Removed java doc package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:59:38 -0600
+
 cu-cs-langs (1405-1.1) trusty; urgency=medium
 
   * Removed extra python packages
