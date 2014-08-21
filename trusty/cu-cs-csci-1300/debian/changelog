@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.1) trusty; urgency=medium
+
+  * Added scipy and numpy
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:17:44 -0600
+
 cu-cs-csci-1300 (1408-1.0) trusty; urgency=medium
 
   * Moved to Python
