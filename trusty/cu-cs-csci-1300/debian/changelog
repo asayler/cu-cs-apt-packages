@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.0) trusty; urgency=medium
+
+  * Moved to Python
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 11:27:09 -0600
+
 cu-cs-csci-1300 (1405-1.4) trusty; urgency=medium
 
   * Fixed Java default script to recognize i686 arch
