@@ -1,6 +1,7 @@
 cu-cs-langs (1408-1.0) trusty; urgency=medium
 
   * Removed java doc package
+  * Added pip and virtenv for Python
 
  -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:59:38 -0600
 
