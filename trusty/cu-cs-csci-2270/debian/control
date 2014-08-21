@@ -6,7 +6,7 @@ Package: cu-cs-csci-2270
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends:  gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib, g++-4.8, g++-4.8-multilib,
- openjdk-7-jdk, openjdk-7-jre, openjdk-7-doc, ant, ant-doc
+ gdb, valgrind
 Architecture: all
 Copyright: copyright
 Changelog: changelog

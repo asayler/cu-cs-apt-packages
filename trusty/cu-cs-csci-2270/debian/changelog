@@ -1,3 +1,10 @@
+cu-cs-csci-2270 (1408-1.0) trusty; urgency=medium
+
+  * Removed Java
+  * Added GDB, Valgrind
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 11:38:25 -0600
+
 cu-cs-csci-2270 (1405-1.1) trusty; urgency=medium
 
   * Fixed Java default script to recognize i686 arch
