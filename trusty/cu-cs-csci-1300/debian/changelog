@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.2) trusty; urgency=medium
+
+  * Removed python3-virtenv (does not exist)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:31:15 -0600
+
 cu-cs-csci-1300 (1408-1.1) trusty; urgency=medium
 
   * Added scipy and numpy

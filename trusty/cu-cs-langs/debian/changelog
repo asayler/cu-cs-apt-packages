@@ -1,3 +1,9 @@
+cu-cs-langs (1408-1.1) trusty; urgency=medium
+
+  * Removed python3-virtenv (does not exist)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:30:32 -0600
+
 cu-cs-langs (1408-1.0) trusty; urgency=medium
 
   * Removed java doc package
