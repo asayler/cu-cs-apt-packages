@@ -1,3 +1,10 @@
+cu-cs-extra (1408-1.0) trusty; urgency=medium
+
+  * Switched from nonfree to extra
+  * Moved LaTeX from base package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:52:22 -0600
+
 cu-cs-extra (1405-1.1) trusty; urgency=low
 
   * Added python-gpgme for Dropbox verification
