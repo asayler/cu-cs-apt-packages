@@ -5,7 +5,7 @@ Standards-Version: 3.9.5
 Package: cu-cs-csci-3753
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
-Depends: asciidoc, attr, attr-dev, crash, fakeroot, fuse-utils,
+Depends: asciidoc, attr, attr-dev, crash, fakeroot, fuse,
  gcc, gcc-doc, gcc-multilib,
  kcachegrind, kernel-package, kernel-wedge, kexec-tools,
  libelf-dev, libfuse-dev, libncurses5, libncurses5-dev, libssl-dev, libssl-doc, libssl1.0.0,
