@@ -13,5 +13,5 @@ Copyright: copyright
 Changelog: changelog
 Postinst: postinst
 Prerm: prerm
-Files:
+Files: ./geany/filetypes.python /usr/share/geany/
 Description: Packages for University of Colorado CSCI-1300 Course
