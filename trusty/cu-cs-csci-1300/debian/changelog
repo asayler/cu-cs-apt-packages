@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.7) trusty; urgency=medium
+
+  * Added geany python3 defaults (fourth attempt)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 29 Aug 2014 21:55:53 -0600
+
 cu-cs-csci-1300 (1408-1.6) trusty; urgency=medium
 
   * Added geany python3 defaults (third attempt)

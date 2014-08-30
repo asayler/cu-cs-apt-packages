@@ -4,8 +4,5 @@
 # CSCI 1300 Package
 # postinst Script
 
-# ToDo
-# Setup Python 3 as Geany Default
-# See http://terminalobsession.blogspot.com/2012/06/how-to-get-geany-to-use-python3-as-its.html
-
-echo 0
+echo "Overwriting default geany python config"
+cp /usr/share/cu-cs-csci-1300/geany/* /usr/share/geany/
