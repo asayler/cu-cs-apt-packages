@@ -1,0 +1,16 @@
+VM Setup Process
+Fall 2014
+
+1. Start with stock Ubuntu 14.04.1 (btrfs-based install)
+2. Run all updates
+3. Add cu-cs-apt package
+4. Install cu-cs-vm-virtualbox package
+5. Run update, autoremove, clean
+6. Tweak IDE color settings (CSCI 1300)
+7. Make python3 geany default (CSCI 1300)
+8. Set default launcher icons
+9. Check Dropbox
+10. Create btrfs read-only snapshots
+11. Reboot
+12. Shutdown
+13. Image
