@@ -7,10 +7,9 @@ Fall 2014
 4. Install cu-cs-vm-virtualbox package
 5. Run update, autoremove, clean
 6. Tweak IDE color settings (CSCI 1300)
-7. Make python3 geany default (CSCI 1300)
-8. Set default launcher icons
-9. Check Dropbox
-10. Create btrfs read-only snapshots
-11. Reboot
-12. Shutdown
-13. Image
+7. Set default launcher icons
+8. Check Dropbox
+9. Create btrfs read-only snapshots
+10. Reboot
+11. Shutdown
+12. Image
