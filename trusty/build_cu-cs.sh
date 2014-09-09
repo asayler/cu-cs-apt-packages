@@ -8,7 +8,7 @@ base_dir="/tmp/cu-cs-pkg-build"
 build_dir="${base_dir}/${platform}/"
 out_dir="/tmp/packages/${platform}/"
 
-gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
+gpgkeys="${HOME}/cu/cu-cs-apt-keys"
 
 # Set GNUPGHOME
 old_GNUPGHOME="${GNUPGHOME}"

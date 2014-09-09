@@ -6,7 +6,7 @@ platform="trusty"
 out_dir="/tmp/packages/${platform}/"
 repo_dir="/srv/apt/ubuntu/"
 
-gpgkeys="${HOME}/cu/packages/cu-cs-apt-keys"
+gpgkeys="${HOME}/cu/cu-cs-apt-keys"
 
 # Set GNUPGHOME
 old_GNUPGHOME="${GNUPGHOME}"
