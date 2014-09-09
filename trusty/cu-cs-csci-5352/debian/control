@@ -5,8 +5,8 @@ Standards-Version: 3.9.5
 Package: cu-cs-csci-5352
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
-Depends: python-dateutil python-decorator python-networkx python-numpy
- python-matplotlib python-pyparsing python-six
+Depends: python-dateutil, python-decorator, python-networkx, python-numpy,
+ python-matplotlib, python-pyparsing, python-six
 Architecture: all
 Copyright: copyright
 Changelog: changelog
