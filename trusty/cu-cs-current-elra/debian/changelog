@@ -1,3 +1,9 @@
+cu-cs-current-elra (1408-1.1) trusty; urgency=medium
+
+  * Add CSCI 5352
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 08 Sep 2014 21:48:06 -0600
+
 cu-cs-current-elra (1408-1.0) trusty; urgency=medium
 
   * Updated for Fall 2014

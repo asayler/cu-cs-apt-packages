@@ -1,3 +1,9 @@
+cu-cs-current-csel (1408-1.5) trusty; urgency=medium
+
+  * Added CSCI 5352
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 08 Sep 2014 21:47:30 -0600
+
 cu-cs-current-csel (1408-1.4) trusty; urgency=medium
 
   * Updated for Fall 2014 Courses

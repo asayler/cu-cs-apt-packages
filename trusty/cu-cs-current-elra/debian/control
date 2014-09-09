@@ -8,8 +8,8 @@ Pre-Depends: cu-cs-base, cu-cs-editors, cu-cs-langs, cu-cs-extra
 Depends: cu-cs-csci-1300, cu-cs-csci-2270, cu-cs-csci-2400,
  cu-cs-csci-3308, cu-cs-csci-3753,
  cu-cs-csci-4229,
- cu-cs-csci-5832
+ cu-cs-csci-5352, cu-cs-csci-5832
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Default CSEL (elra) course packages for Unversity of Colorado CS Dept.
+Description: Default ELRA course packages for Unversity of Colorado CS Dept.
