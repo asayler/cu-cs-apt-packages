@@ -1,3 +1,9 @@
+cu-cs-csci-4229 (1405-1.2) trusty; urgency=medium
+
+  * Added ghc and cabal at the request of a student
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Fri, 12 Sep 2014 21:17:23 -0600
+
 cu-cs-csci-4229 (1405-1.1) trusty; urgency=medium
 
   * Added libsdl

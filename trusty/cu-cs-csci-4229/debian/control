@@ -7,7 +7,8 @@ Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends: libqt4-dev, libsdl1.2-dev, libsdl2-dev, freeglut3-dev,
  mesa-utils, mesa-utils-extra,
- python-pygame, python-numpy
+ python-pygame, python-numpy,
+ ghc, ghc-doc, cabal-install
 Architecture: all
 Copyright: copyright
 Changelog: changelog
