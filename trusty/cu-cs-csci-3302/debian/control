@@ -1,0 +1,17 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-3302
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base
+Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
+ python-wstool python-rosdep
+ ros-indigo-desktop-full
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: 
+Description: Packages for University of Colorado CSCI-3202 Course (Intro to Robotics)
