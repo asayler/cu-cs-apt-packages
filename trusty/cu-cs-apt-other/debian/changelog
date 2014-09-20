@@ -1,0 +1,5 @@
+cu-cs-apt-other (1408-1.0) trusty; urgency=high
+
+  * Initial release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 21:33:33 -0600
