@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-base
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-apt
+Pre-Depends: cu-cs-apt, cu-cs-apt-other
 Depends: bash-completion, binutils, binutils-dev, binutils-doc, build-essential,
  curl, gdb, gdb-doc, ddd, ddd-doc, git, git-doc, htop, iptables,
  man-db, manpages, manpages-dev, manpages-posix, manpages-posix-dev,
