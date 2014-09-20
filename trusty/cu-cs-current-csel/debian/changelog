@@ -1,3 +1,9 @@
+cu-cs-current-csel (1408-1.7) trusty; urgency=medium
+
+  * Fixed CSCI 3302
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 23:00:39 -0600
+
 cu-cs-current-csel (1408-1.6) trusty; urgency=medium
 
   * Added CSCI 3302
