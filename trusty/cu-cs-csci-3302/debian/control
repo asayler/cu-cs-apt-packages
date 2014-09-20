@@ -6,7 +6,7 @@ Package: cu-cs-csci-3302
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
- python-wstool python-rosdep
+ python-wstool, python-rosdep,
  ros-indigo-desktop-full
 Architecture: all
 Copyright: copyright
