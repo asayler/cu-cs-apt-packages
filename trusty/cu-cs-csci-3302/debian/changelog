@@ -1,3 +1,9 @@
+cu-cs-csci-3302 (1408-1.1) trusty; urgency=medium
+
+  * Added ros-indigo-moveit packages
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 25 Sep 2014 16:51:57 -0600
+
 cu-cs-csci-3302 (1408-1.0) trusty; urgency=medium
 
   * Initial Release
