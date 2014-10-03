@@ -13,7 +13,9 @@ Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
  ros-indigo-moveit-simple-controller-manager, ros-indigo-moveit-simple-grasps,
  ros-indigo-moveit-ros-move-group, ros-indigo-moveit-planners-ompl, ros-indigo-moveit-ros-planning,
  ros-indigo-moveit-core, ros-indigo-moveit-ros-visualization, ros-indigo-moveit-plugins,
- ros-indigo-moveit-ros-warehouse, ros-indigo-moveit-visual-tools
+ ros-indigo-moveit-ros-warehouse, ros-indigo-moveit-visual-tools, ros-indigo-moveit-commander,
+ ros-indigo-moveit-ikfast, ros-indigo-moveit-python, ros-indigo-moveit-resources,
+ ros-indigo-moveit-setup-assistant
 Architecture: all
 Copyright: copyright
 Changelog: changelog

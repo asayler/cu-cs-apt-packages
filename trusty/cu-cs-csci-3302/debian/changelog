@@ -1,3 +1,9 @@
+cu-cs-csci-3302 (1408-1.2ubuntu1) trusty; urgency=medium
+
+  * Add some additional ros packages
+
+ -- Matthew Monaco <matt@apt.cs.colorado.edu>  Fri, 03 Oct 2014 08:50:48 -0600
+
 cu-cs-csci-3302 (1408-1.2) trusty; urgency=medium
 
   * Attempt to resolve libopenni-sensor-primesense0 conflict race
