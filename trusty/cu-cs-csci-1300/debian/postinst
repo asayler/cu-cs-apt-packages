@@ -10,5 +10,5 @@ echo "Overwriting default geany python config"
 cp /usr/share/cu-cs-csci-1300/geany/* /usr/share/geany/
 
 echo "Installing PIP packages"
-pip install -r /usr/share/requirments.txt
-pip3 install -r /usr/share/requirments.txt
+pip install -r /usr/share/cu-cs-csci-1300/requirments.txt
+pip3 install -r /usr/share/cu-cs-csci-1300/requirments.txt
