@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.8) trusty; urgency=medium
+
+  * Added python pip reqs and C++ reqs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 28 Oct 2014 10:54:40 -0600
+
 cu-cs-csci-1300 (1408-1.7) trusty; urgency=medium
 
   * Added geany python3 defaults (fourth attempt)
