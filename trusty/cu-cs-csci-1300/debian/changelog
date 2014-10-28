@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1408-1.8.2) trusty; urgency=medium
+
+  * Fixed more pip bug
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 28 Oct 2014 11:21:17 -0600
+
 cu-cs-csci-1300 (1408-1.8.1) trusty; urgency=medium
 
   * Fixed pip bug
