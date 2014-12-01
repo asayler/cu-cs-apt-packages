@@ -1,3 +1,10 @@
+cu-cs-csci-4229 (1405-1.2ubuntu1) trusty; urgency=medium
+
+  * Add libsdl-mixer-dev
+  * Add libsdl-ttf-dev
+
+ -- Matthew Monaco <matt@apt.cs.colorado.edu>  Mon, 01 Dec 2014 07:12:34 -0700
+
 cu-cs-csci-4229 (1405-1.2) trusty; urgency=medium
 
   * Added ghc and cabal at the request of a student
