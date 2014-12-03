@@ -1,14 +1,14 @@
 cu-cs-csci-4229 (1405-1.2ubuntu2) trusty; urgency=medium
 
-  * Add qtbase5-dev
-  * Make qt5 the default (package qt5-default)
+  * Add qtbase5-dev [csel #1059]
+  * Make qt5 the default (package qt5-default) [csel #1059]
 
  -- Matthew Monaco <matt@apt.cs.colorado.edu>  Tue, 02 Dec 2014 11:41:42 -0700
 
 cu-cs-csci-4229 (1405-1.2ubuntu1) trusty; urgency=medium
 
-  * Add libsdl-mixer-dev
-  * Add libsdl-ttf-dev
+  * Add libsdl-mixer-dev [csel #1059]
+  * Add libsdl-ttf-dev [csel #1059]
 
  -- Matthew Monaco <matt@apt.cs.colorado.edu>  Mon, 01 Dec 2014 07:12:34 -0700
 
