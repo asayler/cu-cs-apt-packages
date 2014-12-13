@@ -1,3 +1,9 @@
+cu-cs-current-vm (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 15:39:41 -0700
+
 cu-cs-current-vm (1408-1.0) trusty; urgency=medium
 
   * Removed 3008 and extra
