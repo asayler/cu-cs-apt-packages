@@ -141,6 +141,17 @@ def download(obj, urls_file):
     if failed:
         click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
 
+@click.command()
+@click.option('--repo_dir', default=_DEFAULT_REPO_DIR, type=str, help="Path to Repo")
+@click.option('--release', default=None, type=str, help="Release to Publish")
+@click.pass_obj
+def publish(obj, repo_dir, release):
+
+    build_dir = obj['build_dir']
+    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    repo_dir = os.path.abspath(repo_dir)
+    
+
 # CLI Commands
 cli.add_command(clean)
 cli.add_command(build)
