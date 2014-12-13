@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 1310 Package
+# postinst Script
+
+set -e
+
+echo "Installing PIP packages"
+pip install -r /usr/share/cu-cs-csci-1310/python/requirments.txt
+pip3 install -r /usr/share/cu-cs-csci-1310/python/requirments.txt

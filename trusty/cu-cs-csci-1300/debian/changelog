@@ -1,3 +1,9 @@
+cu-cs-csci-1300 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 16:02:18 -0700
+
 cu-cs-csci-1300 (1408-1.9.0) trusty; urgency=medium
 
   * Added portaudio libs
