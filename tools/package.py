@@ -15,6 +15,7 @@ _ENCODING = "utf-8"
 _DEFAULT_BUILD_DIR = "/tmp/pkg-build"
 _DEFAULT_SOURCE_DIR = "./"
 _DEFAULT_URLS_FILE = "./thirdparty.urls"
+_DEFAULT_REPO_DIR = "/srv/apt/ubuntu"
 
 _DEB_DIR = "debian"
 _BUILD_SRC_DIR = "src"
