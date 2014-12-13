@@ -1,3 +1,9 @@
+cu-cs-editors (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:37:24 -0700
+
 cu-cs-editors (1408-1.0) trusty; urgency=low
 
   * Minor control file comment rewording
