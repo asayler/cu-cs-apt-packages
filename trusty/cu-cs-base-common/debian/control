@@ -11,7 +11,7 @@ Depends: bash-completion, binutils, binutils-dev, binutils-doc, build-essential,
  rsync, screen, strace, tmux, ssh, sshfs, tree, tcpdump, traceroute,
  uptimed, valgrind, zsh, wget, lynx,
  sqlite3, sqlite3-doc, libsqlite3-dev,
-Suggests:
+Suggests: cu-cs-extra, cu-cs-langs
 Architecture: all
 Copyright: copyright
 Changelog: changelog

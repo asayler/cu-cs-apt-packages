@@ -6,7 +6,7 @@ Package: cu-cs-base-nox
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-common
 Depends: 
-Suggests: cu-cs-editors-nox, cu-cs-extra-nox, cu-cs-langs, cu-cs-nonfree
+Suggests: cu-cs-editors-nox
 Architecture: all
 Copyright: copyright
 Changelog: changelog
