@@ -1,5 +1,5 @@
 # Packages
-deb      http://apt.cs.colorado.edu/ubuntu  trusty-15_spring  main
+deb      http://apt.cs.colorado.edu/ubuntu  trusty_15_spring  main
 
 # Sources
-deb-src  http://apt.cs.colorado.edu/ubuntu  trusty-15_spring  main
+deb-src  http://apt.cs.colorado.edu/ubuntu  trusty_15_spring  main

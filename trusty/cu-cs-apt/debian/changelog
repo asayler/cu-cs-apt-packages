@@ -1,4 +1,4 @@
-cu-cs-apt (1501-1.0.0) trusty-15_spring; urgency=medium
+cu-cs-apt (1501.0.0) trusty_15_spring; urgency=medium
 
   * Updated repo for Spring 15
 
