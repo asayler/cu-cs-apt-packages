@@ -1,20 +1,13 @@
 [com.canonical.unity-greeter]
 background-color='#000000000000'
-background='/usr/share/backgrounds/CU-CS-VM-Background.png'
+background='/usr/share/backgrounds/CU-CS-VM-Background-Unity.png'
 draw-grid=false
 
 [org.gnome.desktop.background]
 primary-color='#000000000000'
 secondary-color='#000000000000'
 picture-options='scaled'
-picture-uri='file:///usr/share/backgrounds/CU-CS-VM-Background.png'
-
-[org.gnome.desktop.screensaver]
-logout-enabled=false
-ubuntu-lock-on-suspend=false
-
-[org.gnome.desktop.session]
-idle-delay=0
+picture-uri='file:///usr/share/backgrounds/CU-CS-VM-Background-Unity.png'
 
 [com.canonical.Unity.Lenses]
 remote-content-search='none'
