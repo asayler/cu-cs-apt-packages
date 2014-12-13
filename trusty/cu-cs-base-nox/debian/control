@@ -2,12 +2,12 @@ Section: main
 Priority: optional
 Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
-Package: cu-cs-base
+Package: cu-cs-base-nox
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-common
-Depends: kcachegrind
-Suggests: cu-cs-editors, cu-cs-extra, cu-cs-langs, cu-cs-nonfree
+Depends: 
+Suggests: cu-cs-editors-nox, cu-cs-extra-nox, cu-cs-langs, cu-cs-nonfree
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Desktop Base Package for University of Colorado, Dept. of CS 
+Description: No-X Base Package for University of Colorado, Dept. of CS 

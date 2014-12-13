@@ -1,3 +1,9 @@
+cu-cs-base (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:14:27 -0700
+
 cu-cs-base (1408-1.3ubuntu1) trusty; urgency=medium
 
   * Added libsqlite3-dev [csel #1076]
