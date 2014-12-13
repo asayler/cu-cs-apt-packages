@@ -3,8 +3,8 @@ Name: cu-cs-apt-other
 
 Files: debian/*
 
-Copyright: 2014 Andy Sayler (asayler) <andy.sayler@colorado.edu>
-	   2014 Matt Monaco (matt) <matthew.monaco@colorado.edu>
+Copyright: 2015 Andy Sayler (asayler) <andy.sayler@colorado.edu>
+	   2015 Matt Monaco (matt) <matthew.monaco@colorado.edu>
 
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
