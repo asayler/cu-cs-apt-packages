@@ -31,25 +31,29 @@ def build(obj, source_dir, build_dir):
     orig_dir = os.path.abspath(os.getcwd())
 
     # Clean Prior Run
-    shutil.rmtree(build_dir)
+    if os.path.exists(build_dir):
+        shutil.rmtree(build_dir)
 
     # Export Source
     os.chdir(source_dir)
     export_dir = os.path.join(build_dir, _BUILD_SRC_DIR)
     cmd = ["git", "checkout-index", "-a", "-f", "--prefix={}/".format(export_dir)]
-    ret = subprocess.call(cmd)
-    if ret:
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = proc.communicate()
+    if proc.returncode:
         raise click.ClickException("Git Export Failed")
 
     # Find Packages
     packages = []
+    os.chdir(export_dir)
     for root, dirs, files in os.walk(export_dir):
         pkg_dir = os.path.join(root, _PACKAGE_DIR)
         if os.path.isdir(pkg_dir):
             packages.append(root)
-
     print(packages)
 
+    
+    
 # CLI Commands
 cli.add_command(build)
 
