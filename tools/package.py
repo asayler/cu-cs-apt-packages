@@ -48,8 +48,9 @@ def clean(obj):
 
 @click.command()
 @click.option('--source_dir', default=_DEFAULT_SOURCE_DIR, type=str, help="Source Directory")
+@click.option('--package_name', default=None, type=str, help="Package to build (Defaults to All)")
 @click.pass_obj
-def build(obj, source_dir):
+def build(obj, source_dir, package_name):
 
     build_dir = obj['build_dir']
     source_dir = os.path.abspath(source_dir)
@@ -77,6 +78,9 @@ def build(obj, source_dir):
     cmd = ["equivs-build", "-f", "control"]
     for pkg_src_dir in packages:
         pkg_name = os.path.basename(pkg_src_dir)
+        if package_name:
+            if not pkg_name == package_name:
+                continue
         click.secho("Building {}...".format(pkg_name), fg='blue')
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
         proc = subprocess.Popen(cmd, cwd=deb_src_dir,
@@ -89,10 +93,13 @@ def build(obj, source_dir):
         else:
             click.secho("{} Build Succeeded".format(pkg_name), fg='green')
             succeeded.append(pkg_name)
-            for file_name in os.listdir(deb_src_dir):
-                file_path = os.path.join(deb_src_dir, file_name)
-                if os.path.splitext(file_path)[1] in _DEB_BUILD_EXTS:
-                    shutil.move(file_path, deb_out_dir)
+            for src_name in os.listdir(deb_src_dir):
+                src_path = os.path.join(deb_src_dir, src_name)
+                if os.path.splitext(src_path)[1] in _DEB_BUILD_EXTS:
+                    dst_path = os.path.join(deb_out_dir, src_name)
+                    if os.path.exists(dst_path):
+                        os.remove(dst_path)
+                    shutil.move(src_path, dst_path)
 
     # Print Success/Failure
     click.secho("")
