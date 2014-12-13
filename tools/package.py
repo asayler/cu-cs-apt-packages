@@ -17,6 +17,8 @@ _DEB_DIR = "debian"
 _BUILD_SRC_DIR = "src"
 _BUILD_PKG_DIR = "pkg"
 
+_DEB_BUILD_EXTS = ['.deb', '.dsc', '.changes', '.gz', '.tar']
+
 @click.group()
 @click.option('--gpg_dir', default=None, type=str, help="GPG Home Directory")
 @click.pass_context
@@ -60,6 +62,7 @@ def build(obj, source_dir, build_dir):
     succeeded = []
     failed = []
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    os.makedirs(deb_out_dir)
     cmd = ["equivs-build", "-f", "control"]
     for pkg_src_dir in packages:
         pkg_name = os.path.basename(pkg_src_dir)
@@ -70,17 +73,22 @@ def build(obj, source_dir, build_dir):
         stdout, stderr = proc.communicate()
         if proc.returncode:
             click.secho("{} Build Failed".format(pkg_name), err=True, fg='red')
-            click.secho(stderr.decode(_ENCODING), err=True, fg='red')
             failed.append(pkg_name)
+            click.secho(stderr.decode(_ENCODING), err=True, fg='red')
         else:
             click.secho("{} Build Succeeded".format(pkg_name), fg='green')
             succeeded.append(pkg_name)
+            for file_name in os.listdir(deb_src_dir):
+                file_path = os.path.join(deb_src_dir, file_name)
+                if os.path.splitext(file_path)[1] in _DEB_BUILD_EXTS:
+                    shutil.move(file_path, deb_out_dir)
 
+    # Print Success/Failure
+    click.secho("")
     if succeeded:
-        click.secho("Succeeded Packages: {}".format(succeeded), fg='green')
+        click.secho("Succeeded Packages:\n{}".format(succeeded), fg='green')
     if failed:
-        click.secho("Failed Packages: {}".format(failed), err=True, fg='red')
-        
+        click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
     
 # CLI Commands
 cli.add_command(build)
