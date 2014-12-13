@@ -5,8 +5,11 @@ Standards-Version: 3.9.5
 Package: cu-cs-csci-2270
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
-Depends:  gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib, g++-4.8, g++-4.8-multilib,
- gdb, valgrind
+Depends: codeblocks, codeblocks-contrib,
+ gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib,
+ g++-4.8, g++-4.8-multilib,
+ qtcreator, qtcreator-doc, qt-sdk,
+ gdb, ddd, valgrind
 Architecture: all
 Copyright: copyright
 Changelog: changelog
