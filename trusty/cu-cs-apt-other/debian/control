@@ -10,8 +10,6 @@ Suggests:
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Preinst: preinst.sh
-Postrm: postrm.sh
 Files: ./ros.list /etc/apt/sources.list.d/
  ./ros.gpg /etc/apt/trusted.gpg.d/
 Description: apt repo package for third party sources
