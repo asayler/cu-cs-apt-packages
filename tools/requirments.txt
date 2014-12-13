@@ -1,2 +1,4 @@
 Click
+requests
 python-debian
+
