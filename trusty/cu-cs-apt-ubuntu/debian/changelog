@@ -1,4 +1,10 @@
-cu-cs-apt-ubuntu (1405-1.1) precise; urgency=low
+cu-cs-apt-ubuntu (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated copyright for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:03:19 -0700
+
+cu-cs-apt-ubuntu (1405-1.1) trusty; urgency=low
 
   * Changed section
 
