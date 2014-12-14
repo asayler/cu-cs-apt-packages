@@ -1,3 +1,9 @@
+cu-cs-vm-xfce (1501.1.0) trusty-1501; urgency=medium
+
+  * Updated background for Spring 15
+
+ -- asayler <asayler@raptor>  Sat, 13 Dec 2014 17:03:00 -0700
+
 cu-cs-vm-xfce (1501.0.0) trusty-1501; urgency=medium
 
   * Initial Release (Spring 15)
