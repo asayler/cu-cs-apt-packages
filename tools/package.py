@@ -41,6 +41,7 @@ def cli(ctx, build_dir, gpg_dir):
         click.secho("Setting GNUPGHOME to '{}'".format(ctx.obj['gpg_dir']))
         os.environ['GNUPGHOME'] = ctx.obj['gpg_dir']
 
+
 @click.command()
 @click.pass_obj
 def clean(obj):
@@ -55,20 +56,25 @@ def clean(obj):
 
 
 @click.command()
-@click.option('--source_dir', default=_DEFAULT_SOURCE_DIR, type=str, help="Source Directory")
-@click.option('--package_name', default=None, type=str, help="Package to build (Defaults to All)")
+@click.option('--source_dir', default=_DEFAULT_SOURCE_DIR, type=str,
+              help="Package Source Directory")
+@click.argument('package_names', default=None, nargs=-1, type=str)
 @click.pass_obj
-def build(obj, source_dir, package_name):
+def build(obj, source_dir, package_names):
     """
     Build Packages
 
     """
 
+    # Setup Paths and Vars
     build_dir = obj['build_dir']
     source_dir = os.path.abspath(source_dir)
-
-    # Export Source
     export_dir = os.path.join(build_dir, _BUILD_SRC_DIR)
+    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    pkgs_succeeded = []
+    pkgs_failed = []
+
+    # Export Source via Git
     cmd = ["git", "checkout-index", "-a", "-f", "--prefix={}/".format(export_dir)]
     proc = subprocess.Popen(cmd, cwd=source_dir, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
@@ -76,35 +82,42 @@ def build(obj, source_dir, package_name):
         raise click.ClickException("Git Export Failed")
 
     # Find Packages
-    packages = []
+    pkg_paths = {}
     for root, dirs, files in os.walk(export_dir):
-        pkg_dir = os.path.join(root, _DEB_DIR)
-        if os.path.isdir(pkg_dir):
-            packages.append(root)
+        deb_dir = os.path.join(root, _DEB_DIR)
+        if os.path.isdir(deb_dir):
+            pkg_dir = root
+            pkg_name = os.path.basename(pkg_dir)
+            pkg_paths[pkg_name] = pkg_dir
+
+    # Filter Packages
+    if package_names:
+        pkgs_found = {}
+        for pkg_name in package_names:
+            if pkg_name in pkg_paths:
+                pkgs_found[pkg_name] = pkg_paths[pkg_name]
+            else:
+                click.secho("Could Not Find Package '{}'".format(pkg_name), err=True, fg='red')
+                pkgs_failed.append(pkg_name)
+        pkg_paths = pkgs_found
 
     # Build Packages
-    succeeded = []
-    failed = []
-    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
     os.makedirs(deb_out_dir, exist_ok=True)
     cmd = ["equivs-build", "-f", "control"]
-    for pkg_src_dir in packages:
-        pkg_name = os.path.basename(pkg_src_dir)
-        if package_name:
-            if not pkg_name == package_name:
-                continue
-        click.secho("Building {}...".format(pkg_name), fg='blue')
+    for pkg_name in sorted(pkg_paths.keys()):
+        pkg_src_dir = pkg_paths[pkg_name]
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
+        click.secho("Building {}...".format(pkg_name), fg='blue')
         proc = subprocess.Popen(cmd, cwd=deb_src_dir,
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = proc.communicate()
         if proc.returncode:
             click.secho("{} Build Failed".format(pkg_name), err=True, fg='red')
-            failed.append(pkg_name)
             click.secho(stderr.decode(_ENCODING), err=True, fg='red')
+            pkgs_failed.append(pkg_name)
         else:
             click.secho("{} Build Succeeded".format(pkg_name), fg='green')
-            succeeded.append(pkg_name)
+            pkgs_succeeded.append(pkg_name)
             for src_name in os.listdir(deb_src_dir):
                 src_path = os.path.join(deb_src_dir, src_name)
                 if os.path.splitext(src_path)[1] in _DEB_BUILD_EXTS:
@@ -115,10 +128,13 @@ def build(obj, source_dir, package_name):
 
     # Print Success/Failure
     click.secho("")
-    if succeeded:
-        click.secho("Succeeded Packages:\n{}".format(succeeded), fg='green')
-    if failed:
-        click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
+    if pkgs_succeeded:
+        pkgs_succeeded.sort()
+        click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_failed:
+        pkgs_failed.sort()
+        click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
+
 
 @click.command()
 @click.option('--urls_file', default=_DEFAULT_URLS_FILE, type=str, help="File with Package URLs")
@@ -164,6 +180,7 @@ def download(obj, urls_file):
         click.secho("Succeeded Packages:\n{}".format(succeeded), fg='green')
     if failed:
         click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
+
 
 @click.command()
 @click.option('--repo_dir', default=_DEFAULT_REPO_DIR, type=str, help="Path to Repo")
@@ -294,11 +311,14 @@ def publish(obj, repo_dir, release, major_vers):
     if failed:
         click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
 
+
 # CLI Commands
 cli.add_command(clean)
 cli.add_command(build)
 cli.add_command(download)
 cli.add_command(publish)
 
+
+# Main
 if __name__ == '__main__':
     cli()
