@@ -28,6 +28,10 @@ _DEB_BUILD_EXTS = ['.deb', '.dsc', '.changes', '.gz', '.tar']
 @click.option('--gpg_dir', default=None, type=str, help="GPG Home Directory")
 @click.pass_context
 def cli(ctx, build_dir, gpg_dir):
+    """
+    Top level CLI Wrapper
+
+    """
 
     ctx.obj = {}
     ctx.obj['build_dir'] = os.path.abspath(build_dir)
@@ -40,6 +44,10 @@ def cli(ctx, build_dir, gpg_dir):
 @click.command()
 @click.pass_obj
 def clean(obj):
+    """
+    Clean Build Directory
+
+    """
 
     build_dir = obj['build_dir']
     if os.path.exists(build_dir):
@@ -51,6 +59,10 @@ def clean(obj):
 @click.option('--package_name', default=None, type=str, help="Package to build (Defaults to All)")
 @click.pass_obj
 def build(obj, source_dir, package_name):
+    """
+    Build Packages
+
+    """
 
     build_dir = obj['build_dir']
     source_dir = os.path.abspath(source_dir)
@@ -112,6 +124,10 @@ def build(obj, source_dir, package_name):
 @click.option('--urls_file', default=_DEFAULT_URLS_FILE, type=str, help="File with Package URLs")
 @click.pass_obj
 def download(obj, urls_file):
+    """
+    Download Third Party Packages
+
+    """
     
     build_dir = obj['build_dir']
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
@@ -155,6 +171,10 @@ def download(obj, urls_file):
 @click.option('--major_vers', default=None, type=str, help="Versions to Publish")
 @click.pass_obj
 def publish(obj, repo_dir, release, major_vers):
+    """
+    Publish Packages to Repo
+    
+    """
 
     # Setup Paths
     build_dir = obj['build_dir']
