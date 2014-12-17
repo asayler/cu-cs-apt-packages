@@ -344,8 +344,11 @@ def publish(obj, repo_dir, release, major_vers):
 
         # Publish
         repo_publish_deb(pkg_path, release)
-        # todo: publish dsc
-        click.secho("Publishing {} Succeeded".format(pkg_name), fg='green')
+        click.secho("Publishing {} deb Succeeded".format(pkg_name), fg='green')
+
+        # Publish Source
+        # ToDo
+
         succeeded.append(pkg_name)
 
     # Print Success/Failure
