@@ -54,13 +54,22 @@ def clean(obj):
     if os.path.exists(build_dir):
         shutil.rmtree(build_dir)
 
+def dpkg_field(pkg_path, field):
+    cmd = ["dpkg", "-f", "{}".format(pkg_path), "{}".format(field)]
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = proc.communicate()
+    if proc.returncode:
+        raise click.ClickException("Dpkg Failed")
+    return out.decode(_ENCODING).lstrip().rstrip()
 
 @click.command()
 @click.option('--source_dir', default=_DEFAULT_SOURCE_DIR, type=str,
               help="Package Source Directory")
+@click.option('--force', '-f', is_flag=True, type=bool,
+              help="Force Build of All Packages")
 @click.argument('package_names', default=None, nargs=-1, type=str)
 @click.pass_obj
-def build(obj, source_dir, package_names):
+def build(obj, source_dir, force, package_names):
     """
     Build Packages
 
@@ -71,7 +80,9 @@ def build(obj, source_dir, package_names):
     source_dir = os.path.abspath(source_dir)
     export_dir = os.path.join(build_dir, _BUILD_SRC_DIR)
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    os.makedirs(deb_out_dir, exist_ok=True)
     pkgs_succeeded = []
+    pkgs_skipped = []
     pkgs_failed = []
 
     # Export Source via Git
@@ -81,14 +92,38 @@ def build(obj, source_dir, package_names):
     if proc.returncode:
         raise click.ClickException("Git Export Failed")
 
-    # Find Packages
+    # Find Package Sources
     pkg_paths = {}
+    pkg_vers = {}
     for root, dirs, files in os.walk(export_dir):
         deb_dir = os.path.join(root, _DEB_DIR)
         if os.path.isdir(deb_dir):
+
+            # Find Path
             pkg_dir = root
             pkg_name = os.path.basename(pkg_dir)
             pkg_paths[pkg_name] = pkg_dir
+
+            # Find Version
+            change_path = os.path.join(deb_dir, "changelog")
+            with open(change_path, 'r') as f:
+                change_obj = debian.changelog.Changelog(file=f)
+            pkg_ver = str(change_obj.version)
+            pkg_vers[pkg_name] = pkg_ver
+
+    # Find Built Packages
+    deb_paths = {}
+    deb_vers = {}
+    for root, dirs, files in os.walk(deb_out_dir):
+        for fle in files:
+            path = os.path.join(root, fle)
+            base, ext = os.path.splitext(path)
+            if ext == ".deb":
+                deb_name = dpkg_field(path, 'Package')
+                deb_paths[deb_name] = path
+                deb_vers[deb_name] = dpkg_field(path, 'Version')
+            else:
+                pass
 
     # Filter Packages
     if package_names:
@@ -101,10 +136,25 @@ def build(obj, source_dir, package_names):
                 pkgs_failed.append(pkg_name)
         pkg_paths = pkgs_found
 
+    # Find Newer Sources
+    to_build = []
+    if force:
+        to_build += pkg_paths.keys()
+    else:
+        for pkg_name in pkg_paths.keys():
+            if pkg_name in deb_vers:
+                pkg_ver = pkg_vers[pkg_name]
+                deb_ver = deb_vers[pkg_name]
+                if pkg_ver <= deb_ver:
+                    click.secho("Skipping {}: Version {} already built".format(pkg_name, deb_ver),
+                                fg='yellow')
+                    pkgs_skipped.append(pkg_name)
+                    continue
+            to_build.append(pkg_name)
+
     # Build Packages
-    os.makedirs(deb_out_dir, exist_ok=True)
     cmd = ["equivs-build", "-f", "control"]
-    for pkg_name in sorted(pkg_paths.keys()):
+    for pkg_name in sorted(to_build):
         pkg_src_dir = pkg_paths[pkg_name]
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
         click.secho("Building {}...".format(pkg_name), fg='blue')
@@ -131,6 +181,9 @@ def build(obj, source_dir, package_names):
     if pkgs_succeeded:
         pkgs_succeeded.sort()
         click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_skipped:
+        pkgs_skipped.sort()
+        click.secho("Skipped Packages:\n{}".format(pkgs_skipped), fg='yellow')
     if pkgs_failed:
         pkgs_failed.sort()
         click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
@@ -197,14 +250,6 @@ def publish(obj, repo_dir, release, major_vers):
     build_dir = obj['build_dir']
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
     repo_dir = os.path.abspath(repo_dir)
-
-    def dpkg_field(pkg_path, field):
-        cmd = ["dpkg", "-f", "{}".format(pkg_path), "{}".format(field)]
-        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        out, err = proc.communicate()
-        if proc.returncode:
-            raise click.ClickException("Dpkg Failed")
-        return out.decode(_ENCODING).lstrip().rstrip()
 
     def get_pkg_info(pkg_path):
         # ToDo Replace dpkg calls with native python deb interface
@@ -299,6 +344,7 @@ def publish(obj, repo_dir, release, major_vers):
 
         # Publish
         repo_publish_deb(pkg_path, release)
+        # todo: publish dsc
         click.secho("Publishing {} Succeeded".format(pkg_name), fg='green')
         succeeded.append(pkg_name)
 
