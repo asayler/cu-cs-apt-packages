@@ -98,18 +98,7 @@ def build(obj, source_dir, force, package_names):
     src_repo = cu_apt.src_repo(export_dir)
 
     # Find Built Packages
-    deb_paths = {}
-    deb_vers = {}
-    for root, dirs, files in os.walk(deb_out_dir):
-        for fle in files:
-            path = os.path.join(root, fle)
-            base, ext = os.path.splitext(path)
-            if ext == ".deb":
-                deb_name = dpkg_field(path, 'Package')
-                deb_paths[deb_name] = path
-                deb_vers[deb_name] = dpkg_field(path, 'Version')
-            else:
-                pass
+    deb_repo = cu_apt.deb_repo(deb_out_dir)
 
     # Filter Packages
     if package_names:
@@ -129,9 +118,9 @@ def build(obj, source_dir, force, package_names):
         to_build += pkgs_build.keys()
     else:
         for pkg_name in pkgs_build.keys():
-            if pkg_name in deb_vers:
+            if pkg_name in deb_repo:
                 pkg_ver = pkgs_build[pkg_name].vers
-                deb_ver = deb_vers[pkg_name]
+                deb_ver = deb_repo[pkg_name].vers
                 if pkg_ver <= deb_ver:
                     click.secho("Skipping {}: Version {} already built".format(pkg_name, deb_ver),
                                 fg='yellow')

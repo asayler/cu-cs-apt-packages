@@ -1,16 +1,41 @@
+import abc
 import os
+import subprocess
 
 import debian.changelog
 
 _DEB_DIR = "debian"
 _CHANGELOG = "changelog"
+_ENCODING = "utf-8"
 
 
-class src_pkg():
+### Helper Functions ###
 
+def _dpkg_field(pkg_path, field):
+    cmd = ["dpkg", "-f", "{}".format(pkg_path), "{}".format(field)]
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = proc.communicate()
+    if proc.returncode:
+        raise click.ClickException("Dpkg Failed")
+    return out.decode(_ENCODING).lstrip().rstrip()
+
+
+### Classes ###
+
+class abc_pkg(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
     def __init__(self, path):
 
         self.path = os.path.abspath(path)
+        self.name = None
+        self.vers = None
+
+class src_pkg(abc_pkg):
+
+    def __init__(self, path):
+
+        super().__init__(path)
         self.name = os.path.basename(path)
         self.vers = self._find_vers()
 
@@ -20,13 +45,40 @@ class src_pkg():
         with open(change_path, 'r') as f:
             change_obj = debian.changelog.Changelog(file=f)
         return str(change_obj.version)
-        
 
-class src_repo():
+class deb_pkg(abc_pkg):
 
     def __init__(self, path):
 
+        super().__init__(path)
+        self.name = _dpkg_field(path, 'Package')
+        self.vers = _dpkg_field(path, 'Version')
+
+class abc_repo(metaclass=abc.ABCMeta):
+
+    @abc.abstractmethod
+    def __init__(self, path):
+
         self.path = os.path.abspath(path)
+        self.pkgs = None
+
+    def __iter__(self):
+
+        return self.pkgs
+
+    def __contains__(self, key):
+
+        return key in self.pkgs
+
+    def __getitem__(self, key):
+
+        return self.pkgs[key]
+
+class src_repo(abc_repo):
+
+    def __init__(self, path):
+
+        super().__init__(path)
         self.pkgs = self._find_pkgs()
         
     def _find_pkgs(self):
@@ -44,14 +96,26 @@ class src_repo():
 
         return pkgs
 
-    def __iter__(self):
+class deb_repo(abc_repo):
 
-        return self.pkgs
+    def __init__(self, path):
 
-    def __contains__(self, key):
+        super().__init__(path)
+        self.pkgs = self._find_pkgs()
+        
+    def _find_pkgs(self):
 
-        return key in self.pkgs
+        pkgs = {}
 
-    def __getitem__(self, key):
-    
-        return self.pkgs[key]
+        for root, dirs, files in os.walk(self.path):
+
+            for fle in files:
+                path = os.path.join(root, fle)
+                base, ext = os.path.splitext(path)
+                if ext == ".deb":
+                    pkg = deb_pkg(path)
+                    pkgs[pkg.name] = pkg
+                else:
+                    pass
+
+        return pkgs
