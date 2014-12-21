@@ -10,6 +10,8 @@ import click
 import requests
 import debian.changelog
 
+import cu_apt
+
 _ENCODING = "utf-8"
 
 _DEFAULT_BUILD_DIR = "/tmp/pkg-build"
@@ -93,23 +95,7 @@ def build(obj, source_dir, force, package_names):
         raise click.ClickException("Git Export Failed")
 
     # Find Package Sources
-    pkg_paths = {}
-    pkg_vers = {}
-    for root, dirs, files in os.walk(export_dir):
-        deb_dir = os.path.join(root, _DEB_DIR)
-        if os.path.isdir(deb_dir):
-
-            # Find Path
-            pkg_dir = root
-            pkg_name = os.path.basename(pkg_dir)
-            pkg_paths[pkg_name] = pkg_dir
-
-            # Find Version
-            change_path = os.path.join(deb_dir, "changelog")
-            with open(change_path, 'r') as f:
-                change_obj = debian.changelog.Changelog(file=f)
-            pkg_ver = str(change_obj.version)
-            pkg_vers[pkg_name] = pkg_ver
+    src_repo = cu_apt.src_repo(export_dir)
 
     # Find Built Packages
     deb_paths = {}
@@ -127,23 +113,24 @@ def build(obj, source_dir, force, package_names):
 
     # Filter Packages
     if package_names:
-        pkgs_found = {}
+        pkgs_build = {}
         for pkg_name in package_names:
-            if pkg_name in pkg_paths:
-                pkgs_found[pkg_name] = pkg_paths[pkg_name]
+            if pkg_name in src_repo:
+                pkgs_found[pkg_name] = src_repo[pkg_name]
             else:
                 click.secho("Could Not Find Package '{}'".format(pkg_name), err=True, fg='red')
                 pkgs_failed.append(pkg_name)
-        pkg_paths = pkgs_found
+    else:
+        pkgs_build = src_repo.pkgs
 
     # Find Newer Sources
     to_build = []
     if force:
-        to_build += pkg_paths.keys()
+        to_build += pkgs_build.keys()
     else:
-        for pkg_name in pkg_paths.keys():
+        for pkg_name in pkgs_build.keys():
             if pkg_name in deb_vers:
-                pkg_ver = pkg_vers[pkg_name]
+                pkg_ver = pkgs_build[pkg_name].vers
                 deb_ver = deb_vers[pkg_name]
                 if pkg_ver <= deb_ver:
                     click.secho("Skipping {}: Version {} already built".format(pkg_name, deb_ver),
@@ -155,7 +142,7 @@ def build(obj, source_dir, force, package_names):
     # Build Packages
     cmd = ["equivs-build", "-f", "control"]
     for pkg_name in sorted(to_build):
-        pkg_src_dir = pkg_paths[pkg_name]
+        pkg_src_dir = pkgs_build[pkg_name].path
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
         click.secho("Building {}...".format(pkg_name), fg='blue')
         proc = subprocess.Popen(cmd, cwd=deb_src_dir,

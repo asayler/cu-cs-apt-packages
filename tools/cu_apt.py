@@ -20,6 +20,7 @@ class src_pkg():
         with open(change_path, 'r') as f:
             change_obj = debian.changelog.Changelog(file=f)
         return str(change_obj.version)
+        
 
 class src_repo():
 
@@ -30,14 +31,27 @@ class src_repo():
         
     def _find_pkgs(self):
 
-        pkgs = []
+        pkgs = {}
 
         for root, dirs, files in os.walk(self.path):
 
             deb_dir = os.path.join(root, _DEB_DIR)
             if os.path.isdir(deb_dir):
-                pkgs.append(src_pkg(root))
+                pkg = src_pkg(root)
+                pkgs[pkg.name] = pkg
             else:
                 pass
 
         return pkgs
+
+    def __iter__(self):
+
+        return self.pkgs
+
+    def __contains__(self, key):
+
+        return key in self.pkgs
+
+    def __getitem__(self, key):
+    
+        return self.pkgs[key]
