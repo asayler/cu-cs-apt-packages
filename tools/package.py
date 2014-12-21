@@ -8,7 +8,6 @@ import urllib
 
 import click
 import requests
-import debian.changelog
 
 import cu_apt
 
@@ -55,14 +54,6 @@ def clean(obj):
     build_dir = obj['build_dir']
     if os.path.exists(build_dir):
         shutil.rmtree(build_dir)
-
-def dpkg_field(pkg_path, field):
-    cmd = ["dpkg", "-f", "{}".format(pkg_path), "{}".format(field)]
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    out, err = proc.communicate()
-    if proc.returncode:
-        raise click.ClickException("Dpkg Failed")
-    return out.decode(_ENCODING).lstrip().rstrip()
 
 @click.command()
 @click.option('--source_dir', default=_DEFAULT_SOURCE_DIR, type=str,

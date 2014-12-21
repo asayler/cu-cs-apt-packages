@@ -1,5 +1,5 @@
 import abc
-import os
+import os.path
 import subprocess
 
 import debian.changelog
