@@ -78,60 +78,56 @@ def build(obj, source_dir, force, package_names):
     """
 
     # Setup Paths and Vars
-    build_dir = obj['build_dir']
-    source_dir = os.path.abspath(source_dir)
-    export_dir = os.path.join(build_dir, _BUILD_SRC_DIR)
-    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
-    os.makedirs(deb_out_dir, exist_ok=True)
+    bld_dir = obj['build_dir']
+    src_dir = os.path.abspath(source_dir)
+    exp_dir = os.path.join(bld_dir, _BUILD_SRC_DIR)
+    out_dir = os.path.join(bld_dir, _BUILD_PKG_DIR)
+    os.makedirs(out_dir, exist_ok=True)
     pkgs_succeeded = []
     pkgs_skipped = []
     pkgs_failed = []
 
     # Export Source via Git
-    cmd = ["git", "checkout-index", "-a", "-f", "--prefix={}/".format(export_dir)]
-    proc = subprocess.Popen(cmd, cwd=source_dir, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    cmd = ["git", "checkout-index", "-a", "-f", "--prefix={}/".format(exp_dir)]
+    proc = subprocess.Popen(cmd, cwd=src_dir, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     out, err = proc.communicate()
     if proc.returncode:
         raise click.ClickException("Git Export Failed")
 
     # Find Package Sources
-    src_repo = cu_apt.src_repo(export_dir)
+    src_repo = cu_apt.src_repo(exp_dir)
 
     # Find Built Packages
-    deb_repo = cu_apt.deb_repo(deb_out_dir)
+    deb_repo = cu_apt.deb_repo(out_dir)
 
     # Filter Packages
+    pkgs_queued = []
     if package_names:
-        pkgs_build = {}
-        for pkg_name in package_names:
+        for pkg_name in sorted(package_names):
             if pkg_name in src_repo:
-                pkgs_found[pkg_name] = src_repo[pkg_name]
+                pkgs_queued.append(pkg_name)
             else:
                 click.secho("Could Not Find Package '{}'".format(pkg_name), err=True, fg='red')
                 pkgs_failed.append(pkg_name)
     else:
-        pkgs_build = src_repo.pkgs
+        pkgs_queued += src_repo.keys()
 
     # Find Newer Sources
-    to_build = []
-    if force:
-        to_build += pkgs_build.keys()
-    else:
-        for pkg_name in pkgs_build.keys():
+    if not force:
+        for pkg_name in sorted(pkgs_queued):
             if pkg_name in deb_repo:
-                pkg_ver = pkgs_build[pkg_name].vers
+                pkg_ver = src_repo[pkg_name].vers
                 deb_ver = deb_repo[pkg_name].vers
                 if pkg_ver <= deb_ver:
                     click.secho("Skipping {}: Version {} already built".format(pkg_name, deb_ver),
                                 fg='yellow')
                     pkgs_skipped.append(pkg_name)
-                    continue
-            to_build.append(pkg_name)
+                    pkgs_queued.remove(pkg_name)
 
     # Build Packages
     cmd = ["equivs-build", "-f", "control"]
-    for pkg_name in sorted(to_build):
-        pkg_src_dir = pkgs_build[pkg_name].path
+    for pkg_name in sorted(pkgs_queued):
+        pkg_src_dir = src_repo[pkg_name].path
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
         click.secho("Building {}...".format(pkg_name), fg='blue')
         proc = subprocess.Popen(cmd, cwd=deb_src_dir,
@@ -147,7 +143,7 @@ def build(obj, source_dir, force, package_names):
             for src_name in os.listdir(deb_src_dir):
                 src_path = os.path.join(deb_src_dir, src_name)
                 if os.path.splitext(src_path)[1] in _DEB_BUILD_EXTS:
-                    dst_path = os.path.join(deb_out_dir, src_name)
+                    dst_path = os.path.join(out_dir, src_name)
                     if os.path.exists(dst_path):
                         os.remove(dst_path)
                     shutil.move(src_path, dst_path)

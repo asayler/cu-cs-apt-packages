@@ -74,6 +74,10 @@ class abc_repo(metaclass=abc.ABCMeta):
 
         return self.pkgs[key]
 
+    def keys(self):
+        
+        return self.pkgs.keys()
+
 class src_repo(abc_repo):
 
     def __init__(self, path):
