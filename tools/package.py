@@ -218,17 +218,13 @@ def publish(obj, repo_dir, release, major_vers):
     
     """
 
-    # Setup Paths
-    build_dir = obj['build_dir']
-    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    # Setup Paths and Vars
+    bld_dir = obj['build_dir']
+    out_dir = os.path.join(bld_dir, _BUILD_PKG_DIR)
     repo_dir = os.path.abspath(repo_dir)
-
-    def get_pkg_info(pkg_path):
-        # ToDo Replace dpkg calls with native python deb interface
-        name = dpkg_field(pkg_path, 'Package')
-        vers = dpkg_field(pkg_path, 'Version')
-        arch = dpkg_field(pkg_path, 'Architecture')
-        return (name, vers, arch)
+    pkgs_succeeded = []
+    pkgs_skipped = []
+    pkgs_failed = []
 
     def get_repo_info(pkg_name, pkg_arch, release, attribute):
         cmd = ["reprepro", "-T", "deb", "-A", "{}".format(pkg_arch),
@@ -263,45 +259,31 @@ def publish(obj, repo_dir, release, major_vers):
             raise click.ClickException("reprepro Publish Failed")
         return out.decode(_ENCODING).lstrip().rstrip()
 
-    # Find Packages
-    deb_packages = []
-    dsc_packages = []
-    for root, dirs, files in os.walk(deb_out_dir):
-        for fle in files:
-            path = os.path.join(root, fle)
-            ext = os.path.splitext(path)[1]
-            if ext == ".deb":
-                deb_packages.append(path)
-            elif ext == ".dsc":
-                dsc_packages.append(path)
-            else:
-                pass
+    # Setup Source Repos
+    deb_repo = cu_apt.deb_repo(out_dir)
 
     # Publish Packages
-    failed = []
-    succeeded = []
-    skipped = []
-    for pkg_path in deb_packages:
+    for pkg_name in deb_repo:
 
         # Get Package Info
-        pkg_name, pkg_vers, pkg_arch = get_pkg_info(pkg_path)
+        pkg = deb_repo[pkg_name]
         click.secho("Publishing {}...".format(pkg_name), fg='blue')
 
         # Filter Packages
         if major_vers:
-            pkg_major_vers = pkg_vers.split('.')[0]
+            pkg_major_vers = pkg.vers.split('.')[0]
             if pkg_major_vers != major_vers:
                 click.secho("Skipping: Wrong Major Version {}".format(pkg_major_vers), fg='yellow')
-                skipped.append(pkg_name)
+                pkgs_skipped.append(pkg_name)
                 continue
 
         # Get Repo Version
-        if pkg_arch == "all":
+        if pkg.arch == "all":
             repo_vers_amd64 = get_repo_info(pkg_name, "amd64", release, "version")
             repo_vers_i386 = get_repo_info(pkg_name, "i386", release, "version")
             if repo_vers_amd64 != repo_vers_i386:
                 click.secho("Architecture Version Mismatch", err=True, fg='red')
-                failed.append(pkg_name)
+                pkgs_failed.append(pkg_name)
                 continue
             else:
                 repo_vers = repo_vers_amd64
@@ -309,28 +291,28 @@ def publish(obj, repo_dir, release, major_vers):
             repo_vers = get_repo_info(pkg_name, pkg_arch, release, "version")
 
         # Compare Versions
-        if pkg_vers == repo_vers:
-            click.secho("Skipping: Version {} already in repo.".format(pkg_vers), fg='yellow')
-            skipped.append(pkg_name)
+        if pkg.vers == repo_vers:
+            click.secho("Skipping: Version {} already in repo.".format(pkg.vers), fg='yellow')
+            pkgs_skipped.append(pkg_name)
             continue
 
         # Publish
-        repo_publish_deb(pkg_path, release)
+        repo_publish_deb(pkg.path, release)
         click.secho("Publishing {} deb Succeeded".format(pkg_name), fg='green')
 
         # Publish Source
         # ToDo
 
-        succeeded.append(pkg_name)
+        pkgs_succeeded.append(pkg_name)
 
     # Print Success/Failure
     click.secho("")
-    if succeeded:
-        click.secho("Succeeded Packages:\n{}".format(succeeded), fg='green')
-    if skipped:
-        click.secho("Skipped Packages:\n{}".format(skipped), fg='yellow')
-    if failed:
-        click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
+    if pkgs_succeeded:
+        click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_skipped:
+        click.secho("Skipped Packages:\n{}".format(pkgs_skipped), fg='yellow')
+    if pkgs_failed:
+        click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
 
 # CLI Commands

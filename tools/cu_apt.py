@@ -53,6 +53,7 @@ class deb_pkg(abc_pkg):
         super().__init__(path)
         self.name = _dpkg_field(path, 'Package')
         self.vers = _dpkg_field(path, 'Version')
+        self.arch = _dpkg_field(path, 'Architecture')
 
 class abc_repo(metaclass=abc.ABCMeta):
 
@@ -64,7 +65,7 @@ class abc_repo(metaclass=abc.ABCMeta):
 
     def __iter__(self):
 
-        return self.pkgs
+        return iter(self.pkgs)
 
     def __contains__(self, key):
 
