@@ -164,10 +164,10 @@ def download(obj, urls_file):
     build_dir = obj['build_dir']
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
     urls_file = os.path.abspath(urls_file)
+    pkgs_succeeded = []
+    pkgs_failed = []
 
     # Download Packages
-    succeeded = []
-    failed = []
     os.makedirs(deb_out_dir, exist_ok=True)
     with open(urls_file, 'r') as url_fle:
         for line in url_fle:
@@ -181,21 +181,23 @@ def download(obj, urls_file):
                 req = requests.get(url, stream=True)
                 if req.status_code == 200:
                     click.secho("{} Download Succeeded".format(pkg_name), fg='green')
-                    succeeded.append(pkg_name)
                     with open(pkg_path, 'wb') as deb_fle:
                         req.raw.decode_content = True
                         shutil.copyfileobj(req.raw, deb_fle)
+                    pkgs_succeeded.append(pkg_name)
                 else:
                     click.secho("{} Download Failed: {} Error".format(pkg_name, req.status_code),
                                 err=True, fg='red')
-                    failed.append(pkg_name)
+                    pkgs_failed.append(pkg_name)
 
     # Print Success/Failure
     click.secho("")
-    if succeeded:
-        click.secho("Succeeded Packages:\n{}".format(succeeded), fg='green')
-    if failed:
-        click.secho("Failed Packages:\n{}".format(failed), err=True, fg='red')
+    if pkgs_succeeded:
+        pkgs_succeeded.sort()
+        click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_failed:
+        pkgs_failed.sort()
+        click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
 
 @click.command()
@@ -254,7 +256,7 @@ def publish(obj, repo_dir, release, major_vers):
     deb_repo = cu_apt.deb_repo(out_dir)
 
     # Publish Packages
-    for pkg_name in deb_repo:
+    for pkg_name in sorted(deb_repo):
 
         # Get Package Info
         pkg = deb_repo[pkg_name]
@@ -299,10 +301,13 @@ def publish(obj, repo_dir, release, major_vers):
     # Print Success/Failure
     click.secho("")
     if pkgs_succeeded:
+        pkgs_succeeded.sort()
         click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
     if pkgs_skipped:
+        pkgs_skipped.sort()
         click.secho("Skipped Packages:\n{}".format(pkgs_skipped), fg='yellow')
     if pkgs_failed:
+        pkgs_failed.sort()
         click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
 

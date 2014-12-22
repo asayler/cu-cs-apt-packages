@@ -119,6 +119,10 @@ class deb_repo(abc_repo):
                 base, ext = os.path.splitext(path)
                 if ext == ".deb":
                     pkg = deb_pkg(path)
+                    # todo: handle packages with same name better (e.g arch, etc)
+                    if pkg.name in pkgs:
+                        if pkg.vers < pkgs[pkg.name].vers:
+                            continue
                     pkgs[pkg.name] = pkg
                 else:
                     pass
