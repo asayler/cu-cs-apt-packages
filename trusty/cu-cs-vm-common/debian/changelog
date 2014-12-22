@@ -1,3 +1,9 @@
+cu-cs-vm-common (1501.1.0) trusty-1501; urgency=medium
+
+  * Added user to vboxsf group
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 15:52:01 -0700
+
 cu-cs-vm-common (1501.0.0) trusty-1501; urgency=medium
 
   * Initial Release (Spring 15)

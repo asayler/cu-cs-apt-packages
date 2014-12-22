@@ -4,5 +4,15 @@
 # CS CS VM Package
 # postinst Script
 
-schema_dir="/usr/share/glib-2.0/schemas"
-glib-compile-schemas "${schema_dir}"
+echo "Compiling gschema"
+glib-compile-schemas "/usr/share/glib-2.0/schemas"
+
+# Add user to vboxsf group to facilitate shared folders
+cnt=$(egrep -c -i "^vboxsf" /etc/group)
+if [[ $cnt > 0 ]]
+then
+    echo "Adding user to vboxsf group"
+    usermod -a -G vboxsf user
+else
+    echo "No vboxsf group found"
+fi
