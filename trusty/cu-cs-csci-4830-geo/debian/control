@@ -7,7 +7,7 @@ Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base
 Depends: grass, grass-dev, grass-doc, grass-dev-doc, grass-gui,
  qgis, libqgis-dev, qgis-plugin-grass,
- postgresql. postgresql-client, postgresql-contrib, postgresql-doc, postgis,
+ postgresql, postgresql-client, postgresql-contrib, postgresql-doc, postgis,
  gdal-bin, libgdal-dev, python-gdal, libgdal-doc,
  libgeos, libgeos-dev, libgeos-doc, libproj0, libproj-dev,
  proj-bin, proj-data, libshp0, libshp-dev, shapelib,
