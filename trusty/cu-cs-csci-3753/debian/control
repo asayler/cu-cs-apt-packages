@@ -13,4 +13,4 @@ Depends: asciidoc, attr, attr-dev, crash, fakeroot, fuse,
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Packages for Unversity of Colorado CSCI-3753 Course (Operating Systems)
+Description: Packages for Uinversity of Colorado CSCI-3753 Course (Operating Systems)
