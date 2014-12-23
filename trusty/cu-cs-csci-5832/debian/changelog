@@ -1,3 +1,9 @@
+cu-cs-csci-5832 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 17:56:57 -0700
+
 cu-cs-csci-5832 (1408-1.0) trusty; urgency=medium
 
   * Updated to Trusty

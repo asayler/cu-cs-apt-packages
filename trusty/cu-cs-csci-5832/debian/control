@@ -9,4 +9,4 @@ Depends: python-nltk
 Architecture: all
 Copyright: copyright
 Changelog: changelog
-Description: Packages for Unversity of Colorado CSCI-5832 Course (NLP)
+Description: Packages for University of Colorado CSCI-5832 Course (NLP)
