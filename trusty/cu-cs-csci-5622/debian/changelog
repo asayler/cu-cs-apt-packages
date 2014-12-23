@@ -1,3 +1,9 @@
+cu-cs-csci-5622 (1501.1.0) trusty-1501; urgency=medium
+
+  * Added libboost
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 17:43:16 -0700
+
 cu-cs-csci-5622 (1501.0.1) trusty-1501; urgency=medium
 
   * Fixed postinst script using wrong requirments.txt bug
