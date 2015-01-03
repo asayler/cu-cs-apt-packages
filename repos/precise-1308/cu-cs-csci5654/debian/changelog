@@ -1,0 +1,17 @@
+cu-cs-csci5654 (0.1-0ubuntu3) precise; urgency=low
+
+  * Resigned with asayler's key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 10:39:36 -0600
+
+cu-cs-csci5654 (0.1-0ubuntu2) precise; urgency=low
+
+  * Add python-glpk
+
+ -- Matthew Monaco <matthew.monaco@colorado.edu>  Sat, 07 Sep 2013 21:31:33 -0600
+
+cu-cs-csci5654 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Matthew Monaco <matthew.monaco@colorado.edu>  Thu, 05 Sep 2013 12:32:45 -0600

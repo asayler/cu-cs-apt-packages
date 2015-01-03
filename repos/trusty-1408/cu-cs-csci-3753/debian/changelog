@@ -1,0 +1,23 @@
+cu-cs-csci-3753 (1408-1.1) trusty; urgency=medium
+
+  * Fixed fuse-utils -> fuse
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 23 Aug 2014 00:35:40 -0600
+
+cu-cs-csci-3753 (1408-1.0) trusty; urgency=medium
+
+  * Updated to Trusty
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 22 Aug 2014 23:08:59 -0600
+
+cu-cs-csci-3753 (0.1-0ubuntu2) precise; urgency=high
+
+  * Added missing kernel-package package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 17 Jan 2013 18:04:58 -0700
+
+cu-cs-csci-3753 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sat, 12 Jan 2013 13:00:00 -0600

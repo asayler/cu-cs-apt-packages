@@ -1,0 +1,11 @@
+cu-cs-csci5535 (0.1-0ubuntu2) precise; urgency=high
+
+  * Resigned with asayler's key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 10:07:57 -0600
+
+cu-cs-csci5535 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Matthew Monaco <matthew.monaco@colorado.edu>  Thu, 05 Sep 2013 12:32:45 -0600

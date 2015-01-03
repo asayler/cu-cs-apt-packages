@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci4753
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, gcc, gcc-doc, gcc-multilib, kcachegrind, python, python-dev, python-doc, python-simpy, python-simpy-doc, python-simpy-gui, r-base, r-base-dev, r-doc-info, rstudio
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for Unversity of Colorado CSCI4753 Course (Performance Analysis)

@@ -1,0 +1,17 @@
+cu-cs-csci3202 (0.1-0ubuntu3) precise; urgency=low
+
+  * Added postinst script to set java7 as default
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 16:09:14 -0600
+
+cu-cs-csci3202 (0.1-0ubuntu2) precise; urgency=high
+
+  * Updated ipython requirement to 0.13.2+
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 19:41:22 -0600
+
+cu-cs-csci3202 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 25 Aug 2013 22:55:33 -0600

@@ -1,0 +1,11 @@
+cu-cs-foundations-apt (0.1-0ubuntu2) precise; urgency=high
+
+  * Added cs-colorado-edu.list
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:34:01 -0600
+
+cu-cs-foundations-apt (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 26 Aug 2013 20:06:33 -0600

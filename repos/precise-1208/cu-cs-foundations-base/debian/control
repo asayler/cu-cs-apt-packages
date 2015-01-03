@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-base
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: binutils, binutils-doc, build-essential, ddd, ddd-doc, emacs | emacs23 | emacs23-nox, gdb, gdb-doc, geany, geany-plugins, geany-plugins, git, git-doc, manpages, manpages-dev, manpages-posix, manpages-posix-dev, rsync, screen, ssh, valgrind, vim | vim-nox, vim-doc
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Base packages for Unversity of Colorado CS Foundations Courses 

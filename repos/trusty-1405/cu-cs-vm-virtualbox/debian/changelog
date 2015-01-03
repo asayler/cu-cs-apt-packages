@@ -1,0 +1,5 @@
+cu-cs-vm-virtualbox (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 08 May 2014 23:33:33 -0600

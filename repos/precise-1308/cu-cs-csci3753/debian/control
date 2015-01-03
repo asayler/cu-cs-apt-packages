@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci3753
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: asciidoc, attr, attr-dev, cu-cs-foundations-base, crash, fakeroot, fuse-utils, gcc, gcc-doc, gcc-multilib, kcachegrind, kernel-package, kernel-wedge, kexec-tools, libelf-dev, libfuse-dev, libncurses5, libncurses5-dev, libssl-dev, libssl-doc, libssl1.0.0, makedumpfile, r-base, r-base-dev
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for Unversity of Colorado CSCI-3753 Course (Operating Systems)

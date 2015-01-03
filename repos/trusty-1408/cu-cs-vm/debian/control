@@ -1,0 +1,21 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-vm
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm
+Depends: linux-generic, linux-image-generic, linux-headers-generic,
+ xserver-xorg, libgl1-mesa-glx, libglib2.0-bin,
+ zerofree, secure-delete
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: ./cu-cs-vm-sudoers /etc/sudoers.d/
+       ./cu-cs-vm.pkla /etc/polkit-1/localauthority/30-site.d/
+       ./CU-CS-VM-Background.png /usr/share/backgrounds/
+       ./CU-CS-VM-Background-XFCE.png /usr/share/xfce4/backdrops/
+       ./90_cu-cs-vm.gschema.override /usr/share/glib-2.0/schemas/
+Description: Virtual Machine Packages for University of Colorado, Dept of CS

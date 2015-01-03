@@ -1,0 +1,23 @@
+cu-cs-keyring (3-0) precise; urgency=high
+
+  * Remove Matt's key, for now (matt)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 27 Sep 2013 10:39:16 -0600
+
+cu-cs-keyring (2-0) precise; urgency=high
+
+  * Updating Matt's key
+
+ -- Matt Monaco <matthew.monaco@colorado.edu>  Wed, 11 Sep 2013 11:47:16 -0600
+
+cu-cs-keyring (1-2ubuntu1) precise; urgency=high
+
+  * Resigning with asayler's key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 10:03:16 -0600
+
+cu-cs-keyring (1-2) precise; urgency=high
+
+  * Initial release.
+
+ -- Matt Monaco <matthew.monaco@colorado.edu>  Fri, 06 Sep 2013 07:37:18 -0600

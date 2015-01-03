@@ -1,0 +1,11 @@
+cu-cs-langs (1405-1.1) trusty; urgency=medium
+
+  * Removed extra python packages
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 17 Jun 2014 23:51:10 -0600
+
+cu-cs-langs (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:03:33 -0600

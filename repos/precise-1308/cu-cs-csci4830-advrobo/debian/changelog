@@ -1,0 +1,62 @@
+cu-cs-csci4830-advrobo (0.1-0ubuntu9) precise; urgency=high
+
+  * Merged more of Dave Coleman's new package dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 30 Sep 2013 20:19:33 -0600
+	
+cu-cs-csci4830-advrobo (0.1-0ubuntu8) precise; urgency=high
+
+  * Merged Dave Coleman's new package dependencies
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 30 Sep 2013 14:36:47 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu7) precise; urgency=low
+
+  * Fixed lack of commas between packages
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 25 Sep 2013 13:26:11 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu6) precise; urgency=low
+
+  * Add ros-hydro-turtlebot-simulator ros-hydro-turtlebot-apps
+    ros-hydro-turtlebot-rviz-launchers (matt)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 20 Sep 2013 12:23:24 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu5) precise; urgency=low
+
+  * Fix script to not fail after 'rosdep init'
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Tue, 17 Sep 2013 07:38:42 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu4) precise; urgency=low
+
+  * Add python-wstool
+  * Drop 'rosdep update' from postinst, this command works on a user's home
+    directory, which is not appropriate on the package level
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 16 Sep 2013 17:26:07 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu3) precise; urgency=low
+
+  * Put Andy's key at top
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 09:02:07 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu3) precise; urgency=low
+
+  * Upgrade to ROS Hydro
+
+ -- Matt Monaco <matthew.monaco@colorado.edu>  Wed, 11 Sep 2013 09:02:06 -0600
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu2) precise; urgency=low
+
+  * Removed automatic .bashrc config
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 17 Jan 2013 21:19:27 -0700
+
+cu-cs-csci4830-advrobo (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 17 Jan 2013 20:33:33 -0600

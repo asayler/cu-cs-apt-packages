@@ -1,0 +1,41 @@
+cu-cs-foundations-csel (0.2-0ubuntu5) precise; urgency=high
+
+  * Added cu-cs-csci3155 package (programming languages)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Tue, 24 Sep 2013 21:59:32 -0600
+
+cu-cs-foundations-csel (0.2-0ubuntu4) precise; urgency=high
+
+  * Added cu-cs-csci4273 package (network systems)
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 16 Sep 2013 20:59:32 -0600
+
+cu-cs-foundations-csel (0.2-0ubuntu3) precise; urgency=low
+
+  * Moved extra packages to base repo
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 15 Sep 2013 20:49:50 -0600
+
+cu-cs-foundations-csel (0.2-0ubuntu2) precise; urgency=low
+
+  * Add some basics
+
+ -- Matthew Monaco <matthew.monaco@colorado.edu>  Thu, 12 Sep 2013 16:56:13 -0600
+
+cu-cs-foundations-csel (0.1-0ubuntu3) precise; urgency=low
+
+  * Removed unused 3308 course
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 18:04:22 -0600
+
+cu-cs-foundations-csel (0.1-0ubuntu2) precise; urgency=low
+
+  * Add some classes 
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 05 Sep 2013 15:33:53 -0600
+
+cu-cs-foundations-csel (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 25 Aug 2013 13:20:33 -0600

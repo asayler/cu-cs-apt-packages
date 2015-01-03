@@ -1,0 +1,15 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-vm
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Pre-Depends: cu-cs-foundations-vm-grub
+Depends: linux-virtual, linux-image-virtual, linux-image-extra-virtual
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Files: ./CU-CS-VM-Background.png /usr/share/backgrounds/
+Postinst: postinst
+Prerm: prerm
+Description: Virtual Machine packages for University of Colorado CS Foundations VirutalBox VM

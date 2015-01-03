@@ -1,0 +1,47 @@
+cu-cs-base (1408-1.3ubuntu1) trusty; urgency=medium
+
+  * Added libsqlite3-dev [csel #1076]
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Mon, 08 Dec 2014 19:05:39 -0700
+
+cu-cs-base (1408-1.3) trusty; urgency=medium
+
+  * Added wget and lynx
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 12 Oct 2014 12:19:17 -0600
+
+cu-cs-base (1408-1.2) trusty; urgency=medium
+
+  * Added cmake
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 28 Sep 2014 22:45:54 -0600
+
+cu-cs-base (1408-1.1) trusty; urgency=medium
+
+  * Added cu-cs-apt-other package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 22:12:59 -0600
+
+cu-cs-base (1408-1.0) trusty; urgency=medium
+
+  * Moved LaTeX to extra
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:54:04 -0600
+
+cu-cs-base (1405-1.2) trusty; urgency=medium
+
+  * Added ddd and kcachegrind
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 24 Jun 2014 23:12:38 -0600
+
+cu-cs-base (1405-1.1) trusty; urgency=low
+
+  * Added latex
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:34:45 -0600
+
+cu-cs-base (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 08 May 2014 21:33:33 -0600

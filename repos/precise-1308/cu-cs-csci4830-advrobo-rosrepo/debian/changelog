@@ -1,0 +1,17 @@
+cu-cs-csci4830-advrobo-rosrepo (0.1-0ubuntu3) precise; urgency=low
+
+  * Resigned with asayler's key
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 11 Sep 2013 10:06:52 -0600
+
+cu-cs-csci4830-advrobo-rosrepo (0.1-0ubuntu2) precise; urgency=low
+
+  * Cleanup repo on uninstall
+
+ -- Matthew Monaco <matthew.monaco@colorado.edu>  Wed, 11 Sep 2013 08:20:13 -0600
+
+cu-cs-csci4830-advrobo-rosrepo (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 17 Jan 2013 20:33:33 -0600

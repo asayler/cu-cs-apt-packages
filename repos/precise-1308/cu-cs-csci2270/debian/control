@@ -1,0 +1,15 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci2270
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, g++, g++-multilib,
+ openjdk-7-jdk, openjdk-7-jre, openjdk-7-doc,
+ ant, ant-doc, eclipse
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Postrm: postrm
+Description: Packages for Unversity of Colorado CSCI-2270 Course 

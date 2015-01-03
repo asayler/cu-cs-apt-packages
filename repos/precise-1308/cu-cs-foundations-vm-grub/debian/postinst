@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Fixes occasional grub-pc recofngiure issue where user must select new install location
+echo "grub-pc grub-pc/install_devices multiselect /dev/sda" | sudo debconf-set-selections
+echo "grub-pc grub-pc/install_devices_disks_changed multiselect /dev/sda" | sudo debconf-set-selections
+echo "grub-pc grub-pc/hidden_timeout boolean true" | sudo debconf-set-selections
+echo "grub-pc grub-pc/timeout string 10" | sudo debconf-set-selections
+echo "grub-pc grub2/linux_cmdline string" | sudo debconf-set-selections
+echo "grub-pc grub2/linux_cmdline_default string quiet splash" | sudo debconf-set-selections
+sudo dpkg-reconfigure -f noninteractive grub-pc

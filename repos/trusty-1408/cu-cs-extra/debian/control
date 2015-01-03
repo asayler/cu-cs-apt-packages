@@ -1,0 +1,12 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-extra
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt
+Depends: texlive-latex3, texlive-latex-recommended, texlive-latex-extra
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Extra Packages for University of Colorado, Dept. of CS

@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci4273
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, mtr-tiny
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: CSCI 4273/5273: Network Systems (University of Colorado, Boulder)

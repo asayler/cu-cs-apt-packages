@@ -1,0 +1,17 @@
+cu-cs-csci4753 (0.1-0ubuntu3) precise; urgency=low
+
+  * Added rstudio package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Wed, 16 Jan 2013 22:27:28 -0700
+
+cu-cs-csci4753 (0.1-0ubuntu2) precise; urgency=high
+
+  * Added python-simpy packages
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 13 Jan 2013 23:06:13 -0700
+
+cu-cs-csci4753 (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 13 Jan 2013 17:00:00 -0600

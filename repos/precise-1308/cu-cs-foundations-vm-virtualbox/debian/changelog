@@ -1,0 +1,17 @@
+cu-cs-foundations-vm-virtualbox (0.2-0ubuntu1) precise; urgency=high
+
+  * Added generic VM dependency
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 27 May 2013 00:03:59 -0600
+
+cu-cs-foundations-vm-virtualbox (0.1-0ubuntu2) precise; urgency=high
+
+  * Removed unnecessary dependency packages 
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 26 Aug 2012 14:59:39 -0600
+
+cu-cs-foundations-vm-virtualbox (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Thu, 23 Aug 2012 21:06:05 -0600

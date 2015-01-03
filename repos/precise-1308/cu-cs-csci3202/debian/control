@@ -1,0 +1,13 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci3202
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, python, python-dev, python-doc, python-numpy, python-scipy, python-matplotlib, python-pandas, ipython (>= 0.13.2), ipython-doc (>= 0.13.2), ipython-notebook (>= 0.13.2), ipython-qtconsole (>= 0.13.2)
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Postrm: postrm
+Description: Packages for University of Colorado CSCI-3202 Course (Intro to AI)

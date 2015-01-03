@@ -1,0 +1,12 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci3308
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, sqlite3, libsqlite3-dev, postgresql, postgresql-server-dev-9.1, openssl, libssl-dev, zlib1g, zlib1g-dev, zlibc, libxslt-dev, libxml2-dev, libreadline6-dev, g++, g++-multilib, default-jre, texinfo, ruby1.9.3, sphinxsearch
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Description: Package for University of Colorado CSCI-3308 Course 

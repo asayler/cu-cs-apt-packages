@@ -1,0 +1,16 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-apt-ubuntu
+Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
+Pre-Depends:
+Depends:
+Suggests:
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Preinst: preinst.sh
+Postrm: postrm.sh
+Files: ./ubuntu.list /etc/apt/sources.list.d/
+Description: apt repo package for standard ubuntu sources

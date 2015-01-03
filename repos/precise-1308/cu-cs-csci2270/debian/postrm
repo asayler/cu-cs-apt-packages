@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 2270 Package
+# postrm Script
+# Purpose: Placeholder
+# Created 09/2013
+
+echo "Nothing to cleanup"

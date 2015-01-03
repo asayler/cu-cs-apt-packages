@@ -1,0 +1,13 @@
+Section: extra
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-foundations-vm-grub
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Pre-Depends: grub-pc
+Depends:
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Description: Virtual Machine bootloader packages for University of Colorado CS Foundations VirutalBox VM

@@ -1,0 +1,11 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci1300
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: cu-cs-foundations-base, python, python-dev, python-doc, python-tk, g++, g++-multilib, jython, jython-doc, openjdk-7-jdk, openjdk-7-jre, openjdk-7-doc
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for Unversity of Colorado CSCI-1300 Course

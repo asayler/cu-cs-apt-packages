@@ -1,0 +1,14 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci4830-advrobo
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Pre-Depends: cu-cs-csci4830-advrobo-rosrepo
+Depends: cu-cs-foundations-base, doxygen, ros-groovy-desktop-full, ros-groovy-moveit-core, ros-groovy-rqt, python, python-dev, python-doc, python-rosdep, python-rosinstall
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Postrm: postrm
+Description: Packages for Unversity of Colorado CSCI-4830 Advanced Robotics Course 

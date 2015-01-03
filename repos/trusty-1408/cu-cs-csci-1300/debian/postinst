@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 1300 Package
+# postinst Script
+
+set -e
+
+echo "Overwriting default geany python config"
+cp /usr/share/cu-cs-csci-1300/geany/* /usr/share/geany/
+
+echo "Installing PIP packages"
+pip install -r /usr/share/cu-cs-csci-1300/python/requirments.txt
+pip3 install -r /usr/share/cu-cs-csci-1300/python/requirments.txt

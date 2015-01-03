@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 1300 Package
+# postinst Script
+# Purpose: Sets Java 7 to default
+# Created 09/2013
+
+priority=1071
+
+machine_type=$(uname -i)
+
+if [ "${machine_type}" == "x86_64" ]
+then
+    type_path="amd64"
+elif [ "${machine_type}" == "i386" ]
+then
+    type_path="i386"
+else
+    echo "Unknown machine type"
+    exit 1
+fi
+
+echo "Detected machine type ${type_path}"
+echo "Updating Java7 alternatives to priority ${priority}"
+
+# java
+update-alternatives --install /usr/bin/java \
+		              java \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/jre/bin/java ${priority} \
+		    --slave /usr/share/man/man1/java.1.gz \
+		            java.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/jre/man/man1/java.1.gz
+
+# javac
+update-alternatives --install /usr/bin/javac \
+		              javac \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/bin/javac ${priority} \
+		    --slave /usr/share/man/man1/javac.1.gz \
+		            javac.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/man/man1/javac.1.gz
+
+# javah
+update-alternatives --install /usr/bin/javah \
+		              javah \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/bin/javah ${priority} \
+		    --slave /usr/share/man/man1/javah.1.gz \
+		            javah.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/man/man1/javah.1.gz
+
+# javap
+update-alternatives --install /usr/bin/javap \
+		              javap \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/bin/javap ${priority} \
+		    --slave /usr/share/man/man1/javap.1.gz \
+		            javap.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/man/man1/javap.1.gz
+
+# javaws
+update-alternatives --install /usr/bin/javaws \
+		              javaws \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/jre/bin/javaws ${priority} \
+		    --slave /usr/share/man/man1/javaws.1.gz \
+		            javaws.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/jre/man/man1/javaws.1.gz
+
+# javadoc
+update-alternatives --install /usr/bin/javadoc \
+		              javadoc \
+		              /usr/lib/jvm/java-7-openjdk-${type_path}/bin/javadoc ${priority} \
+		    --slave /usr/share/man/man1/javadoc.1.gz \
+		            javadoc.1.gz \
+		            /usr/lib/jvm/java-7-openjdk-${type_path}/man/man1/javadoc.1.gz

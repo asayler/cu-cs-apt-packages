@@ -1,0 +1,11 @@
+cu-cs-csci-2270 (1405-1.1) trusty; urgency=medium
+
+  * Fixed Java default script to recognize i686 arch
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 02 Jun 2014 20:13:25 -0600
+
+cu-cs-csci-2270 (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 23:03:33 -0600

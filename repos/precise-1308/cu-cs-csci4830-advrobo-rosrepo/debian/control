@@ -1,0 +1,14 @@
+Section: extra
+Priority: optional
+Homepage: foundation.cs.colorado.edu
+Standards-Version: 3.9.2
+Package: cu-cs-csci4830-advrobo-rosrepo
+Maintainer: Andy Sayler (asayler) <andrew.sayler@colorado.edu>
+Depends: 
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Files: ./ros-latest.list /etc/apt/sources.list.d/
+ ./ros.gpg /etc/apt/trusted.gpg.d/
+Description: Packags for Unversity of Colorado CSCI-4830 Advanced Robotics Course ROS Repo

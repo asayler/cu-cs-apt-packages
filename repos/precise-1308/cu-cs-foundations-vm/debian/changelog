@@ -1,0 +1,35 @@
+cu-cs-foundations-vm (0.2-0ubuntu3) precise; urgency=high
+
+  * Added sound support
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 21 Oct 2013 21:54:28 -0600
+
+cu-cs-foundations-vm (0.2-0ubuntu2) precise; urgency=high
+
+  * Added cu-cs-foundations-vm-grub package
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 14 Oct 2013 22:54:56 -0600
+
+cu-cs-foundations-vm (0.2-0ubuntu1) precise; urgency=high
+
+  * Updated for Fall 2013
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Fri, 23 Aug 2013 11:16:21 -0600
+
+cu-cs-foundations-vm (0.1-0ubuntu3) precise; urgency=high
+
+  * Fixed background file location
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 27 May 2013 15:34:37 -0600
+
+cu-cs-foundations-vm (0.1-0ubuntu2) precise; urgency=low
+
+  * Added desktop background file
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Mon, 27 May 2013 15:22:53 -0600
+
+cu-cs-foundations-vm (0.1-0ubuntu1) precise; urgency=high
+
+  * Initial release
+
+ -- Andy Sayler (asayler) <andrew.sayler@colorado.edu>  Sun, 26 May 2013 22:00:00 -0600

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Andy Sayler
+# cu-cs-csci4830-advrobo-rosrepo Package
+# postrm Script
+# Purpose: Restores previous state
+# Created 10/2012
+
+# ToDo - Fix up keys and repo list

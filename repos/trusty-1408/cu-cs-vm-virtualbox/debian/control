@@ -1,0 +1,12 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-vm-virtualbox
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: dkms, cu-cs-vm
+Depends: virtualbox-guest-dkms, virtualbox-guest-utils, virtualbox-guest-x11
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: VirtualBox guest packages for Unversity of Colorado CS VirutalBox VM

@@ -1,0 +1,26 @@
+[com.canonical.unity-greeter]
+background-color='#000000000000'
+background='/usr/share/backgrounds/CU-CS-VM-Background.png'
+draw-grid=false
+
+[org.gnome.desktop.background]
+primary-color='#000000000000'
+secondary-color='#000000000000'
+picture-options='scaled'
+picture-uri='file:///usr/share/backgrounds/CU-CS-VM-Background.png'
+
+[org.gnome.desktop.screensaver]
+logout-enabled=false
+ubuntu-lock-on-suspend=false
+
+[org.gnome.desktop.session]
+idle-delay=0
+
+[com.canonical.Unity.Lenses]
+remote-content-search='none'
+
+[com.canonical.Unity]
+integrated-menus=true
+
+[com.canonical.Unity.Launcher]
+favorites=['application://ubiquity.desktop', 'application://nautilus.desktop', 'application://firefox.desktop', 'application://libreoffice-writer.desktop', 'application://libreoffice-calc.desktop', 'application://libreoffice-impress.desktop', 'application://ubuntu-software-center.desktop', 'application://ubuntu-amazon-default.desktop', 'application://unity-control-center.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']

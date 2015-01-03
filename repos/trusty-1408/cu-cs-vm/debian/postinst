@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+
+schema_dir="/usr/share/glib-2.0/schemas"
+background_schema="${schema_dir}/90_cu-cs-vm_background.gschema.override"
+
+# Set Desktop Background
+glib-compile-schemas "${schema_dir}"
+
+exit 0

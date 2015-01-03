@@ -1,0 +1,17 @@
+# Packages
+deb  http://us.archive.ubuntu.com/ubuntu  trusty            main restricted universe multiverse
+deb  http://us.archive.ubuntu.com/ubuntu  trusty-security   main restricted universe multiverse
+deb  http://us.archive.ubuntu.com/ubuntu  trusty-updates    main restricted universe multiverse
+deb  http://us.archive.ubuntu.com/ubuntu  trusty-backports  main restricted universe multiverse
+deb  http://us.archive.ubuntu.com/ubuntu  trusty-proposed   main restricted universe multiverse
+deb  http://archive.canonical.com/ubuntu  trusty            partner
+deb  http://extras.ubuntu.com/ubuntu      trusty            main
+
+# Sources
+deb-src  http://us.archive.ubuntu.com/ubuntu  trusty            main restricted universe multiverse
+deb-src  http://us.archive.ubuntu.com/ubuntu  trusty-security   main restricted universe multiverse
+deb-src  http://us.archive.ubuntu.com/ubuntu  trusty-updates    main restricted universe multiverse
+deb-src  http://us.archive.ubuntu.com/ubuntu  trusty-backports  main restricted universe multiverse
+deb-src  http://us.archive.ubuntu.com/ubuntu  trusty-proposed   main restricted universe multiverse
+deb-src  http://archive.canonical.com/ubuntu  trusty            partner
+deb-src  http://extras.ubuntu.com/ubuntu      trusty            main

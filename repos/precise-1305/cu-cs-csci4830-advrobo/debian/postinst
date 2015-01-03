@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Andy Sayler
+# cu-cs-csci4830-advrobo Package
+# postinst Script
+# Purpose: Setup ROS
+# Created 01/2013
+
+rosdep init
+rosdep update
+# The following commands must be run manully by the user after the install
+#echo "source /opt/ros/groovy/setup.bash" >> ~/.bashrc
+#~/.bashrc

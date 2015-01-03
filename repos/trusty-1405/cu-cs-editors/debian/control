@@ -1,0 +1,17 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-editors
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt
+Depends: emacs24 | emacs24-nox | emacs23 | emacs23-nox | emacs,
+ vim | vim-gtk | vim-gnome | vim-nox, vim-doc,
+ gedit, gedit-plugins,
+ geany, geany-plugins,
+ codeblocks, codeblocks-contrib,
+ nano
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Editors packages for Unversity of Colorado CS Courses 
