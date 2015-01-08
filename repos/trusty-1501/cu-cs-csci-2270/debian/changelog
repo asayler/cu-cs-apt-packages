@@ -1,3 +1,9 @@
+cu-cs-csci-2270 (1501.0.1) trusty-1501; urgency=medium
+
+  * Added support for base nox
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 20:57:22 -0700
+
 cu-cs-csci-2270 (1501.0.0) trusty-1501; urgency=medium
 
   * Updated for Spring 15
