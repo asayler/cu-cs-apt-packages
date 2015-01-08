@@ -1,0 +1,5 @@
+cu-cs-csci-3308-common (1501.0.0) trusty-1501; urgency=medium
+
+  * Split form main 3308 package and updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 03 Jan 2015 13:00:33 -0700
