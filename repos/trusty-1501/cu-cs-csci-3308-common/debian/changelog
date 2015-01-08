@@ -1,3 +1,9 @@
+cu-cs-csci-3308-common (1501.0.2) trusty-1501; urgency=medium
+
+  * Fixed java 7 package names
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 21:47:32 -0700
+
 cu-cs-csci-3308-common (1501.0.1) trusty-1501; urgency=medium
 
   * Fixed Java 8 bug; Switched to Java 7
