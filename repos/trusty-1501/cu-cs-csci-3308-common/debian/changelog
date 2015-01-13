@@ -1,3 +1,9 @@
+cu-cs-csci-3308-common (1501.1.0) truisty-1501; urgency=medium
+
+  * Added Java 6
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 Jan 2015 20:50:05 -0700
+
 cu-cs-csci-3308-common (1501.0.2) trusty-1501; urgency=medium
 
   * Fixed java 7 package names
