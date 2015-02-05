@@ -1,3 +1,9 @@
+cu-cs-csci-2270 (1501.1.0) trusty-1501; urgency=medium
+
+  * Added curl and json libs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Feb 2015 21:29:59 -0700
+
 cu-cs-csci-2270 (1501.0.1) trusty-1501; urgency=medium
 
   * Added support for base nox

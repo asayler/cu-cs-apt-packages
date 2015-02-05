@@ -8,6 +8,8 @@ Pre-Depends: cu-cs-base | cu-cs-base-nox
 Depends: codeblocks, codeblocks-contrib,
  gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib,
  g++-4.8, g++-4.8-multilib,
+ curl, libcurl4-openssl-dev, libcurl4-doc,
+ libjson0, libjson0-dev,
  qtcreator, qtcreator-doc, qt-sdk,
  gdb, ddd, valgrind
 Architecture: all
