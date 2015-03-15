@@ -1,0 +1,5 @@
+cu-cs-sudoers (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial release
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 15 Mar 2015 03:33:33 -0600

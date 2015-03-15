@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CU CS sudoers Package
+# postinst Script
+
+echo "No postinst Script"
+exit 0
