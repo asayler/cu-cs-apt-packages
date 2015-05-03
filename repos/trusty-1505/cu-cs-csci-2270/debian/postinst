@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 2270 Package
+# postinst Script
+
+echo "Nothing to setup"
+exit 0
