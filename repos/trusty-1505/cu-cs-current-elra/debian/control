@@ -6,7 +6,7 @@ Package: cu-cs-current-elra
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-nox, cu-cs-editors-nox, cu-cs-langs, cu-cs-extra
 Depends: cu-cs-csci-1300, cu-cs-csci-1310, cu-cs-csci-1320,
- cu-cs-csci-2270, cu-cs-csci-2400,
+ cu-cs-csci-2270-nox, cu-cs-csci-2400,
  cu-cs-csci-3155, cu-cs-csci-3308-nox, cu-cs-csci-3753,
  cu-cs-csci-4239, cu-cs-csci-4830-geo,
  cu-cs-csci-5622, cu-cs-csci-5832

@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-2270
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-csci-2270-common
+Pre-Depends: cu-cs-base | cu-cs-base-nox, cu-cs-csci-2270-common
 Depends: codeblocks, codeblocks-contrib, ddd, kacahegrind
 Architecture: all
 Copyright: copyright

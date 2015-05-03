@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-3308-common
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-base
+Pre-Depends: cu-cs-base | cu-cs-base-nox
 Depends: git, subversion,
  curl, wget,
  check, make, build-essential,
