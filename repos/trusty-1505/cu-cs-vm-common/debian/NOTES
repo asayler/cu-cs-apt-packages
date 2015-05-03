@@ -1,0 +1,15 @@
+VM Setup Process
+
+0. Setup discard, etc
+1. Start with stock Ubuntu 14.04.2 (btrfs-based install)
+2. Run all updates
+3. Add cu-cs-apt package
+4. Install cu-cs-vm-virtualbox package
+5. Run update, autoremove, clean
+6. Tweak Terminal Color Settings -> Tango
+7. Set default launcher icons
+8. Check Dropbox
+9. Create btrfs read-only snapshots
+10. Reboot
+11. Shutdown
+12. Image

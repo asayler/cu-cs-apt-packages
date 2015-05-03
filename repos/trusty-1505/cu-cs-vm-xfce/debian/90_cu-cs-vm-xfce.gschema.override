@@ -1,0 +1,5 @@
+[org.gnome.desktop.background]
+primary-color='#000000000000'
+secondary-color='#000000000000'
+picture-options='scaled'
+picture-uri='file:///usr/share/xfce4/backdrops/CU-CS-VM-Background-XFCE.png'
