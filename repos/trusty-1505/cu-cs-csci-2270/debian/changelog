@@ -1,3 +1,9 @@
+cu-cs-csci-2270 (1505.0.1) trusty-1505; urgency=medium
+
+  * Fixed misspelled package name
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:31:10 -0600
+
 cu-cs-csci-2270 (1505.0.0) trusty-1505; urgency=medium
 
   * Spilt out into X and NoX packages
