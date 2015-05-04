@@ -1,0 +1,6 @@
+cu-cs-csci-2400-common (1505.0.0) trusty-1505; urgency=medium
+
+  * Split out form 2400
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:01:28 -0600

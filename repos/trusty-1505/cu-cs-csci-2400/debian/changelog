@@ -1,0 +1,6 @@
+cu-cs-csci-2400 (1505.0.0) trusty-1505; urgency=medium
+
+  * Split out into nox packages
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:02:44 -0600
