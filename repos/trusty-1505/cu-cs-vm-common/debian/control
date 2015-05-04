@@ -6,7 +6,7 @@ Package: cu-cs-vm-common
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm, dkms
 Depends: linux-generic-lts-utopic, linux-image-generic-lts-utopic, linux-headers-generic-lts-utopic,
- xserver-xorg, libgl1-mesa-utopic,
+ xserver-xorg, libgl1-mesa,
  zerofree, secure-delete,
  virtualbox-guest-dkms, virtualbox-guest-utils, virtualbox-guest-x11,
  open-vm-tools
