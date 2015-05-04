@@ -1,3 +1,9 @@
+cu-cs-vm-common (1505.0.3) trusty-1505; urgency=medium
+
+  * Still wrong package name...
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:29:25 -0600
+
 cu-cs-vm-common (1505.0.2) trusty-1505; urgency=medium
 
   * Fixed bad package name
