@@ -4,7 +4,7 @@ VM Setup Process
 1. Start with stock Ubuntu 14.04.2 (btrfs-based install)
 2. Run all updates
 3. Add cu-cs-apt package
-4. Install cu-cs-vm-virtualbox package
+4. Install cu-cs-vm-<flavor> package
 5. Run update, autoremove, clean
 6. Tweak Terminal Color Settings -> Tango
 7. Set default launcher icons

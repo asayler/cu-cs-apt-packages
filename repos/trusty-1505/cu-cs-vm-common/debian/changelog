@@ -1,3 +1,9 @@
+cu-cs-vm-common (1505.0.1) trusty-1505; urgency=medium
+
+  * Removed Utopic Xorg due to incompatibilty with virtualbox-guest
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:25:10 -0600
+
 cu-cs-vm-common (1505.0.0) trusty-1505; urgency=medium
 
   * Updated for Summer 15
