@@ -1,3 +1,9 @@
+cu-cs-vm-xfce (1505.0.1) trusty-1505; urgency=medium
+
+  * Fixed background
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 20:51:49 -0600
+
 cu-cs-vm-xfce (1505.0.0) trusty-1505; urgency=medium
 
   * Updated for Summer 15
