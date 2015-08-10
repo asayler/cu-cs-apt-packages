@@ -10,7 +10,6 @@ Depends: linux-generic-lts-vivid, linux-image-generic-lts-vivid, linux-headers-g
  xserver-xorg-video-all-lts-vivid, xserver-xorg-input-all-lts-vivid,
  libwayland-egl1-mesa-lts-vivid,
  zerofree, secure-delete,
- virtualbox-guest-dkms, virtualbox-guest-utils, virtualbox-guest-x11,
  open-vm-tools
 Architecture: all
 Copyright: copyright

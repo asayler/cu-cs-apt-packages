@@ -2,7 +2,8 @@ VM Setup Process
 
 0. Setup discard, etc
 1. Start with stock Ubuntu 14.04.3 (btrfs-based install)
-2. Run all updates
+2a. Run all updates
+2b. Install dkms + guest additions (from CD)
 3. Add cu-cs-apt package
 4. Install cu-cs-vm-<flavor> package
 5. Run update, autoremove, clean
