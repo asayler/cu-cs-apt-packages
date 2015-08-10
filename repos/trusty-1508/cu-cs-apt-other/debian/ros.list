@@ -1,0 +1,5 @@
+# Packages
+deb  http://packages.ros.org/ros/ubuntu   trusty  main
+
+# Sources
+deb-src  http://packages.ros.org/ros/ubuntu   trusty  main
