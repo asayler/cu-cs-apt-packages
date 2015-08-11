@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-vm-common
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm, dkms
+Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm, cu-cs-sudoers, dkms
 Depends: linux-generic-lts-vivid, linux-image-generic-lts-vivid, linux-headers-generic-lts-vivid,
  xserver-xorg-lts-vivid, xserver-xorg-core-lts-vivid,
  xserver-xorg-video-all-lts-vivid, xserver-xorg-input-all-lts-vivid,
@@ -16,7 +16,6 @@ Copyright: copyright
 Changelog: changelog
 Postinst: postinst
 Prerm: prerm
-Files: ./cu-cs-vm-sudoers /etc/sudoers.d/
-       ./cu-cs-vm.pkla /etc/polkit-1/localauthority/30-site.d/
+Files: ./cu-cs-vm.pkla /etc/polkit-1/localauthority/30-site.d/
        ./90_cu-cs-vm.gschema.override /usr/share/glib-2.0/schemas/
 Description: Virtual Machine Packages for University of Colorado, Dept of CS
