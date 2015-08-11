@@ -11,8 +11,6 @@ Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
  python3-scipy, python3-numpy, python3-ply,
  gcc-4.8, gcc-4.8-multilib, gcc-4.8-doc,
  g++-4.8, g++-4.8-multilib,
- libsndfile1, libsndfile1-dev, libportaudio2,
- portaudio19-dev, portaudio19-doc,
  gdb, valgrind
 Architecture: all
 Copyright: copyright

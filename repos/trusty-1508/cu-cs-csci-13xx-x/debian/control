@@ -5,7 +5,7 @@ Standards-Version: 3.9.5
 Package: cu-cs-csci-13xx-x
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-x | cu-cs-base-nox, cu-cs-13xx-common,
-Depends: ddd
+Depends: geany, geany-plugins, ddd
 Architecture: all
 Copyright: copyright
 Changelog: changelog
