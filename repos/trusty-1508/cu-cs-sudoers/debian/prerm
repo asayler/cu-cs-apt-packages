@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CU CS sudoers Package
+# prerm Script
+
+echo "No prerm Script"
+exit 0

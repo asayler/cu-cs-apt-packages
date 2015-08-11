@@ -1,0 +1,2 @@
+%admin  ALL=(ALL:ALL)  NOPASSWD:  ALL
+%sudo   ALL=(ALL:ALL)  NOPASSWD:  ALL
