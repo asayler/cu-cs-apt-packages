@@ -6,7 +6,8 @@ Package: cu-cs-csci-1300-common
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-csci-13xx-common
 Depends: libsndfile1, libsndfile1-dev, libportaudio2,
- portaudio19-dev, portaudio19-doc
+ portaudio19-dev, portaudio19-doc,
+ python-pygame
 Architecture: all
 Copyright: copyright
 Changelog: changelog
