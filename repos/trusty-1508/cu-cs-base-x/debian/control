@@ -5,7 +5,7 @@ Standards-Version: 3.9.5
 Package: cu-cs-base-x
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-common
-Depends: kcachegrind
+Depends: ddd, ddd-doc, kcachegrind, git-gui
 Suggests: cu-cs-editors-x, cu-cs-nonfree
 Architecture: all
 Copyright: copyright
