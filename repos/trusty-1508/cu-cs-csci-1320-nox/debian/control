@@ -1,0 +1,12 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-1320-nox
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-csci-13xx-nox | cu-cs-csci-13xx-x, cu-cs-1320-common
+Depends: 
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: NoX Packages for University of Colorado CSCI-1320 Course
