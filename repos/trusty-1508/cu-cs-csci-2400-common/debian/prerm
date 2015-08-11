@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Andy Sayler
+# CSCI 2400 Package
+# prerm Script
+
+# Do Nothing
+echo "Nothing to do in prerm script"
+exit 0
