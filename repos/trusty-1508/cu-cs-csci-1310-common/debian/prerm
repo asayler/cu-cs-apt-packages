@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Andy Sayler
-# CSCI 13XX Package
+# CSCI 1310 Package
 # prerm Script
 
 echo "Nothing to cleanup"
