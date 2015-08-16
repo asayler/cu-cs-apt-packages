@@ -13,18 +13,52 @@ Requirements
 
 * reprepro
 * equivs
+* ./tools/requirements.txt
 
 Auto Build
 ----------
 
 To build and publish automatically, run:
 
+   # Make Tmp Directory
+   $ mkdir /tmp/packages
+
+   # Download Third Party Packages
+   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ download --urls_file ./repos/<REPO>/thirdparty.urls
+
+   # Build CU CS Packages
+   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ build --source-dir ./repos/<REPO>/
+
+   # Publish Packages
+   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ publish --repo_dir /srv/apt/ubuntu/ --release <RELEASE>
+
+Old ways; deprecated:
+
     (precise) ./build && ./publish
     (trusty) ./build_cu-cs.sh && ./get_thirdparty.sh && ./publish_all.sh
 
 Manual Build
 ------------
+
 To build manually, see steps below.
+
+### To Setup GPG Agent
+
+Install gpg-agent (Debian/Ubuntu):
+
+    sudo apt-get install gnupg-agent
+
+Add the following to ~/.profile (Debian/Ubuntu):
+
+    # GPG Agent
+    echo "Setting Up GPG Agent"
+    eval $(gpg-agent --enable-ssh-support --daemon)
+
+Add the following to ~/.bashrc:
+
+    # GPG Agent Setup
+    GPG_TTY=$(tty)
+    export GPG_TTY
 
 ### To Update changelog
 
