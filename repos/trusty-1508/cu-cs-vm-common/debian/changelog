@@ -2,7 +2,7 @@ cu-cs-vm-common (1508.0.0) trusty-1508; urgency=medium
 
   * Updated for Fall 15
 
- -- asayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 14:55:53 -0600
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 14:55:53 -0600
 
 cu-cs-vm-common (1505.0.3) trusty-1505; urgency=medium
 
