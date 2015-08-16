@@ -281,7 +281,7 @@ def publish(obj, repo_dir, release, major_vers):
             else:
                 repo_vers = repo_vers_amd64
         else:
-            repo_vers = get_repo_info(pkg_name, pkg_arch, release, "version")
+            repo_vers = get_repo_info(pkg_name, pkg.arch, release, "version")
 
         # Compare Versions
         if pkg.vers == repo_vers:
