@@ -20,17 +20,17 @@ Auto Build
 
 To build and publish automatically, run:
 
-   # Make Tmp Directory
-   $ mkdir /tmp/packages
+    # Make Tmp Directory
+    $ mkdir /tmp/packages
 
-   # Download Third Party Packages
-   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ download --urls_file ./repos/<REPO>/thirdparty.urls
+    # Download Third Party Packages
+    $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ download --urls_file ./repos/<REPO>/thirdparty.urls
 
-   # Build CU CS Packages
-   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ build --source-dir ./repos/<REPO>/
+    # Build CU CS Packages
+    $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ build --source-dir ./repos/<REPO>/
 
-   # Publish Packages
-   $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ publish --repo_dir /srv/apt/ubuntu/ --release <RELEASE>
+    # Publish Packages
+    $ ./tools/package.py --build_dir /tmp/packages --gpg_dir ~/cu/cu-cs-apt-keys/ publish --repo_dir /srv/apt/ubuntu/ --release <RELEASE>
 
 Old ways; deprecated:
 
