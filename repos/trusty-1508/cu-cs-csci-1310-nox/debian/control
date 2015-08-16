@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-1310-nox
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-csci-13xx-nox | cu-cs-csci-13xx-x, cu-cs-1310-common
+Pre-Depends: cu-cs-csci-13xx-nox | cu-cs-csci-13xx-x, cu-cs-csci-1310-common
 Depends: 
 Architecture: all
 Copyright: copyright

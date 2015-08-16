@@ -1,3 +1,9 @@
+cu-cs-csci-1310-x (1508.0.1) trusty-1508; urgency=medium
+
+  * Fixed bad pre-depends
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 15 Aug 2015 19:10:13 -0600
+
 cu-cs-csci-1310-x (1508.0.0) trusty-1508; urgency=medium
 
   * Split out into 1310-x package
