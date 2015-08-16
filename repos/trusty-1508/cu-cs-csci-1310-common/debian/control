@@ -14,5 +14,5 @@ Copyright: copyright
 Changelog: changelog
 Postinst: postinst
 Prerm: prerm
-Files: ./python/requirments.txt /usr/share/cu-cs-csci-1300/
+Files: ./python/requirments.txt /usr/share/cu-cs-csci-1310/
 Description: Common Packages for University of Colorado CSCI-1310 Course
