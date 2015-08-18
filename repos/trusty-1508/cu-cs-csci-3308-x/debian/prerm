@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Andy Sayler
+# CSCI 3308 Package
+# prerm Script
+
+# Do Nothing
+echo "Nothing to do in postrm script"
+exit 0
