@@ -8,7 +8,8 @@ VM Setup Process
 4. Install cu-cs-vm-<flavor> package
 5. Run update, autoremove, clean
 6. Tweak Terminal Color Settings -> Tango
-7. Set default launcher/desktop icons + background
+7a. Set default launcher/desktop icons + background
+7b. Disable screen lock, screensaver, etc
 8. Check Dropbox
 9. Clear History
 10. Create btrfs read-only snapshots
