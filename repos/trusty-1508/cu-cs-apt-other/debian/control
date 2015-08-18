@@ -12,4 +12,6 @@ Copyright: copyright
 Changelog: changelog
 Files: ./ros.list /etc/apt/sources.list.d/
  ./ros.gpg /etc/apt/trusted.gpg.d/
+ ./sbt.list /etc/apt/sources.list.d/
+ ./sbt.gpg /etc/apt/trusted.gpg.d/
 Description: apt repo package for third party sources
