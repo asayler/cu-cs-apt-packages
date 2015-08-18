@@ -1,3 +1,9 @@
+cu-cs-apt-other (1508.0.2) tristy-1508; urgency=medium
+
+  * Fixed SBT Key issues
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 15:28:39 -0600
+
 cu-cs-apt-other (1508.0.1) trusty-1508; urgency=medium
 
   * Added SBT repo

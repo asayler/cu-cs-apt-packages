@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Andy Sayler
+# cu-cs-apt-other Package
+# prerm Script
+
+# Do Nothing
+echo "Removing SBt Key"
+apt-key del 642AC823
+exit 0
