@@ -1,0 +1,24 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-3753
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox
+Depends: asciidoc, autoconf, automake, autotools-dev, bison,
+ debhelper, dh-apparmor, dh-systemd, docbook-dsssl, docbook-utils,
+ flex, gawk, jadetex, kernel-wedge, libaudit-dev, libbison-dev,
+ libdw-dev, libdw1, libelf-dev, libfl-dev, libiberty-dev, libnewt-dev,
+ libosp5, libostyle1c2, libpci-dev, libpng12-dev, libsgmls-perl,
+ libsigsegv2, libslang2-dev, libsp1c2, libtool, libudev-dev,
+ libunwind8, libunwind8-dev, m4, makedumpfile, openjade, po-debconf,
+ sgmlspl, sharutils, sp, transfig, xmlto, xsltproc,
+ attr, attr-dev, crash, fakeroot, fuse,
+ gcc, gcc-doc, gcc-multilib,
+ kcachegrind, kernel-package, kexec-tools,
+ libfuse-dev, libncurses5, libncurses5-dev, libssl-dev, libssl-doc, libssl1.0.0,
+ r-base, r-base-dev
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for University of Colorado CSCI-3753 Course (Operating Systems)
