@@ -1,0 +1,25 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-3302
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox, cu-cs-apt-extra, libopenni-sensor-primesense0, libopenni-sensor-primesense-dev
+Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
+ python-wstool, python-rosdep,
+ ros-indigo-desktop-full, ros-indigo-control-toolbox, ros-indigo-realtime-tools,
+ ros-indigo-moveit-planners, ros-indigo-openni-launch, ros-indigo-moveit-ros-planning-interface,
+ ros-indigo-moveit-msgs, ros-indigo-moveit-ros, ros-indigo-moveit-ros-benchmarks,
+ ros-indigo-moveit-simple-controller-manager, ros-indigo-moveit-simple-grasps,
+ ros-indigo-moveit-ros-move-group, ros-indigo-moveit-planners-ompl, ros-indigo-moveit-ros-planning,
+ ros-indigo-moveit-core, ros-indigo-moveit-ros-visualization, ros-indigo-moveit-plugins,
+ ros-indigo-moveit-ros-warehouse, ros-indigo-moveit-visual-tools, ros-indigo-moveit-commander,
+ ros-indigo-moveit-ikfast, ros-indigo-moveit-python, ros-indigo-moveit-resources,
+ ros-indigo-moveit-setup-assistant
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: 
+Description: Packages for University of Colorado CSCI-3202 Course (Intro to Robotics)
