@@ -4,7 +4,8 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-3302
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-base-x | cu-cs-base-nox, cu-cs-apt-extra, libopenni-sensor-primesense0, libopenni-sensor-primesense-dev
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox, cu-cs-apt-other,
+ libopenni-sensor-primesense0, libopenni-sensor-primesense-dev
 Depends: python,  python-dev,  python-doc, python-pip, python-virtualenv,
  python-wstool, python-rosdep,
  ros-indigo-desktop-full, ros-indigo-control-toolbox, ros-indigo-realtime-tools,
