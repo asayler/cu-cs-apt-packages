@@ -7,9 +7,7 @@ Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-nox, cu-cs-editors-nox, cu-cs-langs, cu-cs-extra
 Depends: cu-cs-csci-1300-nox, cu-cs-csci-1310-nox, cu-cs-csci-1320-nox,
  cu-cs-csci-2270-nox, cu-cs-csci-2400-nox,
- cu-cs-csci-3104, cu-cs-csci-3155, cu-cs-csci-3302, cu-cs-csci-3308-nox, cu-cs-csci-3753,
- cu-cs-csci-4239,
- cu-cs-csci-5622, cu-cs-csci-5832
+ cu-cs-csci-3308-nox
 Architecture: all
 Copyright: copyright
 Changelog: changelog
