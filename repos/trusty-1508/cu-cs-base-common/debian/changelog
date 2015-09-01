@@ -1,3 +1,9 @@
+cu-cs-base-common (1508.1.0) trusty-1508; urgency=medium
+
+  * Added nmap, zip, unzip
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 01 Sep 2015 16:02:20 -0600
+
 cu-cs-base-common (1508.0.0) trusty-1508; urgency=medium
 
   * Updated for Fall 15
