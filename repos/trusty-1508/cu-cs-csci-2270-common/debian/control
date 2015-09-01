@@ -8,6 +8,7 @@ Pre-Depends: cu-cs-base-common
 Depends: gdb, valgrind,
  gcc-4.8, gcc-4.8-doc, gcc-4.8-multilib,
  g++-4.8, g++-4.8-multilib,
+ libc++-dev, libc++abi-dev, clang-3.6, clang-3.6-doc, lldb-3.6,
  curl, libcurl4-openssl-dev, libcurl4-doc,
  libjson0, libjson0-dev
 Architecture: all
