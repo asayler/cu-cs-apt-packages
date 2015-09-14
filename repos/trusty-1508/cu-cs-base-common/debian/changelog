@@ -1,3 +1,9 @@
+cu-cs-base-common (1508.2.0) trusty-1508; urgency=medium
+
+  * Added aspell
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 13 Sep 2015 22:02:47 -0600
+
 cu-cs-base-common (1508.1.0) trusty-1508; urgency=medium
 
   * Added nmap, zip, unzip

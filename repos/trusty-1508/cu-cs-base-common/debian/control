@@ -5,7 +5,8 @@ Standards-Version: 3.9.5
 Package: cu-cs-base-common
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-apt, cu-cs-apt-other
-Depends: bash-completion, binutils, binutils-dev, binutils-doc, build-essential,
+Depends: aspell,
+ bash-completion, binutils, binutils-dev, binutils-doc, build-essential,
  cmake, make, curl, gdb, gdb-doc, git, git-doc, htop, iptables,
  man-db, manpages, manpages-dev, manpages-posix, manpages-posix-dev,
  nmap, rsync, screen, strace, ssh, sshfs, tmux, tree, tcpdump, traceroute,
