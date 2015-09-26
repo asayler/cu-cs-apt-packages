@@ -1,3 +1,9 @@
+cu-cs-csci-5622 (1508.2.0) trusty-1508; urgency=medium
+
+  * Moved python-ntlk to pip install for python3
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 25 Sep 2015 21:30:50 -0600
+
 cu-cs-csci-5622 (1508.1.0) trusty-1508; urgency=medium
 
   * Added python-tk and python-matplotlib
