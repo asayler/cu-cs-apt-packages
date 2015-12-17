@@ -1,0 +1,6 @@
+[org.gnome.desktop.screensaver]
+logout-enabled=false
+ubuntu-lock-on-suspend=false
+
+[org.gnome.desktop.session]
+idle-delay=0
