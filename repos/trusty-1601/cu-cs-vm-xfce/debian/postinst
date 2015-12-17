@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+
+schema_dir="/usr/share/glib-2.0/schemas"
+glib-compile-schemas "${schema_dir}"
