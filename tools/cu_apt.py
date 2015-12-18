@@ -38,6 +38,7 @@ class src_pkg(abc_pkg):
         super().__init__(path)
         self.name = os.path.basename(path)
         self.vers = self._find_vers()
+        self.key = "{}_{}".format(self.name, self.vers)
 
     def _find_vers(self):
 
@@ -54,6 +55,7 @@ class deb_pkg(abc_pkg):
         self.name = _dpkg_field(path, 'Package')
         self.vers = _dpkg_field(path, 'Version')
         self.arch = _dpkg_field(path, 'Architecture')
+        self.key = "{}_{}_{}".format(self.name, self.vers, self.arch)
 
 class abc_repo(metaclass=abc.ABCMeta):
 
@@ -61,7 +63,7 @@ class abc_repo(metaclass=abc.ABCMeta):
     def __init__(self, path):
 
         self.path = os.path.abspath(path)
-        self.pkgs = None
+        self.pkgs = {}
 
     def __iter__(self):
 
@@ -95,7 +97,7 @@ class src_repo(abc_repo):
             deb_dir = os.path.join(root, _DEB_DIR)
             if os.path.isdir(deb_dir):
                 pkg = src_pkg(root)
-                pkgs[pkg.name] = pkg
+                pkgs[pkg.key] = pkg
             else:
                 pass
 
@@ -119,11 +121,7 @@ class deb_repo(abc_repo):
                 base, ext = os.path.splitext(path)
                 if ext == ".deb":
                     pkg = deb_pkg(path)
-                    # todo: handle packages with same name better (e.g arch, etc)
-                    if pkg.name in pkgs:
-                        if pkg.vers < pkgs[pkg.name].vers:
-                            continue
-                    pkgs[pkg.name] = pkg
+                    pkgs[pkg.key] = pkg
                 else:
                     pass
 
