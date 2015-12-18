@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-4446
 Maintainer: Andy Sayler <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-base
+Pre-Depends: cu-cs-base-nox | cu-cs-base-x
 Depends: tisean
 Architecture: all
 Copyright: copyright

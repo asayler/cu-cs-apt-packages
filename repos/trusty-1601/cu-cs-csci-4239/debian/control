@@ -4,7 +4,7 @@ Homepage: apt.cs.colorado.edu
 Standards-Version: 3.9.5
 Package: cu-cs-csci-4239
 Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
-Pre-Depends: cu-cs-base
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox
 Depends: libsdl1.2-dev, libsdl2-dev, libsdl-mixer1.2-dev, libsdl-ttf2.0-dev,
  libqt4-dev, freeglut3-dev, libode-dev,
  qtbase5-dev, qt5-default,
