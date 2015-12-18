@@ -16,6 +16,7 @@ _ENCODING = "utf-8"
 _DEFAULT_BUILD_DIR = "/tmp/pkg-build"
 _DEFAULT_SOURCE_DIR = "./"
 _DEFAULT_URLS_FILE = "./thirdparty.urls"
+_DEFAULT_PREBUILT_DIR = "./prebuilt"
 _DEFAULT_REPO_DIR = "/srv/apt/ubuntu"
 
 _DEB_DIR = "debian"
@@ -199,6 +200,42 @@ def download(obj, urls_file):
         pkgs_failed.sort()
         click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
+@click.command()
+@click.option('--prebuilt_dir', default=_DEFAULT_PREBUILT_DIR, type=str,
+              help="Location of prebuilt packages")
+@click.pass_obj
+def prebuilt(obj, prebuilt_dir):
+    """
+    Copy prebuilt packages
+
+    """
+    
+    build_dir = obj['build_dir']
+    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    prebuilt_dir = os.path.abspath(prebuilt_dir)
+    pkgs_succeeded = []
+    pkgs_failed = []
+
+    # Copy Packages
+    os.makedirs(deb_out_dir, exist_ok=True)
+    for root, dirs, files in os.walk(prebuilt_dir):
+        for fle in files:
+            base, ext = os.path.splitext(fle)
+            if ext == ".deb":
+                src = os.path.join(root, fle)
+                shutil.copy(src, deb_out_dir)
+                pkgs_succeeded.append(base)
+            else:
+                click.secho("Skipping: {}".format(fle), fg='yellow')
+
+    # Print Success/Failure
+    click.secho("")
+    if pkgs_succeeded:
+        pkgs_succeeded.sort()
+        click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_failed:
+        pkgs_failed.sort()
+        click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
 @click.command()
 @click.option('--repo_dir', default=_DEFAULT_REPO_DIR, type=str, help="Path to Repo")
@@ -315,6 +352,7 @@ def publish(obj, repo_dir, release, major_vers):
 cli.add_command(clean)
 cli.add_command(build)
 cli.add_command(download)
+cli.add_command(prebuilt)
 cli.add_command(publish)
 
 
