@@ -1,0 +1,11 @@
+cu-cs-csci-4239 (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Spring 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 18 Dec 2015 11:59:03 -0700
+
+cu-cs-csci-4239 (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial Release
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 17:53:26 -0700
