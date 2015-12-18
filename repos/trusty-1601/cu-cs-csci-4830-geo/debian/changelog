@@ -1,0 +1,17 @@
+cu-cs-csci-4830-geo (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Spring 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 18 Dec 2015 11:19:41 -0700
+
+cu-cs-csci-4830-geo (1501.0.1) trusty-1501; urgency=medium
+
+  * Fixed dependency bugs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 16:55:27 -0700
+
+cu-cs-csci-4830-geo (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial release
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 16:42:46 -0700

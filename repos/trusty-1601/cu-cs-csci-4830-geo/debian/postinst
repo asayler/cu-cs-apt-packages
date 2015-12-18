@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CSCI 4830-geo Package
+# postinst Script
+
+echo "Nothing to setup"
+exit 0
