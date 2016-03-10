@@ -7,7 +7,7 @@ Maintainer: Andy Sayler <andy.sayler@colorado.edu>
 Pre-Depends: cu-cs-base-x, cu-cs-editors-x, cu-cs-langs, cu-cs-nonfree, cu-cs-extra
 Depends: cu-cs-csci-1300-x, cu-cs-csci-1310-x, cu-cs-csci-1320-x,
  cu-cs-csci-2270-x, cu-cs-csci-2400-x,
- cu-cs-csci-3104, cu-cs-csci-3155, cu-cs-csci-3308-x, cu-cs-csci-3753,
+ cu-cs-csci-3104, cu-cs-csci-3155, cu-cs-csci-3308-x, cu-cs-csci-3656-x, cu-cs-csci-3753,
  cu-cs-csci-4239, cu-cs-csci-4446, cu-cs-csci-4830-geo,
  cu-cs-csci-5832
 Architecture: all

@@ -1,3 +1,9 @@
+cu-cs-current-csel (1601.0.1) trusty-1601; urgency=medium
+
+  * Added cu-csci-3656-x package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 10 Mar 2016 03:14:06 +0000
+
 cu-cs-current-csel (1601.0.0) trusty-1601; urgency=medium
 
   * Updated for Spring 2016
