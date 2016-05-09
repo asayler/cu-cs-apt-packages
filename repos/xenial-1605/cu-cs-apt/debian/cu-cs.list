@@ -1,0 +1,5 @@
+# Packages
+deb      http://apt.cs.colorado.edu/ubuntu  xenial-1605  main
+
+# Sources
+deb-src  http://apt.cs.colorado.edu/ubuntu  xenial-1605  main
