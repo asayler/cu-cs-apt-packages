@@ -1,0 +1,133 @@
+cu-cs-csci-1310-nox (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 11:30:13 -0600
+
+cu-cs-csci-1310-nox (1508.0.1) trusty-1508; urgency=medium
+
+  * Fixed bad pre-depends
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 15 Aug 2015 19:09:46 -0600
+
+cu-cs-csci-1310-nox (1508.0.0) trusty-1508; urgency=medium
+
+  * Split out into 1310-nox package
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 21:10:33 -0600
+
+cu-cs-csci-1300 (1501.0.1) trusty-1501; urgency=medium
+
+  * Added nox base option
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 20:49:45 -0700
+
+cu-cs-csci-1300 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 16:02:18 -0700
+
+cu-cs-csci-1300 (1408-1.9.0) trusty; urgency=medium
+
+  * Added portaudio libs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 05 Dec 2014 13:01:07 -0700
+
+cu-cs-csci-1300 (1408-1.8.2) trusty; urgency=medium
+
+  * Fixed more pip bug
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 28 Oct 2014 11:21:17 -0600
+
+cu-cs-csci-1300 (1408-1.8.1) trusty; urgency=medium
+
+  * Fixed pip bug
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 28 Oct 2014 11:17:13 -0600
+
+cu-cs-csci-1300 (1408-1.8) trusty; urgency=medium
+
+  * Added python pip reqs and C++ reqs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 28 Oct 2014 10:54:40 -0600
+
+cu-cs-csci-1300 (1408-1.7) trusty; urgency=medium
+
+  * Added geany python3 defaults (fourth attempt)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 29 Aug 2014 21:55:53 -0600
+
+cu-cs-csci-1300 (1408-1.6) trusty; urgency=medium
+
+  * Added geany python3 defaults (third attempt)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 29 Aug 2014 21:41:24 -0600
+
+cu-cs-csci-1300 (1408-1.5) trusty; urgency=medium
+
+  * Added geany python3 defaults (second attempt)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 29 Aug 2014 21:36:11 -0600
+
+cu-cs-csci-1300 (1408-1.4) trusty; urgency=medium
+
+  * Added geany python3 defaults (first attempt)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 29 Aug 2014 21:10:33 -0600
+
+cu-cs-csci-1300 (1408-1.3) trusty; urgency=medium
+
+  * Added pygame
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:35:06 -0600
+
+cu-cs-csci-1300 (1408-1.2) trusty; urgency=medium
+
+  * Removed python3-virtenv (does not exist)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:31:15 -0600
+
+cu-cs-csci-1300 (1408-1.1) trusty; urgency=medium
+
+  * Added scipy and numpy
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:17:44 -0600
+
+cu-cs-csci-1300 (1408-1.0) trusty; urgency=medium
+
+  * Moved to Python
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 11:27:09 -0600
+
+cu-cs-csci-1300 (1405-1.4) trusty; urgency=medium
+
+  * Fixed Java default script to recognize i686 arch
+  * Removed Java Script
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 02 Jun 2014 20:13:25 -0600
+
+cu-cs-csci-1300 (1405-1.3) trusty; urgency=medium
+
+  * Added portaudio
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 21 May 2014 23:07:53 -0600
+
+cu-cs-csci-1300 (1405-1.2) trusty; urgency=low
+
+  * Removed java and python packages
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 21:39:34 -0600
+
+cu-cs-csci-1300 (1405-1.1) trusty; urgency=low
+
+  * Added libsndfile1 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 20:23:32 -0600
+
+cu-cs-csci-1300 (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 21:33:33 -0600
