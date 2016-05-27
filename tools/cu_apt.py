@@ -44,8 +44,15 @@ class src_pkg(abc_pkg):
 
         change_path = os.path.join(self.path, _DEB_DIR, _CHANGELOG)
         with open(change_path, 'r') as f:
+            print(change_path)
             change_obj = debian.changelog.Changelog(file=f)
-        return str(change_obj.version)
+            try:
+                ver = change_obj.version
+            except IndexError as e:
+                print("Failed to parse changelog: {}".format(change_path))
+                print(e)
+                raise
+            return str(ver)
 
 class deb_pkg(abc_pkg):
 
