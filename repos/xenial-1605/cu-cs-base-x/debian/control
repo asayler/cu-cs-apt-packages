@@ -1,0 +1,13 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-base-x
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-common
+Depends: kcachegrind
+Suggests: cu-cs-editors-x, cu-cs-nonfree-x
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Desktop Base Package for University of Colorado, Dept. of CS 

@@ -1,0 +1,11 @@
+cu-cs-base-nox (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:27:42 -0600
+
+cu-cs-base-nox (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial release (Spring 15)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:17:31 -0700

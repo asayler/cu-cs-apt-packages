@@ -1,0 +1,35 @@
+cu-cs-base-common (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:23:02 -0600
+
+cu-cs-base-common (1601.0.0) trusty-1601; urgency=medium
+
+  * Added exfat
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 10 Mar 2016 03:20:08 +0000
+
+cu-cs-base-common (1508.2.0) trusty-1508; urgency=medium
+
+  * Added aspell
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 13 Sep 2015 22:02:47 -0600
+
+cu-cs-base-common (1508.1.0) trusty-1508; urgency=medium
+
+  * Added nmap, zip, unzip
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 01 Sep 2015 16:02:20 -0600
+
+cu-cs-base-common (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 17:54:48 -0600
+
+cu-cs-base-common (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial Release (Spring 15)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:15:25 -0700

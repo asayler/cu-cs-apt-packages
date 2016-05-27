@@ -1,0 +1,19 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-base-common
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt, cu-cs-apt-other
+Depends: aspell,
+ bash-completion, binutils, binutils-dev, binutils-doc, build-essential,
+ cmake, make, curl, exfat-fuse, exfat-utils,
+ gdb, gdb-doc, git, git-doc, htop, iptables,
+ man-db, manpages, manpages-dev, manpages-posix, manpages-posix-dev,
+ nmap, rsync, screen, strace, ssh, sshfs, tmux, tree, tcpdump, traceroute,
+ unzip, uptimed, valgrind, zip, zsh, wget, lynx
+Suggests: cu-cs-extra, cu-cs-langs
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Common Base Package for University of Colorado, Dept. of CS 
