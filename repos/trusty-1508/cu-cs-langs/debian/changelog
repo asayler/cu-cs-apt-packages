@@ -1,3 +1,9 @@
+cu-cs-langs (1508.1.0) trusty-1508; urgency=medium
+
+  * Added clang
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 01 Sep 2015 15:59:53 -0600
+
 cu-cs-langs (1508.0.0) trusty-1508; urgency=medium
 
   * Updated for Fall 15

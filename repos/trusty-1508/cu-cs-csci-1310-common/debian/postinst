@@ -7,5 +7,5 @@
 set -e
 
 echo "Installing PIP packages"
-pip install -r /usr/share/cu-cs-csci-1300/python/requirments.txt -U
-pip3 install -r /usr/share/cu-cs-csci-1300/python/requirments.txt -U
+pip install -r /usr/share/cu-cs-csci-1310/python/requirments.txt -U
+pip3 install -r /usr/share/cu-cs-csci-1310/python/requirments.txt -U

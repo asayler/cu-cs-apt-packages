@@ -1,3 +1,9 @@
+cu-cs-csci-1300-common (1508.1.0) trusty-1508; urgency=medium
+
+  * Added geopy
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 05 Oct 2015 23:51:58 -0600
+
 cu-cs-csci-1300-common (1508.0.0) trusty-1508; urgency=medium
 
   * Split out into 1300-common package

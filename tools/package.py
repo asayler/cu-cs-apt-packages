@@ -16,6 +16,7 @@ _ENCODING = "utf-8"
 _DEFAULT_BUILD_DIR = "/tmp/pkg-build"
 _DEFAULT_SOURCE_DIR = "./"
 _DEFAULT_URLS_FILE = "./thirdparty.urls"
+_DEFAULT_PREBUILT_DIR = "./prebuilt"
 _DEFAULT_REPO_DIR = "/srv/apt/ubuntu"
 
 _DEB_DIR = "debian"
@@ -95,42 +96,49 @@ def build(obj, source_dir, force, package_names):
     pkgs_queued = []
     if package_names:
         for pkg_name in sorted(package_names):
-            if pkg_name in src_repo:
-                pkgs_queued.append(pkg_name)
-            else:
+            found = False
+            for pkg_key in src_repo:
+                pkg = src_repo[pkg_key]
+                if pkg_name == pkg.name:
+                    found = True
+                    pkgs_queued.append(pkg_key)
+                    continue
+            if not found:
                 click.secho("Could Not Find Package '{}'".format(pkg_name), err=True, fg='red')
-                pkgs_failed.append(pkg_name)
     else:
         pkgs_queued += src_repo.keys()
 
     # Find Newer Sources
     if not force:
-        for pkg_name in sorted(pkgs_queued):
-            if pkg_name in deb_repo:
-                pkg_ver = src_repo[pkg_name].vers
-                deb_ver = deb_repo[pkg_name].vers
-                if pkg_ver <= deb_ver:
-                    click.secho("Skipping {}: Version {} already built".format(pkg_name, deb_ver),
-                                fg='yellow')
-                    pkgs_skipped.append(pkg_name)
-                    pkgs_queued.remove(pkg_name)
+        for src_pkg_key in sorted(pkgs_queued):
+            for deb_pkg_key in deb_repo:
+                if src_repo[src_pkg_key].name == deb_repo[deb_pkg_key].name:
+                    pkg_ver = src_repo[src_pkg_key].vers
+                    deb_ver = deb_repo[deb_pkg_key].vers
+                    if pkg_ver <= deb_ver:
+                        click.secho("Skipping {}:".format(src_pkg_key) +
+                                    " Version {} already built".format(deb_ver),
+                                    fg='yellow')
+                        pkgs_skipped.append(src_pkg_key)
+                        pkgs_queued.remove(src_pkg_key)
+                    continue
 
     # Build Packages
     cmd = ["equivs-build", "-f", "control"]
-    for pkg_name in sorted(pkgs_queued):
-        pkg_src_dir = src_repo[pkg_name].path
+    for pkg_key in sorted(pkgs_queued):
+        pkg_src_dir = src_repo[pkg_key].path
         deb_src_dir = os.path.join(pkg_src_dir, _DEB_DIR)
-        click.secho("Building {}...".format(pkg_name), fg='blue')
+        click.secho("Building {}...".format(pkg_key), fg='blue')
         proc = subprocess.Popen(cmd, cwd=deb_src_dir,
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout, stderr = proc.communicate()
         if proc.returncode:
-            click.secho("{} Build Failed".format(pkg_name), err=True, fg='red')
+            click.secho("{} Build Failed".format(pkg_key), err=True, fg='red')
             click.secho(stderr.decode(_ENCODING), err=True, fg='red')
-            pkgs_failed.append(pkg_name)
+            pkgs_failed.append(pkg_key)
         else:
-            click.secho("{} Build Succeeded".format(pkg_name), fg='green')
-            pkgs_succeeded.append(pkg_name)
+            click.secho("{} Build Succeeded".format(pkg_key), fg='green')
+            pkgs_succeeded.append(pkg_key)
             for src_name in os.listdir(deb_src_dir):
                 src_path = os.path.join(deb_src_dir, src_name)
                 if os.path.splitext(src_path)[1] in _DEB_BUILD_EXTS:
@@ -199,6 +207,42 @@ def download(obj, urls_file):
         pkgs_failed.sort()
         click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
+@click.command()
+@click.option('--prebuilt_dir', default=_DEFAULT_PREBUILT_DIR, type=str,
+              help="Location of prebuilt packages")
+@click.pass_obj
+def prebuilt(obj, prebuilt_dir):
+    """
+    Copy prebuilt packages
+
+    """
+    
+    build_dir = obj['build_dir']
+    deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
+    prebuilt_dir = os.path.abspath(prebuilt_dir)
+    pkgs_succeeded = []
+    pkgs_failed = []
+
+    # Copy Packages
+    os.makedirs(deb_out_dir, exist_ok=True)
+    for root, dirs, files in os.walk(prebuilt_dir):
+        for fle in files:
+            base, ext = os.path.splitext(fle)
+            if ext == ".deb":
+                src = os.path.join(root, fle)
+                shutil.copy(src, deb_out_dir)
+                pkgs_succeeded.append(base)
+            else:
+                click.secho("Skipping: {}".format(fle), fg='yellow')
+
+    # Print Success/Failure
+    click.secho("")
+    if pkgs_succeeded:
+        pkgs_succeeded.sort()
+        click.secho("Succeeded Packages:\n{}".format(pkgs_succeeded), fg='green')
+    if pkgs_failed:
+        pkgs_failed.sort()
+        click.secho("Failed Packages:\n{}".format(pkgs_failed), err=True, fg='red')
 
 @click.command()
 @click.option('--repo_dir', default=_DEFAULT_REPO_DIR, type=str, help="Path to Repo")
@@ -256,47 +300,48 @@ def publish(obj, repo_dir, release, major_vers):
     deb_repo = cu_apt.deb_repo(out_dir)
 
     # Publish Packages
-    for pkg_name in sorted(deb_repo):
+    for pkg_key in sorted(deb_repo):
 
         # Get Package Info
-        pkg = deb_repo[pkg_name]
-        click.secho("Publishing {}...".format(pkg_name), fg='blue')
+        pkg = deb_repo[pkg_key]
+        click.secho("Publishing {}...".format(pkg.key), fg='blue')
 
         # Filter Packages
         if major_vers:
             pkg_major_vers = pkg.vers.split('.')[0]
             if pkg_major_vers != major_vers:
                 click.secho("Skipping: Wrong Major Version {}".format(pkg_major_vers), fg='yellow')
-                pkgs_skipped.append(pkg_name)
+                pkgs_skipped.append(pkg.key)
                 continue
 
         # Get Repo Version
         if pkg.arch == "all":
-            repo_vers_amd64 = get_repo_info(pkg_name, "amd64", release, "version")
-            repo_vers_i386 = get_repo_info(pkg_name, "i386", release, "version")
+            repo_vers_amd64 = get_repo_info(pkg.name, "amd64", release, "version")
+            repo_vers_i386 = get_repo_info(pkg.name, "i386", release, "version")
             if repo_vers_amd64 != repo_vers_i386:
                 click.secho("Architecture Version Mismatch", err=True, fg='red')
-                pkgs_failed.append(pkg_name)
+                pkgs_failed.append(pkg.key)
                 continue
             else:
                 repo_vers = repo_vers_amd64
         else:
-            repo_vers = get_repo_info(pkg_name, pkg.arch, release, "version")
+            repo_vers = get_repo_info(pkg.name, pkg.arch, release, "version")
 
         # Compare Versions
         if pkg.vers == repo_vers:
             click.secho("Skipping: Version {} already in repo.".format(pkg.vers), fg='yellow')
-            pkgs_skipped.append(pkg_name)
+            pkgs_skipped.append(pkg.key)
             continue
 
         # Publish
         repo_publish_deb(pkg.path, release)
-        click.secho("Publishing {} deb Succeeded".format(pkg_name), fg='green')
+        print(pkg.path)
+        click.secho("Publishing {} deb Succeeded".format(pkg.key), fg='green')
 
         # Publish Source
         # ToDo
 
-        pkgs_succeeded.append(pkg_name)
+        pkgs_succeeded.append(pkg.key)
 
     # Print Success/Failure
     click.secho("")
@@ -315,6 +360,7 @@ def publish(obj, repo_dir, release, major_vers):
 cli.add_command(clean)
 cli.add_command(build)
 cli.add_command(download)
+cli.add_command(prebuilt)
 cli.add_command(publish)
 
 

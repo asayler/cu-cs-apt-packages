@@ -1,0 +1,26 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-4830-geo
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox
+Depends: grass, grass-dev, grass-doc, grass-dev-doc, grass-gui,
+ libqgis-dev, qgis, qgis-plugin-grass,
+ postgresql, postgresql-client, postgresql-contrib, postgresql-doc, postgis,
+ gdal-bin, libgdal-dev, libgdal-doc, python-gdal,
+ libgeos-dev, libgeos-doc,
+ libproj-dev, proj-bin, proj-data,
+ libshp-dev, shapelib,
+ spatialite-bin, libspatialite-dev,
+ sqlite3, markdown, jq,
+ r-base, r-base-core, rstudio,
+ ruby, python, ipython,
+ mongodb
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files:
+Description: Packages for University of Colorado CSCI-4830 Geospatial Data Analysis Course

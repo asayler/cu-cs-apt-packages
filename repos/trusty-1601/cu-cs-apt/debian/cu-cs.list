@@ -1,0 +1,7 @@
+# Packages
+deb      http://apt.cs.colorado.edu/ubuntu  trusty-1601  main
+deb      http://apt.cs.colorado.edu/ubuntu  trusty-1508  main
+
+# Sources
+deb-src  http://apt.cs.colorado.edu/ubuntu  trusty-1601  main
+deb-src  http://apt.cs.colorado.edu/ubuntu  trusty-1508  main

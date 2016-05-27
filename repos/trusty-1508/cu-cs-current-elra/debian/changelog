@@ -1,3 +1,9 @@
+cu-cs-current-elra (1508.2.0) trusty-1508; urgency=medium
+
+  * Added 5633 and 5832
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 25 Sep 2015 21:38:30 -0600
+
 cu-cs-current-elra (1508.1.0) trusty-1508; urgency=medium
 
   * Removed all X-based packages

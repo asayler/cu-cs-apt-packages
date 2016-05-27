@@ -1,3 +1,9 @@
+cu-cs-csci-1310-common (1508.0.2) trusty-1508; urgency=medium
+
+  * Fixed bad python path
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 11 Feb 2016 17:44:37 +0000
+
 cu-cs-csci-1310-common (1508.0.1) trusty-1508; urgency=medium
 
   * Fixed bad python path

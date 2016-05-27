@@ -1,0 +1,11 @@
+cu-cs-csci-4446 (1601.0.1) trusty-1601; urgency=medium
+
+  * Fixed base package names
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 18 Dec 2015 12:18:43 -0700
+
+cu-cs-csci-4446 (1601.0.0) trusty-1601; urgency=medium
+
+  * Initial release
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 18 Dec 2015 11:53:26 -0700

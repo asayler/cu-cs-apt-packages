@@ -1,3 +1,21 @@
+cu-cs-csci-5622 (1508.3.0) trusty-1508; urgency=medium
+
+  * Added python-mechanize
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 20 Oct 2015 15:51:26 -0600
+
+cu-cs-csci-5622 (1508.2.0) trusty-1508; urgency=medium
+
+  * Moved python-ntlk to pip install for python3
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 25 Sep 2015 21:30:50 -0600
+
+cu-cs-csci-5622 (1508.1.0) trusty-1508; urgency=medium
+
+  * Added python-tk and python-matplotlib
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 25 Sep 2015 21:25:54 -0600
+
 cu-cs-csci-5622 (1508.0.0) trusty-1508; urgency=medium
 
   * Updated for Fall 15
