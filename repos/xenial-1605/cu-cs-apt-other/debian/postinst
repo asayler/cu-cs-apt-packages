@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Andy Sayler
+# cu-cs-apt-other Package
+# postinst Script
+
+# Do Nothing
+exit 0

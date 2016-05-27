@@ -1,0 +1,35 @@
+cu-cs-apt-other (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:03:17 -0600
+
+cu-cs-apt-other (1508.0.2) tristy-1508; urgency=medium
+
+  * Fixed SBT Key issues
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 15:28:39 -0600
+
+cu-cs-apt-other (1508.0.1) trusty-1508; urgency=medium
+
+  * Added SBT repo
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 14:30:36 -0600
+
+cu-cs-apt-other (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 16:05:25 -0600
+
+cu-cs-apt-other (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 12 Dec 2014 23:54:37 -0700
+
+cu-cs-apt-other (1408-1.0) trusty; urgency=high
+
+  * Initial release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 21:33:33 -0600
