@@ -1,3 +1,9 @@
+cu-cs-csci-1310-common (1605.0.2) xenial-1605; urgency=medium
+
+  * Fixed python dependencies
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 21:09:15 +0000
+
 cu-cs-csci-1310-common (1605.0.1) xenial-1605; urgency=medium
 
   * Fixed python3-virtualenv typo
