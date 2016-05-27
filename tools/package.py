@@ -37,7 +37,7 @@ def cli(ctx, build_dir, gpg_dir):
 
     ctx.obj = {}
     ctx.obj['build_dir'] = os.path.abspath(build_dir)
-    
+
     if gpg_dir:
         ctx.obj['gpg_dir'] = os.path.abspath(gpg_dir)
         click.secho("Setting GNUPGHOME to '{}'".format(ctx.obj['gpg_dir']))
@@ -168,7 +168,7 @@ def download(obj, urls_file):
     Download Third Party Packages
 
     """
-    
+
     build_dir = obj['build_dir']
     deb_out_dir = os.path.join(build_dir, _BUILD_PKG_DIR)
     urls_file = os.path.abspath(urls_file)
@@ -252,7 +252,7 @@ def prebuilt(obj, prebuilt_dir):
 def publish(obj, repo_dir, release, major_vers):
     """
     Publish Packages to Repo
-    
+
     """
 
     # Setup Paths and Vars
