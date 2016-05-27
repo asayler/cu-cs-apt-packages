@@ -1,0 +1,35 @@
+cu-cs-editors-x (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:35:54 -0600
+
+cu-cs-editors-x (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:12:57 -0600
+
+cu-cs-editors (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:37:24 -0700
+
+cu-cs-editors (1408-1.0) trusty; urgency=low
+
+  * Minor control file comment rewording
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:56:50 -0600
+
+cu-cs-editors (1405-1.1) trusty; urgency=high
+
+  * Added codeblocks
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 21:48:22 -0600
+
+cu-cs-editors (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 22:03:33 -0600

@@ -1,0 +1,13 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-editors-nox
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-editors-common
+Depends: emacs-nox | emacs24-nox | emacs | emacs24,
+ vim-nox | vim | vim-gtk | vim-gnome, vim-doc
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: No-X Editor Packages for University of Colorado, Dept of CS
