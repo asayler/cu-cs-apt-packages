@@ -1,0 +1,16 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-vm-xfce
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-vm-common
+Depends:
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: ./CU-CS-VM-Background-XFCE.png /usr/share/xfce4/backdrops/
+Description: XFCE Virtual Machine Config and Meta-package for
+ University of Colorado, Boulder, Dept of CS

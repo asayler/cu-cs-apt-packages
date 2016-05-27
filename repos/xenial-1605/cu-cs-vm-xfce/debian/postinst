@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+
+BACKGROUND="/usr/share/xfce4/backdrops/CU-CS-VM-Background-XFCE.png"
+USER="user"
+
+# Desktop Image
+sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s "${BACKGROUND}"
+# Image Style = Scaled (4)
+sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/image-style --s 4
+# Fill Style = Solid Color (0)
+sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/color-style --s 0
+# Set Black Fill
+sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/color1 -s 0 -s 0 -s 0 -s 65535

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# prerm Script
+
+# TODO Cleanup Files
+
+# Do Nothing
+echo "Nothing to do in prerm script"
+exit 0
