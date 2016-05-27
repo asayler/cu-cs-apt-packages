@@ -1,0 +1,36 @@
+cu-cs-extra (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:41:55 -0600
+
+cu-cs-extra (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:18:48 -0600
+
+cu-cs-extra (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:48:19 -0700
+
+cu-cs-extra (1408-1.0) trusty; urgency=medium
+
+  * Switched from nonfree to extra
+  * Moved LaTeX from base package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:52:22 -0600
+
+cu-cs-extra (1405-1.1) trusty; urgency=low
+
+  * Added python-gpgme for Dropbox verification
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 23:01:38 -0600
+
+cu-cs-extra (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 08 May 2014 21:03:33 -0600

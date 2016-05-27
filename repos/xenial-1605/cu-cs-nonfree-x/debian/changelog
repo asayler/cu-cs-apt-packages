@@ -1,0 +1,35 @@
+cu-cs-nonfree-x (1605.0.0) xenail-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:50:21 -0600
+
+cu-cs-nonfree (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:21:41 -0600
+
+cu-cs-nonfree (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:54:22 -0700
+
+cu-cs-nonfree (1408-1.0) trusty; urgency=low
+
+  * Renamed to cu-cs-nonfree
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:48:33 -0600
+
+cu-cs-nonfree (1405-1.1) trusty; urgency=low
+
+  * Added python-gpgme for Dropbox verification
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 23:01:38 -0600
+
+cu-cs-nonfree (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 08 May 2014 21:03:33 -0600

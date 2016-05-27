@@ -1,0 +1,18 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-langs
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt
+Depends: gcc-5, gcc-5-multilib, g++-5, g++-5-multilib,
+ clang-3.8,
+ openjdk-9-jdk, openjdk-9-jre,
+ python3, python3-dev, python3-doc, python3-pip, python3-virtualenv,
+ python,  python-dev,  python-doc, python-pip, python-virtualenv,
+ sqlite3, libsqlite3-dev
+Suggests:
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Programming Languages for University of Colorado, Dept. of CS

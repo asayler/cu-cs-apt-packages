@@ -1,0 +1,48 @@
+cu-cs-langs (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:46:32 -0600
+
+cu-cs-langs (1508.1.0) trusty-1508; urgency=medium
+
+  * Added clang
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 01 Sep 2015 15:59:53 -0600
+
+cu-cs-langs (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:20:12 -0600
+
+cu-cs-langs (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:52:00 -0700
+
+cu-cs-langs (1408-1.1) trusty; urgency=medium
+
+  * Removed python3-virtenv (does not exist)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 12:30:32 -0600
+
+cu-cs-langs (1408-1.0) trusty; urgency=medium
+
+  * Removed java doc package
+  * Added pip and virtenv for Python
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 09:59:38 -0600
+
+cu-cs-langs (1405-1.1) trusty; urgency=medium
+
+  * Removed extra python packages
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 17 Jun 2014 23:51:10 -0600
+
+cu-cs-langs (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:03:33 -0600
