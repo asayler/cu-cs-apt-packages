@@ -1,0 +1,12 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-1300-x
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox, cu-cs-csci-1300-common,
+Depends: geany, geany-plugins, ddd
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Desktop Packages for University of Colorado CSCI-1300 Course

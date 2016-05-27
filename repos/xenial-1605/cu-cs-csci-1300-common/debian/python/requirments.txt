@@ -1,0 +1,2 @@
+CppHeaderParser>=2.7,<2.8
+geopy>=1.11,<1.12
