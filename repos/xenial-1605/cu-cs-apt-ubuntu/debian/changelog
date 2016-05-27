@@ -1,0 +1,29 @@
+cu-cs-apt-ubuntu (1605.0.0) xenail-1605; urgency=medium
+
+  * Updated for Summer 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:05:45 -0600
+
+cu-cs-apt-ubuntu (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 16:03:10 -0600
+
+cu-cs-apt-ubuntu (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated copyright for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 12:03:19 -0700
+
+cu-cs-apt-ubuntu (1405-1.1) trusty; urgency=low
+
+  * Changed section
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 08 May 2014 20:44:46 -0600
+
+cu-cs-apt-ubuntu (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 May 2014 17:33:33 -0600
