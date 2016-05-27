@@ -1,0 +1,17 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-2400-common
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-common
+Depends:  gdb, valgrind,
+ gcc-5, gcc-5-multilib, gcc-5-doc,
+ g++-5, g++-5-multilib,
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: 
+Description: Common Packages for University of Colorado CSCI-2400 Course 

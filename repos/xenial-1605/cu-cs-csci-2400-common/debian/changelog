@@ -1,0 +1,18 @@
+cu-cs-csci-2400-common (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 11:59:24 -0600
+
+cu-cs-csci-2400-common (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 21:48:42 -0600
+
+cu-cs-csci-2400-common (1505.0.0) trusty-1505; urgency=medium
+
+  * Split out form 2400
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:01:28 -0600
