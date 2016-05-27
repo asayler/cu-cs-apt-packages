@@ -1,0 +1,21 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-vm-common
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-apt, cu-cs-apt-ubuntu, cu-cs-current-vm, dkms
+Depends: linux-generic, linux-image-generic, linux-headers-generic,
+ xserver-xorg, xserver-xorg-core,
+ xserver-xorg-video-all, xserver-xorg-input-all,
+ libwayland-egl1-mesa,
+ zerofree, secure-delete,
+ open-vm-tools
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: ./cu-cs-vm.pkla /etc/polkit-1/localauthority/30-site.d/
+ ./nopasswd /etc/sudoers.d/
+Description: Virtual Machine Packages for University of Colorado, Dept of CS

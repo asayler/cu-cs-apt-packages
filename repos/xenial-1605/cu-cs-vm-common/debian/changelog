@@ -1,0 +1,54 @@
+cu-cs-vm-common (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 09:44:33 -0600
+
+cu-cs-vm-common (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Spring 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 17 Dec 2015 13:07:55 -0700
+
+cu-cs-vm-common (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 14:55:53 -0600
+
+cu-cs-vm-common (1505.0.3) trusty-1505; urgency=medium
+
+  * Still wrong package name...
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:29:25 -0600
+
+cu-cs-vm-common (1505.0.2) trusty-1505; urgency=medium
+
+  * Fixed bad package name
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:27:42 -0600
+
+cu-cs-vm-common (1505.0.1) trusty-1505; urgency=medium
+
+  * Removed Utopic Xorg due to incompatibilty with virtualbox-guest
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:25:10 -0600
+
+cu-cs-vm-common (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 15:27:19 -0600
+
+
+cu-cs-vm-common (1501.1.0) trusty-1501; urgency=medium
+
+  * Added user to vboxsf group
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 22 Dec 2014 15:52:01 -0700
+
+cu-cs-vm-common (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial Release (Spring 15)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 15:25:51 -0700

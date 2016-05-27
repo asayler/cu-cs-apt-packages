@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+
+# Add user to vboxsf group to facilitate shared folders
+cnt=$(egrep -c -i "^vboxsf" /etc/group)
+if [[ $cnt > 0 ]]
+then
+    echo "Adding user to vboxsf group"
+    usermod -a -G vboxsf user
+else
+    echo "No vboxsf group found"
+fi
