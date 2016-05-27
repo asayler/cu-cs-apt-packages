@@ -1,3 +1,9 @@
+cu-cs-apt (1605.0.1) xenial-1605; urgency=medium
+
+  * Attempting to resign with SHA256
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 19:51:30 +0000
+
 cu-cs-apt (1605.0.0) xenial-1605; urgency=medium
 
   * Updated for Summer 2016
