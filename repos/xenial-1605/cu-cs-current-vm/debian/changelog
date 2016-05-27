@@ -1,0 +1,60 @@
+cu-cs-current-vm (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 10:54:59 -0600
+
+cu-cs-current-vm (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Spring 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 17 Dec 2015 12:50:51 -0700
+
+cu-cs-current-vm (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:35:53 -0600
+
+cu-cs-current-vm (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 13:27:13 -0600
+
+cu-cs-current-vm (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 15:39:41 -0700
+
+cu-cs-current-vm (1408-1.0) trusty; urgency=medium
+
+  * Removed 3008 and extra
+  * Added nonfree
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 10:13:35 -0600
+
+cu-cs-current-vm (1405-1.3) trusty; urgency=medium
+
+  * Fixed package typo
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 21:04:06 -0600
+
+cu-cs-current-vm (1405-1.2) trusty; urgency=medium
+
+  * Added cu-cs-csci-3308 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 20:49:00 -0600
+
+cu-cs-current-vm (1405-1.1) trusty; urgency=low
+
+  * Added cu-cs-langs package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:17:44 -0600
+
+cu-cs-current-vm (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 23:33:33 -0600
