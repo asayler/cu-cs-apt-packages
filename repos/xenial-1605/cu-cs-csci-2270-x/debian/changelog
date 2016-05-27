@@ -1,0 +1,61 @@
+cu-cs-csci-2270-x (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>   Fri, 27 May 2016 11:56:07 -0600
+
+cu-cs-csci-2270-x (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 21:41:52 -0600
+
+cu-cs-csci-2270 (1505.0.1) trusty-1505; urgency=medium
+
+  * Fixed misspelled package name
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 18:31:10 -0600
+
+cu-cs-csci-2270 (1505.0.0) trusty-1505; urgency=medium
+
+  * Spilt out into X and NoX packages
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 17:43:51 -0600
+
+cu-cs-csci-2270 (1501.1.0) trusty-1501; urgency=medium
+
+  * Added curl and json libs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Feb 2015 21:29:59 -0700
+
+cu-cs-csci-2270 (1501.0.1) trusty-1501; urgency=medium
+
+  * Added support for base nox
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 20:57:22 -0700
+
+cu-cs-csci-2270 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 16:16:41 -0700
+
+cu-cs-csci-2270 (1408-1.0) trusty; urgency=medium
+
+  * Removed Java
+  * Added GDB, Valgrind
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 21 Aug 2014 11:38:25 -0600
+
+cu-cs-csci-2270 (1405-1.1) trusty; urgency=medium
+
+  * Fixed Java default script to recognize i686 arch
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 02 Jun 2014 20:13:25 -0600
+
+cu-cs-csci-2270 (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 23:03:33 -0600

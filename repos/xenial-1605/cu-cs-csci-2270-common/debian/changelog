@@ -1,0 +1,24 @@
+cu-cs-csci-2270-common (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 11:54:52 -0600
+
+cu-cs-csci-2270-common (1508.1.0) trusty-1508; urgency=medium
+
+  * Added clang, etc
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 01 Sep 2015 15:57:56 -0600
+
+cu-cs-csci-2270-common (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 21:39:45 -0600
+
+cu-cs-csci-2270-common (1505.0.0) trusty-1505; urgency=medium
+
+  * Spilt out from 2270 + nox
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 17:41:34 -0600

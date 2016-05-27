@@ -1,0 +1,20 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-2270-common
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-common
+Depends: gdb, valgrind,
+ gcc-5, gcc-5-multilib,
+ g++-5, g++-5-multilib,
+ libc++-dev, libc++abi-dev, clang-3.8, lldb-3.8,
+ curl, libcurl4-openssl-dev, libcurl4-doc,
+ libjson0, libjson0-dev
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files:
+Description: Common Packages for University of Colorado CSCI-2270 Course
