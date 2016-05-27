@@ -1,0 +1,23 @@
+cu-cs-csci-3308-nox (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 15:30:43 -0600
+
+cu-cs-csci-3308-nox (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 14:48:39 -0600
+
+cu-cs-csci-3308-nox (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 13:50:21 -0600
+
+cu-cs-csci-3308-nox (1501.0.0) trusty-1501; urgency=medium
+
+  * Split from cu-cs-csci-3308 and Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 20:36:31 -0700

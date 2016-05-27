@@ -1,0 +1,26 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-3308-common
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-common
+Depends: git, subversion,
+ curl, wget,
+ check, make, build-essential,
+ gdb, valgrind,
+ doxygen, doxygen-doc, doxygen-latex,
+ python3, python3-dev, python3-flask,
+ python,  python-dev,  python-flask,
+ gcc-5, gcc-5-multilib,
+ g++-5, g++-5-multilib,
+ openjdk-8-jdk,  openjdk-8-jre,
+ mysql-client,
+ sqlite3, sqlite3-doc
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Postinst: postinst
+Prerm: prerm
+Files: 
+Description: Common Packages for University of Colorado CSCI-3308 Course 

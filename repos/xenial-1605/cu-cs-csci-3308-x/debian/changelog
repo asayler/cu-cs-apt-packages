@@ -1,0 +1,35 @@
+cu-cs-csci-3308-x (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 15:29:40 -0600
+
+cu-cs-csci-3308-x (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 14:47:42 -0600
+
+cu-cs-csci-3308 (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 13:49:24 -0600
+
+cu-cs-csci-3308 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 20:36:31 -0700
+
+cu-cs-csci-3308 (1405-1.1) trusty; urgency=medium
+
+  * Added python packages
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 17 Jun 2014 23:50:39 -0600
+
+cu-cs-csci-3308 (1405-1.0) trusty; urgency=high
+
+  * Initial release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 04 June 2014 20:33:33 -0600

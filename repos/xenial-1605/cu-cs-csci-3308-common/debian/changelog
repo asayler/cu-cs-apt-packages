@@ -1,0 +1,41 @@
+cu-cs-csci-3308-common (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 15:24:02 -0600
+
+cu-cs-csci-3308-common (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 14:46:07 -0600
+
+cu-cs-csci-3308-common (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 13:48:26 -0600
+
+cu-cs-csci-3308-common (1501.1.0) truisty-1501; urgency=medium
+
+  * Added Java 6
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 Jan 2015 20:50:05 -0700
+
+cu-cs-csci-3308-common (1501.0.2) trusty-1501; urgency=medium
+
+  * Fixed java 7 package names
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 21:47:32 -0700
+
+cu-cs-csci-3308-common (1501.0.1) trusty-1501; urgency=medium
+
+  * Fixed Java 8 bug; Switched to Java 7
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 21:44:55 -0700
+
+cu-cs-csci-3308-common (1501.0.0) trusty-1501; urgency=medium
+
+  * Split form main 3308 package and updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 03 Jan 2015 13:00:33 -0700
