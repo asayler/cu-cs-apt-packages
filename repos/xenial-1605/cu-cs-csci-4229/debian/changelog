@@ -1,0 +1,49 @@
+cu-cs-csci-4229 (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 22:58:28 -0600
+
+cu-cs-csci-4229 (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 17:22:41 -0600
+
+cu-cs-csci-4229 (1405-1.2ubuntu3) trusty; urgency=medium
+
+  * Add libode-dev [csel #1067]
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Wed, 03 Dec 2014 10:36:08 -0700
+
+cu-cs-csci-4229 (1405-1.2ubuntu2) trusty; urgency=medium
+
+  * Add qtbase5-dev [csel #1059]
+  * Make qt5 the default (package qt5-default) [csel #1059]
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Tue, 02 Dec 2014 11:41:42 -0700
+
+cu-cs-csci-4229 (1405-1.2ubuntu1) trusty; urgency=medium
+
+  * Add libsdl-mixer-dev [csel #1059]
+  * Add libsdl-ttf-dev [csel #1059]
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Mon, 01 Dec 2014 07:12:34 -0700
+
+cu-cs-csci-4229 (1405-1.2) trusty; urgency=medium
+
+  * Added ghc and cabal at the request of a student
+
+ -- Matt Monaco <matt@apt.cs.colorado.edu>  Fri, 12 Sep 2014 21:17:23 -0600
+
+cu-cs-csci-4229 (1405-1.1) trusty; urgency=medium
+
+  * Added libsdl
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 18 Jun 2014 21:20:01 -0600
+
+cu-cs-csci-4229 (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 18 June 2014 20:33:33 -0600

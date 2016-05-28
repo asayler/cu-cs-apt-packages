@@ -1,0 +1,18 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-csci-4229
+Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x | cu-cs-base-nox
+Depends: libsdl1.2-dev, libsdl-mixer1.2-dev, libsdl-ttf2.0-dev,
+ libsdl2-dev, libsdl2-mixer-dev, libsdl2-ttf-dev,
+ libqt4-dev, freeglut3-dev, libode-dev,
+ qtbase5-dev, qt5-default,
+ mesa-utils, mesa-utils-extra,
+ python-pygame, python-numpy,
+ ghc, ghc-doc, cabal-install
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Packages for University of Colorado CSCI 4229/5229 (Computer Graphics)
