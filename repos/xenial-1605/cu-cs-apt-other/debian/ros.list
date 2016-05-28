@@ -2,4 +2,4 @@
 deb  http://packages.ros.org/ros/ubuntu  xenial  main
 
 # Sources
-deb-src  http://packages.ros.org/ros/ubuntu  xenail  main
+deb-src  http://packages.ros.org/ros/ubuntu  xenial  main
