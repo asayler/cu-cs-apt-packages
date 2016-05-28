@@ -1,3 +1,9 @@
+cu-cs-apt-ubuntu (1605.0.2) xenial-1605; urgency=medium
+
+  * Removed extra repo
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 28 May 2016 05:19:03 +0000
+
 cu-cs-apt-ubuntu (1605.0.1) xenial-1605; urgency=medium
 
   * Removed proposed packages from list
