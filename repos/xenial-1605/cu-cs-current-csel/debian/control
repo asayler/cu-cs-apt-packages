@@ -1,0 +1,15 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-current-csel
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-x, cu-cs-editors-x, cu-cs-nonfree-x, cu-cs-langs, cu-cs-extra
+Depends: cu-cs-csci-1300-x, cu-cs-csci-1310-x, cu-cs-csci-1320-x,
+ cu-cs-csci-2270-x, cu-cs-csci-2400-x,
+ cu-cs-csci-3308-x,
+ cu-cs-csci-4229
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Default CSEL course packages for University of Colorado CS Dept.

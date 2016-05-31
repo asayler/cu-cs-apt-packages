@@ -1,0 +1,89 @@
+cu-cs-current-csel (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 31 May 2016 10:23:01 -0600
+
+cu-cs-current-csel (1601.0.1) trusty-1601; urgency=medium
+
+  * Added cu-csci-3656-x package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 10 Mar 2016 03:14:06 +0000
+
+cu-cs-current-csel (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Spring 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 18 Dec 2015 12:05:48 -0700
+
+cu-cs-current-csel (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 18:32:50 -0600
+
+cu-cs-current-csel (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 13:08:39 -0600
+
+cu-cs-current-csel (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 21:13:12 -0700
+
+cu-cs-current-csel (1408-1.7) trusty; urgency=medium
+
+  * Fixed CSCI 3302
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 23:00:39 -0600
+
+cu-cs-current-csel (1408-1.6) trusty; urgency=medium
+
+  * Added CSCI 3302
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 19 Sep 2014 22:57:28 -0600
+
+cu-cs-current-csel (1408-1.5) trusty; urgency=medium
+
+  * Added CSCI 5352
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 08 Sep 2014 21:47:30 -0600
+
+cu-cs-current-csel (1408-1.4) trusty; urgency=medium
+
+  * Updated for Fall 2014 Courses
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 23 Aug 2014 00:09:51 -0600
+
+cu-cs-current-csel (1405-1.4) trusty; urgency=medium
+
+  * Added cu-cs-csci-4229 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 18 Jun 2014 20:48:31 -0600
+
+cu-cs-current-csel (1405-1.3) trusty; urgency=medium
+
+  * Fixed package typo
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 21:05:09 -0600
+
+cu-cs-current-csel (1405-1.2) trusty; urgency=medium
+
+ * Added cu-cs-csci-3308 package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 04 Jun 2014 20:48:01 -0600
+
+cu-cs-current-csel (1405-1.1) trusty; urgency=low
+
+  * Added cu-cs-langs
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 12 May 2014 22:19:16 -0600
+
+cu-cs-current-csel (1405-1.0) trusty; urgency=high
+
+  * Initial trusty release.
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 11 May 2014 23:33:33 -0600

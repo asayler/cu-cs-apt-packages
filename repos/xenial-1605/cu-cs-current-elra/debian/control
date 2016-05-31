@@ -1,0 +1,14 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-current-elra
+Maintainer: Andy Sayler <andy.sayler@colorado.edu>
+Pre-Depends: cu-cs-base-nox, cu-cs-editors-nox, cu-cs-langs, cu-cs-extra
+Depends: cu-cs-csci-1300-nox, cu-cs-csci-1310-nox, cu-cs-csci-1320-nox,
+ cu-cs-csci-2270-nox, cu-cs-csci-2400-nox,
+ cu-cs-csci-3308-nox
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Description: Default ELRA course packages for University of Colorado CS Dept.
