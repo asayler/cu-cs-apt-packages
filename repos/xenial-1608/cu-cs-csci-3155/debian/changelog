@@ -1,0 +1,23 @@
+cu-cs-csci-3155 (1608.0.0) xenial-1608; urgency=medium
+
+  * Updated for Fall 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 10 Aug 2016 21:30:15 +0000
+
+cu-cs-csci-3155 (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Tue, 18 Aug 2015 14:35:24 -0600
+
+cu-cs-csci-3155 (1501.0.0) trusty-1501; urgency=medium
+
+  * Updated for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 28 Dec 2014 13:40:48 -0700
+
+cu-cs-csci-3155 (1408-1.0) trusty; urgency=medium
+
+  * Initial Release
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 22 Aug 2014 23:24:33 -0600
