@@ -1,0 +1,14 @@
+Section: main
+Priority: optional
+Homepage: apt.cs.colorado.edu
+Standards-Version: 3.9.5
+Package: cu-cs-apt
+Maintainer: Andy Sayler (asayler) <andy.sayler@colorado.edu>
+Depends:
+Suggests: cu-cs-apt-ubuntu
+Architecture: all
+Copyright: copyright
+Changelog: changelog
+Files: ./cu-cs.list /etc/apt/sources.list.d/
+ ./csel.gpg /etc/apt/trusted.gpg.d/
+Description: Apt repo package for University of Colorado CS Courses 
