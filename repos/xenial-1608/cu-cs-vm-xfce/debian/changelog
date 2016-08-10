@@ -1,0 +1,53 @@
+cu-cs-vm-xfce (1605.0.1) xenial-1605; urgency=medium
+
+  * Disabled xfce-settings script
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Fri, 27 May 2016 22:55:18 -0600
+
+cu-cs-vm-xfce (1605.0.0) xenial-1605; urgency=medium
+
+  * Updated for Summer 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 26 May 2016 20:10:27 -0600
+
+cu-cs-vm-xfce (1601.0.0) trusty-1601; urgency=medium
+
+  * Updated for Fall 16
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Thu, 17 Dec 2015 13:18:13 -0700
+
+cu-cs-vm-xfce (1508.0.0) trusty-1508; urgency=medium
+
+  * Updated for Fall 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Mon, 10 Aug 2015 16:12:34 -0600
+
+cu-cs-vm-xfce (1505.0.1) trusty-1505; urgency=medium
+
+  * Fixed background
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 20:51:49 -0600
+
+cu-cs-vm-xfce (1505.0.0) trusty-1505; urgency=medium
+
+  * Updated for Summer 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sun, 03 May 2015 15:23:02 -0600
+
+cu-cs-vm-xfce (1501.1.1) trusty-1501; urgency=medium
+
+  * Removed suders file from package
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 07 Jan 2015 21:01:59 -0700
+
+cu-cs-vm-xfce (1501.1.0) trusty-1501; urgency=medium
+
+  * Updated background for Spring 15
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 17:03:00 -0700
+
+cu-cs-vm-xfce (1501.0.0) trusty-1501; urgency=medium
+
+  * Initial Release (Spring 15)
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Sat, 13 Dec 2014 15:36:45 -0700

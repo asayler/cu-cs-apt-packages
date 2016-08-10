@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+# Andy Sayler
+# CS CS VM Package
+# postinst Script
+
+BACKGROUND="/usr/share/xfce4/backdrops/CU-CS-VM-Background-XFCE.png"
+USER="user"
+
+# Note: This script doesn't handle running as root coreclty, disabling for now in favor of manual settings
+# # Desktop Image
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s "${BACKGROUND}"
+# # Image Style = Scaled (4)
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/image-style -s 4
+# # Fill Style = Solid Color (0)
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/color-style -s 0
+# # Set Black Fill
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/color1 -s 0 -s 0 -s 0 -s 65535
+# # Disable Screen Lock
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-session -p /shutdown/LockScreen -s false
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s false
+# # Disable Blank Screen
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -s 0
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-battery -s 0
+# # Disable Sleep
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-ac-sleep -s 0
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-battery-sleep -s 0
+# # Disable Power Off
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-ac-off -s 0
+# sudo -u ${USER} -E -H xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-on-battery-off -s 0
