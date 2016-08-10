@@ -1,3 +1,9 @@
+cu-cs-vm-xfce (1608.0.0) xenial-1608; urgency=medium
+
+  * Updated for Fall 2016
+
+ -- Andy Sayler <andy@apt.cs.colorado.edu>  Wed, 10 Aug 2016 15:42:05 -0600
+
 cu-cs-vm-xfce (1605.0.1) xenial-1605; urgency=medium
 
   * Disabled xfce-settings script
